@@ -55,9 +55,11 @@
 @media screen and (max-width: 750px) {
   .navbar {
     position: absolute;
-    top: 140px;
+    top: 0px;
+    background-color: white;
     transition: all 0.2s ease-in-out;
     text-align: center;
+    text-align: left;
   }
   .mobileMenuButtons {
     display: flex;
@@ -67,9 +69,13 @@
     gap: 10px;
   }
   .navbar .subLinks {
+    align-items: flex-start;
+    padding-left: 20px;
+    min-width: 200px;
     opacity: 1;
     position: static;
     transform: translateX(0);
+    text-align: left;
   }
   .navItem:hover .subLinks,
   .subLinks:hover {
@@ -77,7 +83,8 @@
     z-index: unset;
   }
   .menuOpened {
-    right: 0;
+    right: 100%;
+    transform: translateX(100%);
     display: block;
   }
   .menuClosed {

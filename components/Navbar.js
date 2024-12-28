@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { useEffect } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 
@@ -28,6 +29,13 @@ export default function Navbar() {
   function handleOpenMenu() {
     setMenuOpen(!menuOpen);
   }
+
+  // Chiude il menu quando si clicca un link
+  useEffect(() => {
+    if (menuOpen) {
+      setMenuOpen(false);
+    }
+  }, [pathname]); //  L'effect si attiva quando cambia pathname
 
   //   move menuButtons in Header and lift the state (?)
 
