@@ -42,4 +42,4 @@ filters
 use Lucide
 
 TODO:
-install Lucide
+navbar responsiveness
