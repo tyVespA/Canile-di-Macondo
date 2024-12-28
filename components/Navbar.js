@@ -90,16 +90,18 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/">I nostri ospiti</Link>
+                <Link href="/adozioni/i-nostri-ospiti">I nostri ospiti</Link>
               </li>
               <li>
-                <Link href="/">Adozioni a distanza</Link>
+                <Link href="/adozioni/adozioni-a-distanza">
+                  Adozioni a distanza
+                </Link>
               </li>
             </ul>
           </li>
           <li className={styles.navItem}>
             <Link
-              href="/come-aiutarci"
+              href="/come-aiutarci/"
               className={`${
                 pathname === "/come-aiutarci" ? styles.active : ""
               }`}
@@ -108,13 +110,13 @@ export default function Navbar() {
             </Link>
             <ul className={styles.subLinks}>
               <li>
-                <Link href="/">Chi siamo</Link>
+                <Link href="/come-aiutarci/chi-siamo">Chi siamo</Link>
               </li>
               <li>
-                <Link href="/">Donazioni</Link>
+                <Link href="/come-aiutarci/donazioni">Donazioni</Link>
               </li>
               <li>
-                <Link href="/">Volontariato</Link>
+                <Link href="/come-aiutarci/volontariato">Volontariato</Link>
               </li>
             </ul>
           </li>
