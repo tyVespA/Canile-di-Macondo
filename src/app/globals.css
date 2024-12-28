@@ -77,3 +77,7 @@ button {
 .showing {
   display: block;
 }
+
+.opacity1 {
+  opacity: 1 !important;
+}

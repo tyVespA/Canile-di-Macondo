@@ -1,9 +1,23 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  pointer-events: auto;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
 .mobileMenuButtons {
   display: none;
 }
 
 .navbar {
   position: relative;
+  z-index: 10;
 }
 
 .navbar ul {
@@ -34,7 +48,6 @@
   width: 150px;
   padding-top: 5px;
 
-  /* add animation instead of changing display  */
   transform: translate(-50%, -10px);
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0;
@@ -55,14 +68,17 @@
 @media screen and (max-width: 750px) {
   .navbar {
     position: absolute;
-    top: 0px;
-    background-color: white;
+    top: 56px;
+    background-color: antiquewhite;
     transition: all 0.2s ease-in-out;
     text-align: center;
     text-align: left;
+
+    border: 1px solid black;
   }
   .mobileMenuButtons {
     display: flex;
+    z-index: 15;
   }
   .navbar ul {
     flex-direction: column;
@@ -83,11 +99,11 @@
     z-index: unset;
   }
   .menuOpened {
-    right: 100%;
-    transform: translateX(100%);
+    left: 100%;
+    transform: translateX(-100%);
     display: block;
   }
   .menuClosed {
-    right: -500px;
+    left: 200%;
   }
 }

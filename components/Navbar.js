@@ -6,6 +6,8 @@ import { useEffect } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 
+// import "../src/app/globals.css";
+
 import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 
@@ -41,6 +43,11 @@ export default function Navbar() {
 
   return (
     <>
+      <div
+        className={`${styles.overlay} ${menuOpen && "opacity1"}`}
+        onClick={handleOpenMenu}
+      ></div>
+
       <div className={styles.mobileMenuButtons}>
         <button
           className={`${styles.menuButton} ${menuOpen ? "hidden" : "showing"}`}
