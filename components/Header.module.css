@@ -1,0 +1,8 @@
+.header {
+  padding: 20px 40px;
+}
+
+.subLinks {
+  display: flex;
+  flex-direction: column;
+}
