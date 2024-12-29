@@ -6,6 +6,25 @@ export default function Home() {
   return (
     <div>
       <h1>Home</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint error
+        quibusdam inventore, vitae facere consequatur quia, minima voluptatum
+        explicabo officiis deserunt iusto quis ut facilis doloribus alias
+        delectus vero molestias!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos
+        voluptate quae. Ullam necessitatibus ab, dolores explicabo magnam
+        excepturi maiores eaque. Quo numquam quisquam excepturi explicabo quae
+        minus eos necessitatibus!
+      </p>
+      <h2>Heading 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+        quas excepturi modi minus impedit. Eum quidem suscipit labore
+        reprehenderit officiis adipisci consequuntur eius molestias, corrupti
+        recusandae corporis, iste pariatur! Ex.
+      </p>
     </div>
   );
 }

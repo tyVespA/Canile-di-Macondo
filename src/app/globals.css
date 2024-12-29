@@ -10,10 +10,13 @@
 
 body {
   line-height: 1.5;
-  font-family: var(--font-geist-sans);
-
+  font-family: var(--font-comfortaa);
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
+}
+
+p {
+  font-family: var(--font-redhat-text);
 }
 
 img,
