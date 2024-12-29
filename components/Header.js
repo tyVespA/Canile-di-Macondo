@@ -9,7 +9,7 @@ import { X } from "lucide-react";
 
 export default function Header() {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <Link href="/">
         <PawPrint height={36} width={36} />
       </Link>
@@ -18,6 +18,6 @@ export default function Header() {
         <Button theme="dark">Dona</Button>
         <Button theme="light">Adotta</Button>
       </div>
-    </div>
+    </header>
   );
 }

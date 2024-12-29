@@ -1,3 +1,7 @@
 .footer {
   margin-top: auto;
 }
+
+.copyright {
+  font-family: var(--font-comfortaa);
+}
