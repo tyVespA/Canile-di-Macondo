@@ -11,11 +11,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
-}
-
-p {
-  font-family: var(--font-redhat-text);
+  overflow-x: hidden;
 }
 
 img,
@@ -63,6 +59,20 @@ h6 {
 
 /* END OF RESET */
 
+:root {
+  --primary: #6148fc;
+  --primary-light: #715bfc;
+  --primary-medium: #4737a9;
+  --primary-dark: #061328;
+  --yellow: #ffdc5b;
+  --orange: #f46036;
+}
+
+body {
+  background-color: var(--primary);
+  color: white;
+}
+
 h1,
 h2,
 h3,
@@ -72,6 +82,13 @@ header,
 footer,
 button {
   font-family: var(--font-comfortaa);
+  /* font-family: var(--font-redhat-display); */
+}
+
+p {
+  /* font-weight: 450; */
+  font-size: 17px;
+  font-family: var(--font-redhat-text);
 }
 
 a {

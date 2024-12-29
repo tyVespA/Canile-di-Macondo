@@ -5,13 +5,22 @@
 
   font-weight: 700;
   font-size: 15px;
+
+  transition: all 0.3s;
 }
 
 .dark {
-  background-color: #715bfc;
-  color: #ffdc5b;
+  background-color: var(--primary-light);
+  color: var(--yellow);
 }
 
 .light {
-  background-color: #ffdc5b;
+  background-color: var(--yellow);
+  color: var(--primary-dark);
+}
+
+.dark:hover,
+.light:hover {
+  background-color: white;
+  color: var(--primary-dark);
 }
