@@ -1,14 +1,14 @@
 export const db = [
   {
-    id: "nome1",
-    nome: "nome1",
+    id: "Alberto",
+    nome: "Alberto",
     img1: "/images/ospiti/bea/Beatris-11-06-23-(3).webp",
     img2: "/images/ospiti/bea/Beatris_16-07-23-().webp",
     img3: "/images/ospiti/bea/Beatris_16-07-23-(8).webp",
     taglia: "media",
     anno_di_nascita: "2022",
     mese_di_nascita: "11",
-    sesso: "maschio",
+    sesso: "Maschio",
     descrizione: "descrizione..",
   },
   {
@@ -18,7 +18,7 @@ export const db = [
     taglia: "grande",
     anno_di_nascita: "2023",
     mese_di_nascita: "09",
-    sesso: "femmina",
+    sesso: "Femmina",
     descrizione: "descrizione..",
   },
   {
@@ -27,7 +27,7 @@ export const db = [
     img1: "/images/ospiti/bea/Beatris_16-07-23-(8).webp",
     taglia: "piccola",
     anno_di_nascita: "2021",
-    sesso: "femmina",
+    sesso: "Femmina",
     descrizione: "descrizione..",
   },
   {
@@ -35,7 +35,7 @@ export const db = [
     img1: "/images/ospiti/bea/Beatris_16-07-23-(8).webp",
     taglia: "piccola",
     anno_di_nascita: "2021",
-    sesso: "femmina",
+    sesso: "Femmina",
     descrizione: "descrizione..",
   },
   {
@@ -43,7 +43,7 @@ export const db = [
     img1: "/images/ospiti/bea/Beatris_16-07-23-(8).webp",
     taglia: "piccola",
     anno_di_nascita: "2021",
-    sesso: "femmina",
+    sesso: "Femmina",
     descrizione: "descrizione..",
   },
   {
@@ -51,7 +51,7 @@ export const db = [
     img1: "/images/ospiti/bea/Beatris_16-07-23-(8).webp",
     taglia: "piccola",
     anno_di_nascita: "2021",
-    sesso: "femmina",
+    sesso: "Femmina",
     descrizione: "descrizione..",
   },
 ];

@@ -60,12 +60,12 @@ h6 {
 /* END OF RESET */
 
 :root {
-  --primary: #6148fc;
-  --primary-light: #715bfc;
-  --primary-medium: #4737a9;
-  --primary-dark: #061328;
-  --yellow: #ffdc5b;
-  --orange: #f46036;
+  --primary: hsl(248, 97%, 64%);
+  --primary-light: hsl(248, 96%, 67%);
+  --primary-medium: hsl(248, 51%, 44%);
+  --primary-dark: hsl(217, 74%, 9%);
+  --yellow: hsl(47, 100%, 68%);
+  --orange: hsl(13, 90%, 58%);
 }
 
 body {
@@ -87,7 +87,7 @@ button {
 
 p {
   /* font-weight: 450; */
-  font-size: 17px;
+  /* font-size: 17px; */
   font-family: var(--font-redhat-text);
 }
 

@@ -6,7 +6,7 @@ export default function PreviewCard({ item }) {
   const anno_di_nascita = item.anno_di_nascita;
   const mese_di_nascita = item.mese_di_nascita;
 
-  const età2 = calculateAge(anno_di_nascita, mese_di_nascita);
+  const età = calculateAge(anno_di_nascita, mese_di_nascita);
 
   return (
     <div className={styles.previewCardContainer}>
@@ -15,12 +15,11 @@ export default function PreviewCard({ item }) {
           <Image src={item.img1} width={3142} height={3927} alt="" />
         </div>
         <div className={styles.textContainer}>
-          <p>{item.nome}</p>
+          <p className={styles.nome}>{item.nome}</p>
           <p>
-            {item.sesso}, {età2}
+            {item.sesso}, {età}
           </p>
-          <p>taglia: {item.taglia}</p>
-          <p>sesso: </p>
+          <p className={styles.taglia}>Taglia {item.taglia}</p>
         </div>
       </div>
     </div>
