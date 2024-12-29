@@ -2,6 +2,7 @@ import Link from "next/link";
 import { PawPrint } from "lucide-react";
 import styles from "./Header.module.css";
 import Navbar from "./Navbar";
+import Button from "./Button";
 
 import { Menu } from "lucide-react";
 import { X } from "lucide-react";
@@ -14,8 +15,8 @@ export default function Header() {
       </Link>
       <Navbar />
       <div className={styles.ctaButtons}>
-        <button>Dona</button>
-        <button>Adotta</button>
+        <Button theme="dark">Dona</Button>
+        <Button theme="light">Adotta</Button>
       </div>
     </div>
   );

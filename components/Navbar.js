@@ -5,9 +5,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
-
-// import "../src/app/globals.css";
-
+import { ChevronDown } from "lucide-react";
 import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 
@@ -79,9 +77,11 @@ export default function Navbar() {
           <li className={styles.navItem}>
             <Link
               href="/adozioni"
-              className={`${isAdozioniActive ? styles.active : ""}`}
+              className={`${isAdozioniActive ? styles.active : ""} ${
+                styles.mainLink
+              }`}
             >
-              Adozioni
+              Adozioni <ChevronDown width={15} height={15} />
             </Link>
             <ul className={styles.subLinks}>
               <li>
@@ -111,9 +111,12 @@ export default function Navbar() {
               href="/come-aiutarci/"
               className={`${
                 pathname === "/come-aiutarci" ? styles.active : ""
-              }`}
+              } ${styles.mainLink}`}
             >
-              Come aiutarci
+              Come aiutarci{" "}
+              <span className={styles.chevron}>
+                <ChevronDown width={15} height={15} />
+              </span>
             </Link>
             <ul className={styles.subLinks}>
               <li>

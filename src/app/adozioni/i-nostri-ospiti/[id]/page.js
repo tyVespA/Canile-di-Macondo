@@ -1,3 +1,4 @@
+export const runtime = "edge";
 // import { db } from "../../../../public/db";
 // import { notFound } from "next/navigation";
 
