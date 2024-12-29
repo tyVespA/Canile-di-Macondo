@@ -37,6 +37,15 @@ export default function Navbar() {
     }
   }, [pathname]); //  L'effect si attiva quando cambia pathname
 
+  // blocca scrolling quando menu aperto
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "";
+    }
+  }, [menuOpen]);
+
   //   move menuButtons in Header and lift the state (?)
 
   return (
