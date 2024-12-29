@@ -81,3 +81,9 @@ button {
 .opacity1 {
   opacity: 1 !important;
 }
+
+.max-width-container {
+  max-width: 1260px;
+  padding-inline: 40px;
+  margin-inline: auto;
+}
