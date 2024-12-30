@@ -28,6 +28,25 @@
   font-size: 23px;
   font-weight: 700;
   font-family: var(--font-comfortaa);
+  margin-bottom: 5px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.sesso,
+.età,
+.taglia {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sesso,
+.età {
+  margin-bottom: 5px;
 }
 
 .taglia {
