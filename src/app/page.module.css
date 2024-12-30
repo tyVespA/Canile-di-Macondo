@@ -40,11 +40,14 @@
 .section2::before {
   content: "";
   position: absolute;
-  /* display: block; */
-  top: -235px; /* Adjust overlap */
+  display: block;
+  top: -320px; /* probably have to change in media q */
   left: 0;
   right: 0;
   width: 100%;
+  min-width: 100vw;
+  margin-left: calc(50% - 50vw);
+
   height: 320px;
   background: url("../../public/images/wave-2.svg");
   transform: scaleX(-1); /* flips the wave */
