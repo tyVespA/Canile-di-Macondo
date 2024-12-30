@@ -10,9 +10,11 @@ import { X } from "lucide-react";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Link href="/">
-        <PawPrint height={36} width={36} />
-      </Link>
+      <div className={styles.logoContainer}>
+        <Link href="/">
+          <PawPrint height={36} width={36} />
+        </Link>
+      </div>
       <Navbar />
       <div className={styles.ctaButtons}>
         <Button theme="dark">Dona</Button>
