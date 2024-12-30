@@ -66,6 +66,9 @@ h6 {
   --primary-dark: hsl(217, 74%, 9%);
   --yellow: hsl(47, 100%, 68%);
   --orange: hsl(13, 90%, 58%);
+
+  --max-width: 1260px;
+  --padding-inline-max-width: 40px;
 }
 
 body {
@@ -115,7 +118,7 @@ button {
 }
 
 .max-width-container {
-  max-width: 1260px;
-  padding-inline: 40px;
+  max-width: var(--max-width);
+  padding-inline: var(--padding-inline-max-width);
   margin-inline: auto;
 }
