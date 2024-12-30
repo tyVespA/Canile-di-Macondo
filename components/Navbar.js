@@ -16,6 +16,7 @@ export default function Navbar() {
     return paths.includes(currentPath);
   }
 
+  // dà la classe active al mainLink anche se il path è in un sublink
   const adozioniPaths = [
     "/adozioni",
     "/adozioni/come-funziona",
@@ -23,6 +24,14 @@ export default function Navbar() {
     "/adozioni/adozioni-a-distanza",
   ];
   const isAdozioniActive = isActiveFunction(adozioniPaths, pathname);
+
+  const comeAiutarciPaths = [
+    "/come-aiutarci",
+    "/come-aiutarci/chi-siamo",
+    "/come-aiutarci/donazioni",
+    "/come-aiutarci/volontariato",
+  ];
+  const isComeAiutarciActive = isActiveFunction(comeAiutarciPaths, pathname);
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -78,7 +87,9 @@ export default function Navbar() {
           <li>
             <Link
               href="/"
-              className={pathname === "/" ? `${styles.active}` : ""}
+              className={`${pathname === "/" ? styles.active : ""} ${
+                styles.mainLink
+              }`}
             >
               Homepage
             </Link>
@@ -106,10 +117,26 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/adozioni/i-nostri-ospiti">I nostri ospiti</Link>
+                <Link
+                  href="/adozioni/i-nostri-ospiti"
+                  className={
+                    pathname === "/adozioni/i-nostri-ospiti"
+                      ? `${styles.active}`
+                      : ""
+                  }
+                >
+                  I nostri ospiti
+                </Link>
               </li>
               <li>
-                <Link href="/adozioni/adozioni-a-distanza">
+                <Link
+                  href="/adozioni/adozioni-a-distanza"
+                  className={
+                    pathname === "/adozioni/adozioni-a-distanza"
+                      ? `${styles.active}`
+                      : ""
+                  }
+                >
                   Adozioni a distanza
                 </Link>
               </li>
@@ -118,9 +145,9 @@ export default function Navbar() {
           <li className={styles.navItem}>
             <Link
               href="/come-aiutarci/"
-              className={`${
-                pathname === "/come-aiutarci" ? styles.active : ""
-              } ${styles.mainLink}`}
+              className={`${isComeAiutarciActive ? styles.active : ""} ${
+                styles.mainLink
+              }`}
             >
               Come aiutarci{" "}
               <span className={styles.chevron}>
@@ -129,20 +156,49 @@ export default function Navbar() {
             </Link>
             <ul className={styles.subLinks}>
               <li>
-                <Link href="/come-aiutarci/chi-siamo">Chi siamo</Link>
+                <Link
+                  href="/come-aiutarci/chi-siamo"
+                  className={
+                    pathname === "/come-aiutarci/chi-siamo"
+                      ? `${styles.active}`
+                      : ""
+                  }
+                >
+                  Chi siamo
+                </Link>
               </li>
               <li>
-                <Link href="/come-aiutarci/donazioni">Donazioni</Link>
+                <Link
+                  href="/come-aiutarci/donazioni"
+                  className={
+                    pathname === "/come-aiutarci/donazioni"
+                      ? `${styles.active}`
+                      : ""
+                  }
+                >
+                  Donazioni
+                </Link>
               </li>
               <li>
-                <Link href="/come-aiutarci/volontariato">Volontariato</Link>
+                <Link
+                  href="/come-aiutarci/volontariato"
+                  className={
+                    pathname === "/come-aiutarci/volontariato"
+                      ? `${styles.active}`
+                      : ""
+                  }
+                >
+                  Volontariato
+                </Link>
               </li>
             </ul>
           </li>
           <li>
             <Link
               href="/contatti"
-              className={pathname === "/contatti" ? `${styles.active}` : ""}
+              className={`${pathname === "/contatti" ? styles.active : ""} ${
+                styles.mainLink
+              }`}
             >
               Contatti
             </Link>

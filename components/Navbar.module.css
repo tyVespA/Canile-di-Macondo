@@ -30,6 +30,7 @@
 
 .active {
   font-weight: bold;
+  color: var(--yellow);
 }
 
 .navItem {
@@ -40,6 +41,11 @@
   display: flex;
   align-items: center;
   gap: 3px;
+  transition: color 0.3s;
+}
+
+.mainLink:hover {
+  color: var(--yellow);
 }
 
 .navbar .subLinks {
@@ -64,6 +70,14 @@
   z-index: -1;
 
   pointer-events: none;
+}
+
+.subLinks li {
+  transition: color 0.3s;
+}
+
+.subLinks li:hover {
+  color: var(--yellow);
 }
 
 /* to not close the menu before mouse reaches the subLinks box */
