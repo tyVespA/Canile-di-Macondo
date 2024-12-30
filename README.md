@@ -39,7 +39,6 @@ Learnt:
 dropdowns
 [id] - dinamic links
 filters
-use Lucide
 
 TODO:
 navbar responsiveness

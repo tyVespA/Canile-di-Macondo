@@ -1,18 +1,15 @@
 import Link from "next/link";
-import { PawPrint } from "lucide-react";
+import { Dog } from "@phosphor-icons/react/dist/ssr";
 import styles from "./Header.module.css";
 import Navbar from "./Navbar";
 import Button from "./Button";
-
-import { Menu } from "lucide-react";
-import { X } from "lucide-react";
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
         <Link href="/">
-          <PawPrint height={36} width={36} />
+          <Dog size={35} weight="duotone" />
         </Link>
       </div>
       <Navbar />

@@ -5,9 +5,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
-import { Menu } from "lucide-react";
-import { X } from "lucide-react";
+import { CaretDown } from "@phosphor-icons/react";
+import { List, X } from "@phosphor-icons/react/dist/ssr";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -69,13 +68,13 @@ export default function Navbar() {
           className={`${styles.menuButton} ${menuOpen ? "hidden" : "showing"}`}
           onClick={handleOpenMenu}
         >
-          <Menu />
+          <List size={24} weight="bold" />
         </button>
         <button
           className={`${styles.closeButton} ${menuOpen ? "showing" : "hidden"}`}
           onClick={handleOpenMenu}
         >
-          <X />
+          <X size={24} weight="bold" />
         </button>
       </div>
       <nav
@@ -101,7 +100,7 @@ export default function Navbar() {
                 styles.mainLink
               }`}
             >
-              Adozioni <ChevronDown width={15} height={15} />
+              Adozioni <CaretDown size={15} weight="bold" />
             </Link>
             <ul className={styles.subLinks}>
               <li>
@@ -149,10 +148,7 @@ export default function Navbar() {
                 styles.mainLink
               }`}
             >
-              Come aiutarci{" "}
-              <span className={styles.chevron}>
-                <ChevronDown width={15} height={15} />
-              </span>
+              Come aiutarci <CaretDown size={15} weight="bold" />
             </Link>
             <ul className={styles.subLinks}>
               <li>
