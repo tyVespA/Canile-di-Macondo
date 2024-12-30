@@ -39,6 +39,9 @@ Learnt:
 dropdowns
 [id] - dinamic links
 filters
+planning for changes: ex change colors, use vars instead of hardcode
+stripe
+lightbox (?)
 
 TODO:
 navbar responsiveness

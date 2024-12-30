@@ -26,8 +26,8 @@ export default function page() {
           onChange={(e) => setFilters({ ...filters, sesso: e.target.value })}
         >
           <option value="all">All sesso</option>
-          <option value="maschio">Maschio</option>
-          <option value="femmina">Femmina</option>
+          <option value="Maschio">Maschio</option>
+          <option value="Femmina">Femmina</option>
         </select>
         <select
           value={filters.taglia}
