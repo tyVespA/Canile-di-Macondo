@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./page.module.css";
-import { db } from "../../../../public/db";
+import { db } from "../../../../lib/db";
 import PreviewCardsSection from "../../components/PreviewCardsSection";
 
 export default function page() {

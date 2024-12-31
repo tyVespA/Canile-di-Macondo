@@ -10,6 +10,7 @@
   flex: 1 1 50%;
   min-width: 300px;
   max-width: 70ch;
+  margin-bottom: 150px;
 }
 
 .heroImgContainer {
