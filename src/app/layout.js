@@ -36,12 +36,26 @@ export const metadata = {
     ],
   },
   openGraph: {
-    images: {
-      url: "https://cdn.7tv.app/emote/01HKWA1EB00005BZE9KQ0QYJW7/4x.avif",
-      width: 200,
-      height: 200,
-      alt: "Canile di Macondo",
-    },
+    images: [
+      {
+        url: "https://cdn.7tv.app/emote/01HKWA1EB00005BZE9KQ0QYJW7/4x.avif",
+        width: 200,
+        height: 200,
+        alt: "Canile di Macondo",
+      },
+      {
+        url: "https://www.google.com/logos/doodles/2024/new-years-eve-2024-6753651837110349.3-sdrk.png",
+        width: 200,
+        height: 200,
+        alt: "Canile di Macondo",
+      },
+      {
+        url: "https://momentocasa-it.storage.googleapis.com/wp-content/uploads/2023/12/cane-piu-bello-del-mondo.jpg",
+        width: 550,
+        height: 375,
+        alt: "Canile di Macondo",
+      },
+    ],
   },
 };
 
