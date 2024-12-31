@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 Learnt:
 dropdowns
-[id] - dinamic links
+[id] - dynamic links
 filters
 planning for changes: ex change colors, use vars instead of hardcode
 stripe / paypal
@@ -47,10 +47,11 @@ TODO:
 navbar mobile - what about main links?
 compress images
 lightbox
-contact form
+contact form - put in its own component
 dove siamo - integrate maps
 i nostri ospiti - style filter
 put icon as favicon - make it check color scheme
 footer - links + social icons
+scroll animations - AOS (Animate On Scroll) (o altri?)
 
 DONE:
