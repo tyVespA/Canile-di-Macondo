@@ -1,8 +1,5 @@
-import localFont from "next/font/local";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Red_Hat_Display, Red_Hat_Text, Red_Hat_Mono } from "next/font/google";
 import { Comfortaa } from "next/font/google";
-import { Quicksand } from "next/font/google";
+import { Red_Hat_Display, Red_Hat_Text } from "next/font/google";
 import "./globals.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -15,10 +12,6 @@ const redHatText = Red_Hat_Text({
   variable: "--font-redhat-text",
   subsets: ["latin"],
 });
-const redHatMono = Red_Hat_Mono({
-  variable: "--font-redhat-mono",
-  subsets: ["latin"],
-});
 
 const comfortaa = Comfortaa({
   variable: "--font-comfortaa",
@@ -26,9 +19,14 @@ const comfortaa = Comfortaa({
 });
 
 export const metadata = {
-  title: "Canile di ...",
+  title: "Canile di Macondo",
   description: "Vieni a trovarci!",
+  // icons: {
+  //   icon: "/dog-duotone.ico",
+  // },
 };
+
+<link rel="icon" href="/dog-duotone.ico" sizes="any" />;
 
 export default function RootLayout({ children }) {
   return (
@@ -36,7 +34,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${comfortaa.variable} ${redHatDisplay.variable} ${
           redHatText.variable
-        } ${redHatMono.variable}
+        }
          ${"max-width-container"}`}
       >
         <Header />

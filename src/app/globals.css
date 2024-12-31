@@ -85,7 +85,6 @@ header,
 footer,
 button {
   font-family: var(--font-comfortaa);
-  /* font-family: var(--font-redhat-display); */
 }
 
 p {

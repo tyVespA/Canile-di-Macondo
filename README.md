@@ -48,6 +48,7 @@ navbar mobile - what about main links?
 compress images
 lightbox
 contact form - put in its own component
+donate component
 dove siamo - integrate maps
 i nostri ospiti - style filter
 put icon as favicon - make it check color scheme
