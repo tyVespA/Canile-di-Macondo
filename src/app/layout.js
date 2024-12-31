@@ -43,12 +43,6 @@ export const metadata = {
         height: 200,
         alt: "Canile di Macondo",
       },
-      {
-        url: "https://momentocasa-it.storage.googleapis.com/wp-content/uploads/2023/12/cane-piu-bello-del-mondo.jpg",
-        width: 400,
-        height: 270,
-        alt: "Canile di Macondo",
-      },
     ],
   },
 };
