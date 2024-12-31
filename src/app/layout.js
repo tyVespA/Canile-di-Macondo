@@ -58,9 +58,13 @@ export default function RootLayout({ children }) {
             property="og:url"
             content="https://a273098f.shelter-testing.pages.dev/"
           />
-          <meta
+          {/* <meta
             property="og:image"
             content="https://momentocasa-it.storage.googleapis.com/wp-content/uploads/2023/12/cane-piu-bello-del-mondo.jpg"
+          /> */}
+          <meta
+            property="og:image"
+            content="https://cdn.7tv.app/emote/01HKWA1EB00005BZE9KQ0QYJW7/4x.avif"
           />
           <meta property="og:image:width" content="205" />
           <meta property="og:image:height" content="230" />
