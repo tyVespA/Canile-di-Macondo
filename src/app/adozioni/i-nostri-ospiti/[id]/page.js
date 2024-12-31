@@ -8,7 +8,8 @@ export async function generateMetadata({ params }) {
   const { id } = await params;
   const animal = db.find((item) => item.id === id);
   return {
-    title: animal?.nome || "Errore",
+    title: `${animal?.nome} | Canile di Macondo` || "Errore",
+    description: "bau!",
   };
 }
 

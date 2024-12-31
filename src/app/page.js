@@ -4,6 +4,11 @@ import styles from "./page.module.css";
 import cane_hero from "../../public/images/cane_hero.png";
 import FullWidthBg from "../../components/FullWidthBg";
 
+export const metadata = {
+  title: "Home | Canile di Macondo",
+  description: "Benvenuti!",
+};
+
 export default function Home() {
   return (
     <div>
@@ -22,7 +27,6 @@ export default function Home() {
           <Image src={cane_hero} alt="" />
         </div>
       </section>
-
       <FullWidthBg bgColor="var(--yellow)">
         <div className={styles.section2}>
           <h2>section2</h2>

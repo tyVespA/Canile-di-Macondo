@@ -42,9 +42,11 @@ filters
 planning for changes: ex change colors, use vars instead of hardcode
 stripe / paypal
 lightbox (?)
+variable favicon
 
 TODO:
 navbar mobile - what about main links?
+page titles? ex. Canile | Home
 compress images
 lightbox
 contact form - put in its own component

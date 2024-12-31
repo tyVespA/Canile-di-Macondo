@@ -21,12 +21,21 @@ const comfortaa = Comfortaa({
 export const metadata = {
   title: "Canile di Macondo",
   description: "Vieni a trovarci!",
-  // icons: {
-  //   icon: "/dog-duotone.ico",
-  // },
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/images/favicon-light.svg",
+        href: "/images/favicon-light.svg",
+      },
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/images/favicon-dark.svg",
+        href: "/images/favicon-dark.svg",
+      },
+    ],
+  },
 };
-
-<link rel="icon" href="/dog-duotone.ico" sizes="any" />;
 
 export default function RootLayout({ children }) {
   return (
