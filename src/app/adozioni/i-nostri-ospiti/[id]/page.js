@@ -1,35 +1,40 @@
-export const runtime = "edge";
-// import { db } from "../../../../public/db";
-// import { notFound } from "next/navigation";
+// export const runtime = "edge";
+import { db } from "../../../../../lib/db";
+import { notFound } from "next/navigation";
+import Image from "next/image";
+import styles from "./page.module.css";
 
-// export async function generateMetadata({ params }) {
-//   const animal = db.find((item) => item.id === params.id);
-//   return {
-//     title: animal?.nome || "Animal Not Found",
-//   };
-// }
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const animal = db.find((item) => item.id === id);
+  return {
+    title: animal?.nome || "Errore",
+  };
+}
 
-// export default function Page({ params }) {
-//   const animal = db.find((item) => item.id === params.id);
+export default async function Page({ params }) {
+  const { id } = await params;
+  const animal = db.find((item) => item.id === id);
 
-//   if (!animal) {
-//     notFound();
-//   }
+  if (!animal) {
+    return notFound();
+  }
 
-//   return (
-//     <div>
-//       <h1>{animal.nome}</h1>
-//       <img src={animal.img1} alt={animal.nome} />
-//       <p>Taglia: {animal.taglia}</p>
-//       <p>Sesso: {animal.sesso}</p>
-//       <p>Anno di nascita: {animal.anno_di_nascita}</p>
-//       <p>{animal.descrizione}</p>
-//     </div>
-//   );
-// }
+  return (
+    <div className={styles.pageContainer}>
+      <h1>{animal.nome}</h1>
+      {/* <Image src={animal.img1} alt={animal.nome} /> */}
+      <img src={animal.img1} alt={animal.nome} />
+      <p>Taglia: {animal.taglia}</p>
+      <p>Sesso: {animal.sesso}</p>
+      <p>Anno di nascita: {animal.anno_di_nascita}</p>
+      <p>{animal.descrizione}</p>
+    </div>
+  );
+}
 
-// export async function generateStaticParams() {
-//   return db.map((animal) => ({
-//     id: animal.id,
-//   }));
-// }
+export async function generateStaticParams() {
+  return db.map((animal) => ({
+    id: animal.id,
+  }));
+}
