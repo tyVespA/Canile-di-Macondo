@@ -51,8 +51,8 @@ export const metadata = {
       },
       {
         url: "https://momentocasa-it.storage.googleapis.com/wp-content/uploads/2023/12/cane-piu-bello-del-mondo.jpg",
-        width: 550,
-        height: 375,
+        width: 400,
+        height: 270,
         alt: "Canile di Macondo",
       },
     ],
@@ -62,6 +62,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <head>
+          <meta property="og:title" content="Canile di Macondo" />
+          <meta property="og:description" content="Vieni a trovarci!" />
+          <meta
+            property="og:url"
+            content="https://a273098f.shelter-testing.pages.dev/"
+          />
+          <meta
+            property="og:image"
+            content="https://momentocasa-it.storage.googleapis.com/wp-content/uploads/2023/12/cane-piu-bello-del-mondo.jpg"
+          />
+          <meta property="og:image:width" content="205" />
+          <meta property="og:image:height" content="230" />
+        </head>
+      </head>
       <body
         className={`${comfortaa.variable} ${redHatDisplay.variable} ${
           redHatText.variable
