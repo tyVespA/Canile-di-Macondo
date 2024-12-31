@@ -23,12 +23,6 @@
   height: 100%;
 }
 
-.section2Container {
-  background-color: var(--yellow);
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-}
-
 .section2 {
   max-width: var(--max-width);
   padding-inline: var(--padding-inline-max-width);

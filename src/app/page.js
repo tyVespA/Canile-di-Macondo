@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import cane_hero from "../../public/images/cane_hero.png";
+import FullWidthBg from "../../components/FullWidthBg";
 
 export default function Home() {
   return (
@@ -22,8 +23,8 @@ export default function Home() {
         </div>
       </section>
 
-      <div className={styles.section2Container}>
-        <section className={styles.section2}>
+      <FullWidthBg bgColor="var(--yellow)">
+        <div className={styles.section2}>
           <h2>section2</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint error
@@ -44,8 +45,8 @@ export default function Home() {
             reprehenderit officiis adipisci consequuntur eius molestias,
             corrupti recusandae corporis, iste pariatur! Ex.
           </p>
-        </section>
-      </div>
+        </div>
+      </FullWidthBg>
     </div>
   );
 }

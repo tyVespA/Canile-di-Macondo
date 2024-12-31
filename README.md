@@ -40,8 +40,17 @@ dropdowns
 [id] - dinamic links
 filters
 planning for changes: ex change colors, use vars instead of hardcode
-stripe
+stripe / paypal
 lightbox (?)
 
 TODO:
-navbar responsiveness
+navbar mobile - what about main links?
+compress images
+lightbox
+contact form
+dove siamo - integrate maps
+i nostri ospiti - style filter
+put icon as favicon - make it check color scheme
+footer - links + social icons
+
+DONE:
