@@ -26,12 +26,10 @@ export const metadata = {
       {
         media: "(prefers-color-scheme: dark)",
         url: "/images/favicon-light.svg",
-        href: "/images/favicon-light.svg",
       },
       {
         media: "(prefers-color-scheme: light)",
         url: "/images/favicon-dark.svg",
-        href: "/images/favicon-dark.svg",
       },
     ],
   },

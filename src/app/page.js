@@ -15,7 +15,6 @@ export default function Home() {
       <section className={styles.heroContainer}>
         <div className={styles.textContainer}>
           <h1>Home</h1>
-          <h2>text</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
             velit vel officiis ut repellat ratione dicta? Et vitae neque, fuga
@@ -24,7 +23,7 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.heroImgContainer}>
-          <Image src={cane_hero} alt="" />
+          <Image src={cane_hero} alt="foto di un cane" />
         </div>
       </section>
       <FullWidthBg bgColor="var(--yellow)">

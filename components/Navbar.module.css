@@ -43,17 +43,18 @@
   gap: 3px;
   transition: color 0.3s;
 }
-
+.parentLink {
+  cursor: default;
+}
 .mainLink:hover {
   color: var(--yellow);
 }
-
 .navbar .subLinks {
   display: flex;
   flex-direction: column;
   gap: 5px;
   text-align: left;
-  padding: 24px 24px;
+  padding: 12px 24px;
   margin-top: 12px;
 
   position: absolute;
@@ -62,8 +63,7 @@
   width: 230px;
   background-color: var(--primary);
   border-radius: 15px;
-  box-shadow: 0px 15px 50px 0px rgba(27, 32, 50, 0.1);
-
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transform: translateY(-10px);
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0;
@@ -72,7 +72,8 @@
   pointer-events: none;
 }
 
-.subLinks li {
+.navbar .subLinks li {
+  color: var(--white);
   transition: color 0.3s;
 }
 
@@ -84,14 +85,13 @@
 .navbar .subLinks::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 135px; /* width of the mainLink */
   height: 20px;
   top: -12px;
   bottom: 0;
   right: 0;
   left: 0;
 }
-
 .navItem:hover .subLinks,
 .subLinks:hover {
   z-index: 10;
@@ -121,19 +121,34 @@
     padding-top: 56px;
     padding-left: 30px;
   }
+  .mainLink {
+    margin-bottom: 10px;
+  }
   .navbar .subLinks {
     align-items: flex-start;
     padding-block: 0;
-    margin-top: 5px;
+    /* margin-top: 10px; */
+    gap: 10px;
     padding-left: 20px;
     min-width: 300px;
-    opacity: 1;
     position: static;
     transform: translateX(0);
     box-shadow: unset;
-    /* text-align: left; */
+    opacity: 0;
+    max-height: 0;
+
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
   }
-  .navItem:hover .subLinks,
+  .navbar .subLinksOpened {
+    opacity: 1;
+    max-height: 200px;
+  }
+  .navbar .subLinksClosed {
+    opacity: 0;
+    max-height: 0;
+  }
+  .navbar .subLinks .navItem:hover .subLinks,
   .subLinks:hover {
     transform: translateX(0);
     z-index: unset;

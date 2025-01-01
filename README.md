@@ -43,9 +43,9 @@ planning for changes: ex change colors, use vars instead of hardcode
 stripe / paypal
 lightbox (?)
 variable favicon
+openGraph metadata
 
 TODO:
-navbar mobile - what about main links?
 page titles? ex. Canile | Home
 compress images
 lightbox
@@ -53,8 +53,9 @@ contact form - put in its own component
 donate component
 dove siamo - integrate maps
 i nostri ospiti - style filter
-put icon as favicon - make it check color scheme
 footer - links + social icons
+refractor navbar
 scroll animations - AOS (Animate On Scroll) (o altri?)
 
 DONE:
+put icon as favicon - make it check color scheme

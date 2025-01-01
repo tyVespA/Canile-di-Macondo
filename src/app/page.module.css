@@ -1,8 +1,6 @@
 .heroContainer {
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
 }
 
@@ -15,7 +13,6 @@
 
 .heroImgContainer {
   flex: 2 1 50%;
-  height: 100%;
 }
 
 .heroImgContainer img {

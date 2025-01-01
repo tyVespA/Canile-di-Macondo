@@ -54,6 +54,25 @@ export default function Navbar() {
     }
   }, [menuOpen]);
 
+  const [openSubLinks, setOpenSubLinks] = useState({
+    adozioni: false,
+    comeAiutarci: false,
+  });
+
+  function toggleSubLinks(section) {
+    setOpenSubLinks((prevState) => ({
+      ...prevState,
+      [section]: !prevState[section],
+    }));
+  }
+
+  useEffect(() => {
+    setOpenSubLinks({
+      adozioni: isAdozioniActive,
+      comeAiutarci: isComeAiutarciActive,
+    });
+  }, [pathname, isAdozioniActive, isComeAiutarciActive]);
+
   //   move menuButtons in Header and lift the state (?)
 
   return (
@@ -94,15 +113,21 @@ export default function Navbar() {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link
-              href="/adozioni"
-              className={`${isAdozioniActive ? styles.active : ""} ${
-                styles.mainLink
-              }`}
+            <span
+              onClick={() => toggleSubLinks("adozioni")}
+              className={`${styles.parentLink} ${styles.mainLink} ${
+                isAdozioniActive ? styles.active : ""
+              } `}
             >
               Adozioni <CaretDown size={15} weight="bold" />
-            </Link>
-            <ul className={styles.subLinks}>
+            </span>
+            <ul
+              className={`${styles.subLinks} ${
+                openSubLinks.adozioni || isAdozioniActive
+                  ? styles.subLinksOpened
+                  : styles.subLinksClosed
+              } `}
+            >
               <li>
                 <Link
                   href="/adozioni/come-funziona"
@@ -142,15 +167,21 @@ export default function Navbar() {
             </ul>
           </li>
           <li className={styles.navItem}>
-            <Link
-              href="/come-aiutarci/"
-              className={`${isComeAiutarciActive ? styles.active : ""} ${
-                styles.mainLink
+            <span
+              onClick={() => toggleSubLinks("comeAiutarci")}
+              className={`${styles.parentLink} ${styles.mainLink} ${
+                isComeAiutarciActive ? styles.active : ""
               }`}
             >
               Come aiutarci <CaretDown size={15} weight="bold" />
-            </Link>
-            <ul className={styles.subLinks}>
+            </span>
+            <ul
+              className={`${styles.subLinks} ${
+                openSubLinks.comeAiutarci || isComeAiutarciActive
+                  ? styles.subLinksOpened
+                  : styles.subLinksClosed
+              }`}
+            >
               <li>
                 <Link
                   href="/come-aiutarci/chi-siamo"
