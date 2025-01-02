@@ -46,7 +46,7 @@
   margin-left: calc(50% - 50vw);
 
   height: 320px;
-  background: url("@images/wave-2.svg");
+  /* background: url("@images/wave-2.svg"); */
   transform: scaleX(-1); /* flips the wave */
   background-size: cover;
   z-index: -1;
