@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 25px;
 }
 
 .textContainer {
@@ -13,16 +14,20 @@
 
 .heroImgContainer {
   flex: 2 1 50%;
+  height: 600px;
+  display: flex;
 }
 
 .heroImgContainer img {
-  object-fit: cover;
-  height: 100%;
+  object-fit: contain;
+  height: 600px;
+  margin-left: auto;
 }
 
 .section2 {
   max-width: var(--max-width);
   padding-inline: var(--padding-inline-max-width);
+  padding-bottom: 50px;
   margin-inline: auto;
   color: var(--primary-dark);
   position: relative;
@@ -33,7 +38,7 @@
   content: "";
   position: absolute;
   display: block;
-  top: -320px; /* probably have to change in media q */
+  top: -260px; /* probably have to change in media q */
   left: 0;
   right: 0;
   width: 100%;
