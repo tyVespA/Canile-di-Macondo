@@ -27,7 +27,7 @@
 .section2 {
   max-width: var(--max-width);
   padding-inline: var(--padding-inline-max-width);
-  padding-bottom: 50px;
+  padding-bottom: 5000px;
   margin-inline: auto;
   color: var(--primary-dark);
   position: relative;
