@@ -26,13 +26,13 @@ export default function PreviewCard({ item }) {
               )}
               {item.sesso}
             </p>
+            <p className={styles.taglia}>
+              <Ruler size={18} /> Taglia {item.taglia}
+            </p>
             <p className={styles.età}>
               {" "}
               <Cake size={18} />
               {età}
-            </p>
-            <p className={styles.taglia}>
-              <Ruler size={18} /> Taglia {item.taglia}
             </p>
           </div>
         </div>
