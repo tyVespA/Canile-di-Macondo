@@ -26,7 +26,7 @@ export default function Home() {
           <Image src={cane_hero} alt="foto di un cane" />
         </div>
       </section>
-      <FullWidthBg bgColor="var(--yellow)">
+      <FullWidthBg bgColor="var(--accent-one)">
         <div className={styles.section2}>
           <h2>section2</h2>
           <p>

@@ -30,7 +30,7 @@
 
 .active {
   font-weight: bold;
-  color: var(--yellow);
+  color: var(--accent-one);
 }
 
 .navItem {
@@ -47,7 +47,7 @@
   cursor: default;
 }
 .mainLink:hover {
-  color: var(--yellow);
+  color: var(--accent-one);
 }
 .navbar .subLinks {
   display: flex;
@@ -61,7 +61,7 @@
   left: 0;
   top: 100%;
   width: 230px;
-  background-color: var(--primary);
+  background-color: var(--background);
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transform: translateY(-10px);
@@ -78,7 +78,7 @@
 }
 
 .subLinks li:hover {
-  color: var(--yellow);
+  color: var(--accent-one);
 }
 
 /* to not close the menu before mouse reaches the subLinks box */
@@ -106,7 +106,7 @@
     position: fixed;
     top: 0;
     height: 100vh;
-    background-color: var(--primary);
+    background-color: var(--background);
     transition: all 0.2s ease-in-out;
     text-align: center;
     text-align: left;

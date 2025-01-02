@@ -60,20 +60,23 @@ h6 {
 /* END OF RESET */
 
 :root {
-  --primary: hsl(248, 97%, 64%);
-  --primary-light: hsl(248, 96%, 67%);
-  --primary-medium: hsl(248, 51%, 44%);
-  --primary-dark: hsl(217, 74%, 9%);
-  --yellow: hsl(47, 100%, 68%);
-  --orange: hsl(13, 90%, 58%);
+  --background: hsl(248, 97%, 64%);
+  --surface: hsl(248, 96%, 67%);
+
+  --text-light: hsl(0, 0%, 100%);
+  --text-dark: hsl(217, 74%, 9%);
+
+  --accent-one: hsl(47, 100%, 68%);
+  --accent-two: hsl(13, 90%, 58%);
 
   --max-width: 1260px;
   --padding-inline-max-width: 40px;
 }
 
 body {
-  background-color: var(--primary);
+  background-color: var(--background);
   color: white;
+  font-family: var(--font-redhat-text);
 }
 
 h1,

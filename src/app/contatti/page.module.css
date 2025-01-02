@@ -18,8 +18,8 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background: var(--yellow);
-  color: var(--primary-dark);
+  background: var(--accent-one);
+  color: var(--text-dark);
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -38,7 +38,7 @@
 .contactForm textarea {
   margin-bottom: 15px;
   padding: 10px;
-  outline: 1px solid var(--primary);
+  outline: 1px solid var(--text-dark);
   border: transparent;
   border-radius: 4px;
   font-size: 16px;
@@ -59,7 +59,7 @@
 }
 
 .contactForm button {
-  background-color: var(--primary);
+  background-color: var(--surface);
   color: white;
   border: none;
   padding: 10px 15px;

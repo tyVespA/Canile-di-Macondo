@@ -29,7 +29,7 @@
   padding-inline: var(--padding-inline-max-width);
   padding-bottom: 5000px;
   margin-inline: auto;
-  color: var(--primary-dark);
+  color: var(--text-dark);
   position: relative;
   z-index: 1;
 }

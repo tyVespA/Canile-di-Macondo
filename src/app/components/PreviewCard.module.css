@@ -1,8 +1,7 @@
 .previewCardContainer {
-  /* border: 1px solid var(--primary-dark); */
   border-radius: 15px;
   overflow: hidden;
-  background-color: var(--primary-medium);
+  background-color: var(--surface);
 }
 
 .imageContainer {
@@ -20,7 +19,7 @@
 
 .textContainer {
   padding: 10px 20px 20px 20px;
-  background-color: var(--primary-medium);
+  background-color: var(--surface);
   position: relative;
 }
 

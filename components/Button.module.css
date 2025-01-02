@@ -10,17 +10,17 @@
 }
 
 .dark {
-  background-color: var(--primary-light);
-  color: var(--yellow);
+  background-color: var(--surface);
+  color: var(--accent-one);
 }
 
 .light {
-  background-color: var(--yellow);
-  color: var(--primary-dark);
+  background-color: var(--accent-one);
+  color: var(--text-dark);
 }
 
 .dark:hover,
 .light:hover {
   background-color: white;
-  color: var(--primary-dark);
+  color: var(--text-dark);
 }
