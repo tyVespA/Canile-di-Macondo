@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Dog } from "@phosphor-icons/react/dist/ssr";
 import styles from "./Header.module.css";
 import Navbar from "./Navbar";
-import Button from "./Button";
+import Button from "../Button";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);

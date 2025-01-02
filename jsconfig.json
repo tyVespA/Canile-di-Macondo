@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["*"],
+      "@images/*": ["./public/images/*"],
+      "@shared-components/*": ["./src/app/shared-components/*"]
     }
   }
 }

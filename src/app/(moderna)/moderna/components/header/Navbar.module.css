@@ -1,0 +1,164 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.mobileMenuButtons {
+  display: none;
+}
+
+.navbar {
+  position: relative;
+  z-index: 10;
+}
+
+.navbar ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  /* justify-content: space-between; */
+}
+
+.active {
+  font-weight: bold;
+  color: var(--accent-one);
+}
+
+.navItem {
+  position: relative;
+}
+
+.mainLink {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  transition: color 0.3s;
+}
+.parentLink {
+  cursor: default;
+}
+.mainLink:hover {
+  color: var(--accent-one);
+}
+.navbar .subLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+  padding: 12px 24px;
+  margin-top: 12px;
+
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 230px;
+  background-color: var(--background);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  z-index: -1;
+
+  pointer-events: none;
+}
+
+.navbar .subLinks li {
+  color: var(--white);
+  transition: color 0.3s;
+}
+
+.subLinks li:hover {
+  color: var(--accent-one);
+}
+
+/* to not close the menu before mouse reaches the subLinks box */
+.navbar .subLinks::before {
+  content: "";
+  position: absolute;
+  width: 135px; /* width of the mainLink */
+  height: 20px;
+  top: -12px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.navItem:hover .subLinks,
+.subLinks:hover {
+  z-index: 10;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* MOBILE */
+@media screen and (max-width: 750px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: var(--background);
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    text-align: left;
+  }
+  .mobileMenuButtons {
+    display: flex;
+    z-index: 15;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 56px;
+    padding-left: 30px;
+  }
+  .mainLink {
+    margin-bottom: 10px;
+  }
+  .navbar .subLinks {
+    align-items: flex-start;
+    padding-block: 0;
+    /* margin-top: 10px; */
+    gap: 10px;
+    padding-left: 20px;
+    min-width: 300px;
+    position: static;
+    transform: translateX(0);
+    box-shadow: unset;
+    opacity: 0;
+    max-height: 0;
+
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  .navbar .subLinksOpened {
+    opacity: 1;
+    max-height: 200px;
+  }
+  .navbar .subLinksClosed {
+    opacity: 0;
+    max-height: 0;
+  }
+  .navbar .subLinks .navItem:hover .subLinks,
+  .subLinks:hover {
+    transform: translateX(0);
+    z-index: unset;
+  }
+  .menuOpened {
+    left: 100%;
+    transform: translateX(-75%);
+    display: block;
+  }
+  .menuClosed {
+    left: 200%;
+  }
+}

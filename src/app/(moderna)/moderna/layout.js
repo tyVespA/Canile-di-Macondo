@@ -3,6 +3,8 @@ import { Red_Hat_Display, Red_Hat_Text } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/Header";
 import Footer from "./components/Footer";
+import SwitchVersionButton from "@shared-components/SwitchVersionButton";
+// import SwitchVersionButton from "../../shared-components/SwitchVersionButton";
 
 const redHatDisplay = Red_Hat_Display({
   variable: "--font-redhat-display",
@@ -45,7 +47,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function VersionModernLayout({ children }) {
   return (
     <html lang="en">
       <head>
@@ -68,9 +70,10 @@ export default function RootLayout({ children }) {
         }
          ${"max-width-container"}`}
       >
-        {/* <Header /> */}
+        <SwitchVersionButton />
+        <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

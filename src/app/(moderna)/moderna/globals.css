@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* END OF RESET */
+
+:root {
+  --background: hsl(248, 97%, 64%);
+  --surface: hsl(248, 96%, 67%);
+
+  --text-light: hsl(0, 0%, 100%);
+  --text-dark: hsl(217, 74%, 9%);
+
+  --accent-one: hsl(47, 100%, 68%);
+  --accent-two: hsl(13, 90%, 58%);
+
+  --max-width: 1260px;
+  --padding-inline-max-width: 40px;
+}
+
+body {
+  background-color: var(--background);
+  color: white;
+  font-family: var(--font-redhat-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+header,
+footer,
+button {
+  font-family: var(--font-comfortaa);
+}
+
+p {
+  /* font-weight: 450; */
+  /* font-size: 17px; */
+  font-family: var(--font-redhat-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* HELPER CLASSES */
+.hidden {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.opacity1 {
+  opacity: 1 !important;
+}
+
+.max-width-container {
+  max-width: var(--max-width);
+  padding-inline: var(--padding-inline-max-width);
+  margin-inline: auto;
+}

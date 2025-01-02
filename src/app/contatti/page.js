@@ -1,5 +1,5 @@
 "use client";
-import FullWidthBg from "../../../components/FullWidthBg";
+import FullWidthBg from "../components/FullWidthBg";
 import styles from "./page.module.css";
 
 export default function page() {

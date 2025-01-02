@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
-import cane_hero from "../../public/images/cane_hero.png";
+import cane_hero from "@images/cane_hero.png";
 import FullWidthBg from "./components/FullWidthBg";
 
 export const metadata = {
@@ -21,9 +21,6 @@ export default function Home() {
             pariatur, ratione officiis tenetur eveniet odio eum nisi molestias
             soluta!
           </p>
-        </div>
-        <div className={styles.heroImgContainer}>
-          <Image src={cane_hero} alt="foto di un cane" />
         </div>
       </section>
       <FullWidthBg bgColor="var(--accent-one)">

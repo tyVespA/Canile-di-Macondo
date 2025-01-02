@@ -44,6 +44,7 @@ stripe / paypal
 lightbox (?)
 variable favicon
 openGraph metadata
+relative pathing
 
 TODO:
 page titles? ex. Canile | Home

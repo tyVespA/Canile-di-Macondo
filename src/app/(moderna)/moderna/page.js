@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
-import cane_hero from "../../public/images/cane_hero.png";
+import cane_hero from "@images/cane_hero.png";
 import FullWidthBg from "./components/FullWidthBg";
 
 export const metadata = {
