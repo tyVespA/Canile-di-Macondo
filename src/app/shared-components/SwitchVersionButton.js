@@ -4,9 +4,9 @@ import styles from "./SwitchVersionButton.module.css";
 
 export default function SwitchVersionButton() {
   const pathname = usePathname();
+  const isTraditional = pathname.startsWith("/tradizionale");
 
   const handleClick = () => {
-    const isTraditional = pathname.startsWith("/tradizionale");
     const newPath = isTraditional
       ? pathname.replace("/tradizionale", "/moderna")
       : pathname.replace("/moderna", "/tradizionale");
@@ -16,7 +16,7 @@ export default function SwitchVersionButton() {
 
   return (
     <button onClick={handleClick} className={styles.switchVersionButton}>
-      Switch
+      {isTraditional ? "Versione tradizionale" : "Versione moderna"}
     </button>
   );
 }

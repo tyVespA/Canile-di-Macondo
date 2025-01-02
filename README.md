@@ -47,6 +47,7 @@ openGraph metadata
 relative pathing
 
 TODO:
+chiudere sublinks su desktop dopo click
 page titles? ex. Canile | Home
 compress images
 lightbox
