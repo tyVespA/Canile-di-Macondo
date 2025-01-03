@@ -4,8 +4,6 @@ import styles from "./page.module.css";
 import { db } from "@lib/db";
 import PreviewCardsSection from "../../components/PreviewCardsSection";
 
-import Head from "next/head";
-
 export default function page() {
   useEffect(() => {
     document.title = "I nostri ospiti | Canile di Macondo ";
@@ -25,9 +23,6 @@ export default function page() {
   });
   return (
     <>
-      <Head>
-        <title>{document.title}</title>
-      </Head>
       <h1>i nostri ospiti</h1>
       <div className={styles.filters}>
         <select
