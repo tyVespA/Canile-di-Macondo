@@ -8,7 +8,7 @@
 .textContainer {
   flex: 1 1 50%;
   min-width: 300px;
-  max-width: 70ch;
+  max-width: 50ch;
   margin-bottom: 150px;
 }
 
@@ -16,12 +16,21 @@
   flex: 2 1 50%;
   height: 600px;
   display: flex;
+  position: relative;
 }
 
 .heroImgContainer img {
   object-fit: contain;
   height: 600px;
   margin-left: auto;
+}
+
+.blob {
+  position: absolute;
+  /* bottom: 0px; */
+  left: 50px;
+  z-index: -1;
+  transform: scale(1.1);
 }
 
 .section2 {

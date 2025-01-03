@@ -1,17 +1,72 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import styles from "./page.module.css";
-import cane_hero from "@images/cane_hero.png";
 import FullWidthBg from "./components/FullWidthBg";
+import cane_hero_1 from "@images/moderna/cane_hero_1.png";
+import cane_hero_2 from "@images/moderna/cane_hero_2.png";
+import cane_hero_3 from "@images/moderna/cane_hero_3.png";
+// import cane_hero_4 from "@images/moderna/cane_hero_4.png";
+import blob_1 from "@images/moderna/blob-haikei_1.svg";
+import blob_2 from "@images/moderna/blob-haikei_2.svg";
+import blob_3 from "@images/moderna/blob-haikei_3.svg";
+import blob_4 from "@images/moderna/blob-haikei_4.svg";
 
-export const metadata = {
-  title: "Home | Canile di Macondo",
-  description: "Benvenuti!",
-};
+// export const metadata = {
+//   title: "Home | Canile di Macondo",
+//   description: "Benvenuti!",
+// };
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * 4) + 1;
+}
 
 export default function Home() {
+  const [randomDog, setRandomDog] = useState(null);
+  const [randomBlob, setRandomBlob] = useState(null);
+
+  useEffect(() => {
+    const randomNum = getRandomNumber();
+    const randomNum2 = getRandomNumber();
+    switch (randomNum) {
+      case 1:
+        setRandomDog(cane_hero_1);
+        break;
+      case 2:
+        setRandomDog(cane_hero_2);
+        break;
+      case 3:
+        setRandomDog(cane_hero_3);
+        break;
+      case 4:
+        setRandomDog(cane_hero_1);
+        break;
+      default:
+        setRandomDog(null);
+    }
+
+    switch (randomNum2) {
+      case 1:
+        setRandomBlob(blob_1);
+        break;
+      case 2:
+        setRandomBlob(blob_2);
+        break;
+      case 3:
+        setRandomBlob(blob_3);
+        break;
+      case 4:
+        setRandomBlob(blob_4);
+        break;
+      default:
+        setRandomBlob(null);
+    }
+  }, []);
   return (
-    <div>
+    <>
+      <title>Homepage | Canile di Macondo</title>
+      <meta name="description" content="Benvenuti al canile di Macondo!" />
       <section className={styles.heroContainer}>
         <div className={styles.textContainer}>
           <h1>Home</h1>
@@ -23,7 +78,16 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.heroImgContainer}>
-          <Image src={cane_hero} alt="foto di un cane" />
+          {randomDog && (
+            <Image src={randomDog} alt="foto di un cane" priority />
+          )}
+          {randomBlob && (
+            <Image
+              src={randomBlob}
+              alt="foto di un cane"
+              className={styles.blob}
+            />
+          )}
         </div>
       </section>
       <FullWidthBg bgColor="var(--accent-one)">
@@ -50,6 +114,6 @@ export default function Home() {
           </p>
         </div>
       </FullWidthBg>
-    </div>
+    </>
   );
 }
