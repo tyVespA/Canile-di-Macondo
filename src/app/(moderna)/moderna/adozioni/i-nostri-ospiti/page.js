@@ -1,10 +1,16 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import { db } from "@lib/db";
 import PreviewCardsSection from "../../components/PreviewCardsSection";
 
+import Head from "next/head";
+
 export default function page() {
+  useEffect(() => {
+    document.title = "I nostri ospiti | Canile di Macondo ";
+  }, []);
+
   const [filters, setFilters] = useState({
     taglia: "all",
     sesso: "all",
@@ -18,7 +24,10 @@ export default function page() {
     return true;
   });
   return (
-    <div>
+    <>
+      <Head>
+        <title>{document.title}</title>
+      </Head>
       <h1>i nostri ospiti</h1>
       <div className={styles.filters}>
         <select
@@ -46,6 +55,6 @@ export default function page() {
           <p>No data</p>
         )}
       </div>
-    </div>
+    </>
   );
 }
