@@ -2,27 +2,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 25px;
+  height: 700px;
+
+  position: relative;
 }
 
 .textContainer {
   flex: 1 1 50%;
   min-width: 300px;
   max-width: 70ch;
-  margin-bottom: 150px;
+  position: relative;
+  z-index: 1;
 }
 
-.heroImgContainer {
-  flex: 2 1 50%;
-  height: 600px;
-  display: flex;
+.heroImage {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  margin-left: calc(50% - 50vw);
+  background-image: url("../../../../public/images/tradizionale/cane_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.heroImgContainer img {
-  object-fit: contain;
-  height: 600px;
-  margin-left: auto;
-}
+/* .heroImage img {
+  object-fit: cover;
+  height: 100%;
+  z-index: -1;
+} */
 
 .section2 {
   max-width: var(--max-width);

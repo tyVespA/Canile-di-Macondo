@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import cane_hero from "@images/cane_hero.png";
 import FullWidthBg from "./components/FullWidthBg";
+import cane_hero_1 from "@images/tradizionale/cane_hero_1.jpg";
 
 export const metadata = {
   title: "Home | Canile di Macondo",
@@ -21,6 +22,9 @@ export default function Home() {
             pariatur, ratione officiis tenetur eveniet odio eum nisi molestias
             soluta!
           </p>
+        </div>
+        <div className={styles.heroImage}>
+          {/* <Image src={cane_hero_1} alt="" /> */}
         </div>
       </section>
       <FullWidthBg bgColor="var(--accent-one)">
