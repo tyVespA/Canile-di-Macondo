@@ -1,14 +1,17 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import { db } from "@lib/db";
 import PreviewCardsSection from "../../components/PreviewCardsSection";
 
 export default function page() {
+  // useEffect(() => {
+  //   document.title = "I nostri ospiti | Canile di Macondo";
+  // }, []);
+
   const [filters, setFilters] = useState({
     taglia: "all",
     sesso: "all",
-    // add more filters
   });
 
   const filteredData = db.filter((animal) => {
@@ -18,7 +21,13 @@ export default function page() {
     return true;
   });
   return (
-    <div>
+    <>
+      <title>I nostri ospiti | Canile di Macondo</title>
+      <meta
+        name="description"
+        content="Scopri i nostri ospiti, i cani in attesa di adozione presso il Canile di Macondo."
+      />
+
       <h1>i nostri ospiti</h1>
       <div className={styles.filters}>
         <select
@@ -46,6 +55,6 @@ export default function page() {
           <p>No data</p>
         )}
       </div>
-    </div>
+    </>
   );
 }
