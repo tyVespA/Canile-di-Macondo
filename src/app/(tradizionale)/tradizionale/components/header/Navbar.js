@@ -75,6 +75,19 @@ export default function Navbar() {
 
   //   move menuButtons in Header and lift the state (?)
 
+  const [desktopDropdownClicked, setDesktopDropdownClicked] = useState(false);
+  useEffect(() => {
+    // Reset the dropdown state when navigating to another page
+    setDesktopDropdownClicked(false);
+  }, [pathname]);
+
+  const handleLinkClick = (linkPath) => {
+    if (pathname !== linkPath) {
+      // If it's not the current page, set the dropdown state to closed
+      setDesktopDropdownClicked(true);
+    }
+  };
+
   return (
     <>
       <div
@@ -126,10 +139,13 @@ export default function Navbar() {
                 openSubLinks.adozioni || isAdozioniActive
                   ? styles.subLinksOpened
                   : styles.subLinksClosed
-              } `}
+              } ${desktopDropdownClicked ? styles.closeDesktopDropdown : ""} `}
             >
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick("/tradizionale/adozioni/come-funziona")
+                  }
                   href="/tradizionale/adozioni/come-funziona"
                   className={
                     pathname === "/tradizionale/adozioni/come-funziona"
@@ -142,6 +158,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick("/tradizionale/adozioni/i-nostri-ospiti")
+                  }
                   href="/tradizionale/adozioni/i-nostri-ospiti"
                   className={
                     pathname === "/tradizionale/adozioni/i-nostri-ospiti"
@@ -154,6 +173,11 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick(
+                      "/tradizionale/adozioni/adozioni-a-distanza"
+                    )
+                  }
                   href="/tradizionale/adozioni/adozioni-a-distanza"
                   className={
                     pathname === "/tradizionale/adozioni/adozioni-a-distanza"
@@ -180,10 +204,13 @@ export default function Navbar() {
                 openSubLinks.comeAiutarci || isComeAiutarciActive
                   ? styles.subLinksOpened
                   : styles.subLinksClosed
-              }`}
+              } ${desktopDropdownClicked ? styles.closeDesktopDropdown : ""}`}
             >
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick("/tradizionale/come-aiutarci/chi-siamo")
+                  }
                   href="/tradizionale/come-aiutarci/chi-siamo"
                   className={
                     pathname === "/tradizionale/come-aiutarci/chi-siamo"
@@ -196,6 +223,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick("/tradizionale/come-aiutarci/donazioni")
+                  }
                   href="/tradizionale/come-aiutarci/donazioni"
                   className={
                     pathname === "/tradizionale/come-aiutarci/donazioni"
@@ -208,6 +238,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick("/tradizionale/come-aiutarci/volontariato")
+                  }
                   href="/tradizionale/come-aiutarci/volontariato"
                   className={
                     pathname === "/tradizionale/come-aiutarci/volontariato"

@@ -75,6 +75,19 @@ export default function Navbar() {
 
   //   move menuButtons in Header and lift the state (?)
 
+  const [desktopDropdownClicked, setDesktopDropdownClicked] = useState(false);
+  useEffect(() => {
+    // Reset the dropdown state when navigating to another page
+    setDesktopDropdownClicked(false);
+  }, [pathname]);
+
+  const handleLinkClick = (linkPath) => {
+    if (pathname !== linkPath) {
+      // If it's not the current page, set the dropdown state to closed
+      setDesktopDropdownClicked(true);
+    }
+  };
+
   return (
     <>
       <div
@@ -126,10 +139,13 @@ export default function Navbar() {
                 openSubLinks.adozioni || isAdozioniActive
                   ? styles.subLinksOpened
                   : styles.subLinksClosed
-              } `}
+              } ${desktopDropdownClicked ? styles.closeDesktopDropdown : ""}`}
             >
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick("/moderna/adozioni/come-funziona")
+                  }
                   href="/moderna/adozioni/come-funziona"
                   className={
                     pathname === "/moderna/adozioni/come-funziona"
@@ -142,6 +158,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick("/moderna/adozioni/i-nostri-ospiti")
+                  }
                   href="/moderna/adozioni/i-nostri-ospiti"
                   className={
                     pathname === "/moderna/adozioni/i-nostri-ospiti"
@@ -154,6 +173,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick("/moderna/adozioni/adozioni-a-distanza")
+                  }
                   href="/moderna/adozioni/adozioni-a-distanza"
                   className={
                     pathname === "/moderna/adozioni/adozioni-a-distanza"
@@ -180,10 +202,13 @@ export default function Navbar() {
                 openSubLinks.comeAiutarci || isComeAiutarciActive
                   ? styles.subLinksOpened
                   : styles.subLinksClosed
-              }`}
+              } ${desktopDropdownClicked ? styles.closeDesktopDropdown : ""}`}
             >
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick("/moderna/come-aiutarci/chi-siamo")
+                  }
                   href="/moderna/come-aiutarci/chi-siamo"
                   className={
                     pathname === "/moderna/come-aiutarci/chi-siamo"
@@ -196,6 +221,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick("/moderna/come-aiutarci/donazioni")
+                  }
                   href="/moderna/come-aiutarci/donazioni"
                   className={
                     pathname === "/moderna/come-aiutarci/donazioni"
@@ -208,6 +236,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
+                  onClick={() =>
+                    handleLinkClick("/moderna/come-aiutarci/volontariato")
+                  }
                   href="/moderna/come-aiutarci/volontariato"
                   className={
                     pathname === "/moderna/come-aiutarci/volontariato"
