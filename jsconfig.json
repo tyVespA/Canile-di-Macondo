@@ -4,7 +4,8 @@
     "paths": {
       "@/*": ["*"],
       "@images/*": ["./public/images/*"],
-      "@shared-components/*": ["./src/app/shared-components/*"]
+      "@shared-components/*": ["./src/app/shared-components/*"],
+      "@lib/*": ["./lib/*"]
     }
   }
 }
