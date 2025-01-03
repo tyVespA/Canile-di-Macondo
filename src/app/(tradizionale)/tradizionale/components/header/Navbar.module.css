@@ -73,12 +73,12 @@
   pointer-events: none;
 }
 
-.navbar .subLinks li {
+.navbar .subLinks a {
   color: var(--white);
   transition: color 0.3s;
 }
 
-.subLinks li:hover {
+.subLinks a:hover {
   color: var(--accent-one);
 }
 
