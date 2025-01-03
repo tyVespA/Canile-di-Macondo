@@ -8,7 +8,10 @@ export default function PreviewCardsSection({ data }) {
       <h2>previewCardsSection</h2>
       <section className={styles.previewCardsSectionContainer}>
         {data.map((item, index) => (
-          <Link key={index} href={`/adozioni/i-nostri-ospiti/${item.id}`}>
+          <Link
+            key={index}
+            href={`/moderna/adozioni/i-nostri-ospiti/${item.id}`}
+          >
             <PreviewCard item={data[index]} />
           </Link>
         ))}

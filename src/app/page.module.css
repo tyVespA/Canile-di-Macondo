@@ -1,53 +1,7 @@
-.heroContainer {
+.buttonsContainer {
+  min-height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 25px;
-}
-
-.textContainer {
-  flex: 1 1 50%;
-  min-width: 300px;
-  max-width: 70ch;
-  margin-bottom: 150px;
-}
-
-.heroImgContainer {
-  flex: 2 1 50%;
-  height: 600px;
-  display: flex;
-}
-
-.heroImgContainer img {
-  object-fit: contain;
-  height: 600px;
-  margin-left: auto;
-}
-
-.section2 {
-  max-width: var(--max-width);
-  padding-inline: var(--padding-inline-max-width);
-  padding-bottom: 5000px;
-  margin-inline: auto;
-  color: var(--text-dark);
-  position: relative;
-  z-index: 1;
-}
-
-.section2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: -260px; /* probably have to change in media q */
-  left: 0;
-  right: 0;
-  width: 100%;
-  min-width: 100vw;
-  margin-left: calc(50% - 50vw);
-
-  height: 320px;
-  background: url("../../public/images/wave-2.svg");
-  transform: scaleX(-1); /* flips the wave */
-  background-size: cover;
-  z-index: -1;
+  gap: 50px;
 }

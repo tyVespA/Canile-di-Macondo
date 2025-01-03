@@ -16,7 +16,7 @@ export default function SwitchVersionButton() {
 
   return (
     <button onClick={handleClick} className={styles.switchVersionButton}>
-      {isTraditional ? "Versione tradizionale" : "Versione moderna"}
+      {isTraditional ? "Versione moderna →" : "Versione tradizionale  →"}
     </button>
   );
 }

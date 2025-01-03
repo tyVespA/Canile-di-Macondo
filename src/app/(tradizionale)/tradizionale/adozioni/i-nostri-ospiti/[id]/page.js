@@ -1,5 +1,5 @@
 // export const runtime = "edge";
-import { db } from "../../../../../lib/db";
+import { db } from "@lib/db";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import styles from "./page.module.css";
