@@ -1,8 +1,6 @@
 import { Comfortaa } from "next/font/google";
 import { Red_Hat_Display, Red_Hat_Text } from "next/font/google";
 import "./globals.css";
-import Header from "./components/header/Header";
-import Footer from "./components/Footer";
 
 const redHatDisplay = Red_Hat_Display({
   variable: "--font-redhat-display",
