@@ -30,7 +30,8 @@
 
 .active {
   font-weight: bold;
-  color: var(--accent-one);
+  text-decoration: underline;
+  /* color: var(--accent-one); */
 }
 
 .navItem {

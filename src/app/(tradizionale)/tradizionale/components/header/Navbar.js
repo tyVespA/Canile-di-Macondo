@@ -17,18 +17,18 @@ export default function Navbar() {
 
   // dà la classe active al mainLink anche se il path è in un sublink
   const adozioniPaths = [
-    "/adozioni",
-    "/adozioni/come-funziona",
-    "/adozioni/i-nostri-ospiti",
-    "/adozioni/adozioni-a-distanza",
+    "/tradizionale/adozioni",
+    "/tradizionale/adozioni/come-funziona",
+    "/tradizionale/adozioni/i-nostri-ospiti",
+    "/tradizionale/adozioni/adozioni-a-distanza",
   ];
   const isAdozioniActive = isActiveFunction(adozioniPaths, pathname);
 
   const comeAiutarciPaths = [
-    "/come-aiutarci",
-    "/come-aiutarci/chi-siamo",
-    "/come-aiutarci/donazioni",
-    "/come-aiutarci/volontariato",
+    "/tradizionale/come-aiutarci",
+    "/tradizionale/come-aiutarci/chi-siamo",
+    "/tradizionale/come-aiutarci/donazioni",
+    "/tradizionale/come-aiutarci/volontariato",
   ];
   const isComeAiutarciActive = isActiveFunction(comeAiutarciPaths, pathname);
 
@@ -104,10 +104,10 @@ export default function Navbar() {
         <ul>
           <li>
             <Link
-              href="/moderna"
-              className={`${pathname === "/moderna" ? styles.active : ""} ${
-                styles.mainLink
-              }`}
+              href="/tradizionale"
+              className={`${
+                pathname === "/tradizionale" ? styles.active : ""
+              } ${styles.mainLink}`}
             >
               Homepage
             </Link>
@@ -130,9 +130,9 @@ export default function Navbar() {
             >
               <li>
                 <Link
-                  href="/adozioni/come-funziona"
+                  href="/tradizionale/adozioni/come-funziona"
                   className={
-                    pathname === "/adozioni/come-funziona"
+                    pathname === "/tradizionale/adozioni/come-funziona"
                       ? `${styles.active}`
                       : ""
                   }
@@ -142,9 +142,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/adozioni/i-nostri-ospiti"
+                  href="/tradizionale/adozioni/i-nostri-ospiti"
                   className={
-                    pathname === "/adozioni/i-nostri-ospiti"
+                    pathname === "/tradizionale/adozioni/i-nostri-ospiti"
                       ? `${styles.active}`
                       : ""
                   }
@@ -154,9 +154,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/adozioni/adozioni-a-distanza"
+                  href="/tradizionale/adozioni/adozioni-a-distanza"
                   className={
-                    pathname === "/adozioni/adozioni-a-distanza"
+                    pathname === "/tradizionale/adozioni/adozioni-a-distanza"
                       ? `${styles.active}`
                       : ""
                   }
@@ -184,9 +184,9 @@ export default function Navbar() {
             >
               <li>
                 <Link
-                  href="/come-aiutarci/chi-siamo"
+                  href="/tradizionale/come-aiutarci/chi-siamo"
                   className={
-                    pathname === "/come-aiutarci/chi-siamo"
+                    pathname === "/tradizionale/come-aiutarci/chi-siamo"
                       ? `${styles.active}`
                       : ""
                   }
@@ -196,9 +196,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/come-aiutarci/donazioni"
+                  href="/tradizionale/come-aiutarci/donazioni"
                   className={
-                    pathname === "/come-aiutarci/donazioni"
+                    pathname === "/tradizionale/come-aiutarci/donazioni"
                       ? `${styles.active}`
                       : ""
                   }
@@ -208,9 +208,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/come-aiutarci/volontariato"
+                  href="/tradizionale/come-aiutarci/volontariato"
                   className={
-                    pathname === "/come-aiutarci/volontariato"
+                    pathname === "/tradizionale/come-aiutarci/volontariato"
                       ? `${styles.active}`
                       : ""
                   }
@@ -222,10 +222,10 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/contatti"
-              className={`${pathname === "/contatti" ? styles.active : ""} ${
-                styles.mainLink
-              }`}
+              href="/tradizionale/contatti"
+              className={`${
+                pathname === "/tradizionale/contatti" ? styles.active : ""
+              } ${styles.mainLink}`}
             >
               Contatti
             </Link>

@@ -17,18 +17,18 @@ export default function Navbar() {
 
   // dà la classe active al mainLink anche se il path è in un sublink
   const adozioniPaths = [
-    "/adozioni",
-    "/adozioni/come-funziona",
-    "/adozioni/i-nostri-ospiti",
-    "/adozioni/adozioni-a-distanza",
+    "/moderna/adozioni",
+    "/moderna/adozioni/come-funziona",
+    "/moderna/adozioni/i-nostri-ospiti",
+    "/moderna/adozioni/adozioni-a-distanza",
   ];
   const isAdozioniActive = isActiveFunction(adozioniPaths, pathname);
 
   const comeAiutarciPaths = [
-    "/come-aiutarci",
-    "/come-aiutarci/chi-siamo",
-    "/come-aiutarci/donazioni",
-    "/come-aiutarci/volontariato",
+    "/moderna/come-aiutarci",
+    "/moderna/come-aiutarci/chi-siamo",
+    "/moderna/come-aiutarci/donazioni",
+    "/moderna/come-aiutarci/volontariato",
   ];
   const isComeAiutarciActive = isActiveFunction(comeAiutarciPaths, pathname);
 
@@ -130,9 +130,9 @@ export default function Navbar() {
             >
               <li>
                 <Link
-                  href="/adozioni/come-funziona"
+                  href="/moderna/adozioni/come-funziona"
                   className={
-                    pathname === "/adozioni/come-funziona"
+                    pathname === "/moderna/adozioni/come-funziona"
                       ? `${styles.active}`
                       : ""
                   }
@@ -142,9 +142,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/adozioni/i-nostri-ospiti"
+                  href="/moderna/adozioni/i-nostri-ospiti"
                   className={
-                    pathname === "/adozioni/i-nostri-ospiti"
+                    pathname === "/moderna/adozioni/i-nostri-ospiti"
                       ? `${styles.active}`
                       : ""
                   }
@@ -154,9 +154,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/adozioni/adozioni-a-distanza"
+                  href="/moderna/adozioni/adozioni-a-distanza"
                   className={
-                    pathname === "/adozioni/adozioni-a-distanza"
+                    pathname === "/moderna/adozioni/adozioni-a-distanza"
                       ? `${styles.active}`
                       : ""
                   }
@@ -184,9 +184,9 @@ export default function Navbar() {
             >
               <li>
                 <Link
-                  href="/come-aiutarci/chi-siamo"
+                  href="/moderna/come-aiutarci/chi-siamo"
                   className={
-                    pathname === "/come-aiutarci/chi-siamo"
+                    pathname === "/moderna/come-aiutarci/chi-siamo"
                       ? `${styles.active}`
                       : ""
                   }
@@ -196,9 +196,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/come-aiutarci/donazioni"
+                  href="/moderna/come-aiutarci/donazioni"
                   className={
-                    pathname === "/come-aiutarci/donazioni"
+                    pathname === "/moderna/come-aiutarci/donazioni"
                       ? `${styles.active}`
                       : ""
                   }
@@ -208,9 +208,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/come-aiutarci/volontariato"
+                  href="/moderna/come-aiutarci/volontariato"
                   className={
-                    pathname === "/come-aiutarci/volontariato"
+                    pathname === "/moderna/come-aiutarci/volontariato"
                       ? `${styles.active}`
                       : ""
                   }
@@ -222,10 +222,10 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/contatti"
-              className={`${pathname === "/contatti" ? styles.active : ""} ${
-                styles.mainLink
-              }`}
+              href="/moderna/contatti"
+              className={`${
+                pathname === "/moderna/contatti" ? styles.active : ""
+              } ${styles.mainLink}`}
             >
               Contatti
             </Link>

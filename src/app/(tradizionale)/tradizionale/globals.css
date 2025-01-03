@@ -60,7 +60,7 @@ h6 {
 /* END OF RESET */
 
 :root {
-  --background: hsl(34, 97%, 64%);
+  --background: hsl(0, 0%, 100%);
   --surface: hsl(248, 96%, 67%);
 
   --text-light: hsl(0, 0%, 100%);
@@ -75,7 +75,7 @@ h6 {
 
 body {
   background-color: var(--background);
-  color: white;
+  color: var(--text-dark);
   font-family: var(--font-redhat-text);
 }
 
