@@ -1,4 +1,7 @@
-import React from "react";
+export const metadata = {
+  title: "Come funziona | Canile di Macondo",
+  description: "Benvenuti!" /* change */,
+};
 
 export default function page() {
   return (

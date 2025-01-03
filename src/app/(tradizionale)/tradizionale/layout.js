@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "./components/header/Header";
 import Footer from "./components/Footer";
 import SwitchVersionButton from "@shared-components/SwitchVersionButton";
-// import SwitchVersionButton from "../../shared-components/SwitchVersionButton";
 
 const redHatDisplay = Red_Hat_Display({
   variable: "--font-redhat-display",
