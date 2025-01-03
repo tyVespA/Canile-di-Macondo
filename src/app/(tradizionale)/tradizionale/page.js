@@ -6,7 +6,7 @@ import FullWidthBg from "./components/FullWidthBg";
 
 export const metadata = {
   title: "Home | Canile di Macondo",
-  description: "Benvenuti!",
+  description: "Benvenuti!" /* change */,
 };
 
 export default function Home() {

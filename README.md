@@ -47,7 +47,7 @@ openGraph metadata
 relative pathing
 
 TODO:
-chiudere sublinks su desktop dopo click
+underline effect while hover on nav (?)
 page titles? ex. Canile | Home
 compress images
 lightbox
@@ -61,3 +61,4 @@ scroll animations - AOS (Animate On Scroll) (o altri?)
 
 DONE:
 put icon as favicon - make it check color scheme
+chiudere sublinks su desktop dopo click
