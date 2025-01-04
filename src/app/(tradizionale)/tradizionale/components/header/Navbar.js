@@ -78,7 +78,9 @@ export default function Navbar() {
   const [desktopDropdownClicked, setDesktopDropdownClicked] = useState(false);
   useEffect(() => {
     // Reset the dropdown state when navigating to another page
-    setDesktopDropdownClicked(false);
+    setTimeout(() => {
+      setDesktopDropdownClicked(false);
+    }, 300);
   }, [pathname]);
 
   const handleLinkClick = (linkPath) => {

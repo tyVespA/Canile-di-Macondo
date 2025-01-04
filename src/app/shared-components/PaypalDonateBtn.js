@@ -6,7 +6,6 @@ import styles from "./PaypalDonateBtn.module.css";
 export default function PaypalDonateBtn() {
   const buttonRendered = useRef(false);
 
-  // Re-add the useEffect but with a check for both window.PayPal and buttonRendered
   useEffect(() => {
     // Check if PayPal is already loaded
     if (window.PayPal && !buttonRendered.current) {
