@@ -81,7 +81,6 @@ export default function Navbar() {
     setTimeout(() => {
       setDesktopDropdownClicked(false);
     }, 300);
-    return () => clearTimeout(timer);
   }, [pathname]);
 
   const handleLinkClick = (linkPath) => {

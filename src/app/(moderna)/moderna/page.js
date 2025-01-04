@@ -7,7 +7,7 @@ import FullWidthBg from "./components/FullWidthBg";
 import cane_hero_1 from "@images/moderna/cane_hero_1.png";
 import cane_hero_2 from "@images/moderna/cane_hero_2.png";
 import cane_hero_3 from "@images/moderna/cane_hero_3.png";
-import cane_hero_4 from "@images/moderna/cane_hero_4.png";
+// import cane_hero_4 from "@images/moderna/cane_hero_4.png";
 import blob_1 from "@images/moderna/blob-haikei_1.svg";
 import blob_2 from "@images/moderna/blob-haikei_2.svg";
 import blob_3 from "@images/moderna/blob-haikei_3.svg";
@@ -40,7 +40,7 @@ export default function Home() {
         setRandomDog(cane_hero_3);
         break;
       case 4:
-        setRandomDog(cane_hero_4);
+        setRandomDog(cane_hero_1);
         break;
       default:
         setRandomDog(null);

@@ -23,10 +23,19 @@
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.logoContainer {
-  /* width: 206px; */
+.logoContainer a {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoContainer a:hover svg {
+  fill: var(--surface);
+}
+
+.logoContainer svg {
+  transition: fill 0.3s;
 }
 
 .ctaButtons {

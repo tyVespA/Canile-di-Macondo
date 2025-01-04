@@ -20,10 +20,23 @@
   padding-block: 15px;
 }
 
-.logoContainer {
-  width: 206px;
+.logoContainer a {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoContainer a:hover svg {
+  fill: var(--accent-one);
+}
+
+.logoContainer svg {
+  transition: fill 0.3s;
+}
+
+.writtenLogo {
+  margin-bottom: 3px;
 }
 
 .ctaButtons {
