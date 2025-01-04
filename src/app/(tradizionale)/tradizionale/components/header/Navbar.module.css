@@ -102,7 +102,7 @@
 }
 
 @media screen and (min-width: 751px) {
-  .navItem .closeDesktopDropdown {
+  .closeDesktopDropdown {
     opacity: 0 !important;
     transform: translateY(-10px) !important;
     pointer-events: none !important;

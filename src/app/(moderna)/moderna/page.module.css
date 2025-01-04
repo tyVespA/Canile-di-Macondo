@@ -2,35 +2,35 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 25px;
+
+  min-height: 400px;
+  max-height: calc(100vh - 82px);
 }
 
 .textContainer {
   flex: 1 1 50%;
   min-width: 300px;
   max-width: 50ch;
-  margin-bottom: 150px;
 }
 
 .heroImgContainer {
   flex: 2 1 50%;
-  height: 600px;
+  max-height: calc(100vh - 82px);
   display: flex;
   position: relative;
 }
 
 .heroImgContainer img {
   object-fit: contain;
-  height: 600px;
+  height: auto;
+  width: 100%;
   margin-left: auto;
 }
 
 .blob {
   position: absolute;
-  /* bottom: 0px; */
-  left: 50px;
+  top: 0;
   z-index: -1;
-  transform: scale(1.1);
 }
 
 .section2 {

@@ -18,15 +18,15 @@ export default function Header() {
   }, []);
 
   return (
-    <div className={styles.stickyHeaderContainer}>
-      <header
-        className={`${styles.header} max-width-container ${
-          scrolled ? styles.scrolled : ""
-        }`}
-      >
+    <div
+      className={`${styles.stickyHeaderContainer} ${
+        scrolled ? styles.scrolled : ""
+      }`}
+    >
+      <header className={`${styles.header} max-width-container `}>
         <div className={styles.logoContainer}>
-          <Link href="/moderna">
-            <Dog size={35} weight="duotone" />
+          <Link href="/tradizionale">
+            <Dog size={50} weight="duotone" />
           </Link>
         </div>
         <Navbar />

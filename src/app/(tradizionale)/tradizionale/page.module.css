@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 700px;
+  min-height: 400px;
+  max-height: calc(100vh - 70px);
 
   position: relative;
 }
@@ -21,8 +22,13 @@
   height: 100%;
   margin-left: calc(50% - 50vw);
   background-image: url("../../../../public/images/tradizionale/cane_hero_1.jpg");
+  /* background-size: contain; */
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+
+  /* on mobile */
+  /* background-position: 90% center; */
 }
 
 /* .heroImage img {
@@ -39,22 +45,4 @@
   color: var(--text-dark);
   position: relative;
   z-index: 1;
-}
-
-.section2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: -260px; /* probably have to change in media q */
-  left: 0;
-  right: 0;
-  width: 100%;
-  min-width: 100vw;
-  margin-left: calc(50% - 50vw);
-
-  height: 320px;
-  /* background: url("@images/wave-2.svg"); */
-  transform: scaleX(-1); /* flips the wave */
-  background-size: cover;
-  z-index: -1;
 }
