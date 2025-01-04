@@ -81,7 +81,7 @@ export default function VersionModernLayout({ children }) {
         />
         <SwitchVersionButton />
         <Header />
-        {children}
+        <div style={{ marginTop: "65px" }}>{children}</div>
         <FullWidthBg
           backgroundColor="var(--text-dark)"
           color="var(--text-light)"

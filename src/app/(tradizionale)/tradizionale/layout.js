@@ -3,7 +3,7 @@ import { Red_Hat_Display, Red_Hat_Text } from "next/font/google";
 import "./globals.css";
 import FullWidthBg from "@shared-components/FullWidthBg";
 import Header from "./components/header/Header";
-// import Footer from "./components/Footer";
+
 import Footer from "@shared-components/Footer";
 import SwitchVersionButton from "@shared-components/SwitchVersionButton";
 
@@ -73,7 +73,7 @@ export default function VersionTraditionalLayout({ children }) {
       >
         <SwitchVersionButton />
         <Header />
-        {children}
+        <div style={{ marginTop: "65px" }}>{children}</div>
         <FullWidthBg
           backgroundColor="var(--text-dark)"
           color="var(--text-light)"
