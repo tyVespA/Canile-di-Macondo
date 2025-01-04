@@ -4,7 +4,7 @@
   justify-content: space-between;
 
   min-height: 400px;
-  max-height: calc(100vh - 82px);
+  max-height: calc(100vh - 65px);
 }
 
 .textContainer {
@@ -15,7 +15,7 @@
 
 .heroImgContainer {
   flex: 2 1 50%;
-  max-height: calc(100vh - 82px);
+  max-height: calc(100vh - 65px);
   display: flex;
   position: relative;
 }

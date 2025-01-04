@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
-import cane_hero from "@images/cane_hero.png";
 import FullWidthBg from "./components/FullWidthBg";
-import cane_hero_1 from "@images/tradizionale/cane_hero_1.jpg";
+import Button from "@shared-components/Button";
 
 export const metadata = {
   title: "Home | Canile di Macondo",
@@ -22,6 +21,9 @@ export default function Home() {
             pariatur, ratione officiis tenetur eveniet odio eum nisi molestias
             soluta!
           </p>
+          <Button theme="accent-two" paddingInline="40px">
+            Scopri
+          </Button>
         </div>
         <div className={styles.heroImage}>
           {/* <Image src={cane_hero_1} alt="" /> */}

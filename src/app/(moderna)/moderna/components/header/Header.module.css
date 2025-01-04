@@ -1,14 +1,15 @@
 .stickyHeaderContainer {
   background-color: var(--background);
   width: 100vw;
+  padding-block: 10px;
   margin-left: calc(50% - 50vw);
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: padding-block 0.3s, background-color 0.3s;
 }
 
 .header {
-  padding-block: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +18,7 @@
 }
 
 .scrolled {
-  padding-block: 15px;
+  background-color: hsla(248, 97%, 64%, 0.85);
 }
 
 .logoContainer a {
