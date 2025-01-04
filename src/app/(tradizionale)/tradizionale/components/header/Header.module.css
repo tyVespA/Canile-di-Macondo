@@ -3,10 +3,11 @@
   width: 100vw;
   padding-block: 10px;
   margin-left: calc(50% - 50vw);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 100;
-  transition: padding-block 0.3s, background-color 0.3s;
+  transition: transform 0.3s;
 }
 
 .header {
@@ -15,12 +16,12 @@
   align-items: center;
 }
 
-.scrolled {
-  /* padding-block: 5px; */
+.show {
+  transform: translateY(0);
 }
 
-.scrolled.stickyHeaderContainer {
-  background-color: rgba(255, 255, 255, 0.75);
+.hide {
+  transform: translateY(-100%);
 }
 
 .logoContainer a {

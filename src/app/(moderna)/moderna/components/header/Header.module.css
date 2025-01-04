@@ -3,10 +3,19 @@
   width: 100vw;
   padding-block: 10px;
   margin-left: calc(50% - 50vw);
-  /* position: sticky; */
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 100;
-  transition: padding-block 0.3s, background-color 0.3s;
+  transition: transform 0.3s;
+}
+
+.show {
+  transform: translateY(0);
+}
+
+.hide {
+  transform: translateY(-100%);
 }
 
 .header {
@@ -15,11 +24,6 @@
   align-items: center;
 
   transition: padding-block 0.3s;
-}
-
-.scrolled {
-  background-color: hsla(248, 97%, 64%, 0.85);
-  position: sticky;
 }
 
 .logoContainer a {
@@ -56,8 +60,5 @@
 @media screen and (max-width: 750px) {
   .ctaButtons {
     display: none;
-  }
-  .scrolled {
-    padding-block: 10px;
   }
 }

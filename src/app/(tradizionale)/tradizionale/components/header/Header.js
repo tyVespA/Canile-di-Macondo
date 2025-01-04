@@ -9,10 +9,21 @@ import Button from "../Button";
 import LogoWrittenBlack from "@images/tradizionale/LogoWrittenBlack.png";
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 100);
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        setShowHeader(false);
+      } else if (currentScrollY < lastScrollY) {
+        setShowHeader(true);
+      }
+
+      lastScrollY = currentScrollY > 0 ? currentScrollY : 0; // Prevent negative values
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -22,13 +33,13 @@ export default function Header() {
   return (
     <div
       className={`${styles.stickyHeaderContainer} ${
-        scrolled ? styles.scrolled : ""
+        showHeader ? styles.show : styles.hide
       }`}
     >
-      <header className={`${styles.header} max-width-container `}>
+      <header className={`${styles.header} max-width-container`}>
         <div className={styles.logoContainer}>
-          <Link href="/tradizionale">
-            <Dog size={50} weight="duotone" />
+          <Link href="/moderna">
+            <Dog size={45} weight="duotone" />
             <Image
               src={LogoWrittenBlack}
               alt="logo"
