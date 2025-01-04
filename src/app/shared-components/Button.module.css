@@ -1,0 +1,29 @@
+.button {
+  border-radius: 50px;
+  padding-block: 10px;
+
+  font-weight: 700;
+  font-size: 15px;
+
+  transition: all 0.3s;
+}
+
+.dark {
+  background-color: var(--surface);
+  color: var(--accent-one);
+}
+
+.light {
+  background-color: var(--accent-one);
+  color: var(--text-dark);
+}
+
+.accent-two {
+  background-color: var(--accent-two);
+  color: var(--text-light);
+}
+
+.button:hover {
+  background-color: white;
+  color: var(--text-dark);
+}
