@@ -71,6 +71,7 @@ h6 {
 
   --max-width: 1260px;
   --padding-inline-max-width: 40px;
+  --section-padding: 100px;
 }
 
 body {

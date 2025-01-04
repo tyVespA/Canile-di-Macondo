@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Dog } from "@phosphor-icons/react/dist/ssr";
 import styles from "./Header.module.css";
 import Navbar from "./Navbar";
-import Button from "../Button";
+import Button from "@shared-components/Button";
 import LogoWrittenWhite from "@images/moderna/LogoWrittenWhite.png";
 
 export default function Header() {

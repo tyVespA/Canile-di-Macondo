@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
 
-  min-height: 400px;
-  max-height: calc(100vh - 65px);
+  height: calc(100vh - 75px);
+  max-height: 500px;
 }
 
 .textContainer {
@@ -15,14 +15,14 @@
 
 .heroImgContainer {
   flex: 2 1 50%;
-  max-height: calc(100vh - 65px);
+  max-height: calc(100vh - 75px);
   display: flex;
   position: relative;
 }
 
 .heroImgContainer img {
   object-fit: contain;
-  height: auto;
+  max-height: 500px;
   width: 100%;
   margin-left: auto;
 }
@@ -40,6 +40,7 @@
   margin-inline: auto;
   color: var(--text-dark);
   position: relative;
+  padding-top: var(--section-padding);
   /* z-index: 1; */
 }
 

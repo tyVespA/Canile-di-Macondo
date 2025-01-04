@@ -2,10 +2,10 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Dog } from "@phosphor-icons/react/dist/ssr";
+import { Dog, PawPrint, Bone } from "@phosphor-icons/react/dist/ssr";
 import styles from "./Header.module.css";
 import Navbar from "./Navbar";
-import Button from "../Button";
+import Button from "@shared-components/Button";
 import LogoWrittenBlack from "@images/tradizionale/LogoWrittenBlack.png";
 
 export default function Header() {
@@ -40,7 +40,7 @@ export default function Header() {
     >
       <header className={`${styles.header} max-width-container`}>
         <div className={styles.logoContainer}>
-          <Link href="/moderna">
+          <Link href="/tradizionale">
             <Dog size={45} weight="duotone" />
             <Image
               src={LogoWrittenBlack}
@@ -51,8 +51,14 @@ export default function Header() {
         </div>
         <Navbar />
         <div className={styles.ctaButtons}>
-          <Button theme="dark">Dona</Button>
-          <Button theme="light">Adotta</Button>
+          <Link href="/tradizionale/come-aiutarci/donazioni">
+            <Button theme="white">
+              Dona <Bone size={25} weight="fill" />
+            </Button>
+          </Link>
+          <Button theme="light">
+            Adotta <PawPrint size={25} weight="fill" />
+          </Button>
         </div>
       </header>
     </div>

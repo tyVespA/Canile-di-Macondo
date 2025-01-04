@@ -1,7 +1,7 @@
 .stickyHeaderContainer {
   background-color: var(--background);
   width: 100vw;
-  padding-block: 10px;
+  padding-block: 15px;
   margin-left: calc(50% - 50vw);
   position: fixed;
   top: 0;
@@ -58,10 +58,17 @@
   display: none;
 }
 
+.header nav button {
+  display: none;
+}
+
 /* MOBILE */
 
 @media screen and (max-width: 750px) {
   .ctaButtons {
     display: none;
+  }
+  .header nav button {
+    display: flex;
   }
 }

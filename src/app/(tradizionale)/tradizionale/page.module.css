@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
 
-  height: calc(100vh - 70px);
+  height: calc(100vh - 75px);
   max-height: 700px;
 
   position: relative;
@@ -33,10 +33,12 @@
 }
 
 .section2 {
-  max-width: var(--max-width);
+  /* max-width: var(--max-width);
   padding-inline: var(--padding-inline-max-width);
+  margin-inline: auto; */
+
   padding-bottom: 5000px;
-  margin-inline: auto;
+  padding-top: var(--section-padding);
   color: var(--text-dark);
   position: relative;
   z-index: 1;

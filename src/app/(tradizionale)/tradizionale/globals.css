@@ -60,7 +60,7 @@ h6 {
 /* END OF RESET */
 
 :root {
-  --background: hsl(0, 0%, 100%);
+  --background: #fff3d4;
   --surface: hsl(248, 96%, 67%);
 
   --text-light: hsl(0, 0%, 100%);
@@ -71,6 +71,7 @@ h6 {
 
   --max-width: 1260px;
   --padding-inline-max-width: 40px;
+  --section-padding: 50px;
 }
 
 body {

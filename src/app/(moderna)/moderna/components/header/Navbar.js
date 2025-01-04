@@ -5,8 +5,14 @@ import { useState } from "react";
 import { useEffect } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
-import { CaretDown } from "@phosphor-icons/react";
-import { List, X } from "@phosphor-icons/react/dist/ssr";
+import {
+  CaretDown,
+  List,
+  X,
+  Bone,
+  PawPrint,
+} from "@phosphor-icons/react/dist/ssr";
+import Button from "@shared-components/Button";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -264,6 +270,18 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
+        <div className={styles.ctaButtons}>
+          <Link href="/tradizionale/come-aiutarci/donazioni">
+            <Button theme="white">
+              Dona <Bone size={25} weight="fill" />
+            </Button>
+          </Link>
+          <Link href="/tradizionale/adozioni/come-funziona">
+            <Button theme="light">
+              Adotta <PawPrint size={25} weight="fill" />
+            </Button>
+          </Link>
+        </div>
       </nav>
     </>
   );

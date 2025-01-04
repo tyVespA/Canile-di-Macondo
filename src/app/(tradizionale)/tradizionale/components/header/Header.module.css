@@ -1,7 +1,7 @@
 .stickyHeaderContainer {
   background-color: var(--background);
   width: 100vw;
-  padding-block: 10px;
+  padding-block: 15px;
   margin-left: calc(50% - 50vw);
   position: fixed;
   top: 0;
@@ -14,6 +14,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header nav button {
+  display: none;
 }
 
 .show {
@@ -59,5 +63,8 @@
   }
   .scrolled {
     padding-block: 10px;
+  }
+  .header nav button {
+    display: flex;
   }
 }

@@ -36,36 +36,13 @@ export default function Home() {
           {/* <Image src={cane_hero_1} alt="" /> */}
         </div>
       </section>
-      <FullWidthBg bgColor="var(--accent-one)">
-        <div className={styles.section2}>
-          <h2>section2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint error
-            quibusdam inventore, vitae facere consequatur quia, minima
-            voluptatum explicabo officiis deserunt iusto quis ut facilis
-            doloribus alias delectus vero molestias!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos
-            voluptate quae. Ullam necessitatibus ab, dolores explicabo magnam
-            excepturi maiores eaque. Quo numquam quisquam excepturi explicabo
-            quae minus eos necessitatibus!
-          </p>
-          <h2>Heading 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-            quas excepturi modi minus impedit. Eum quidem suscipit labore
-            reprehenderit officiis adipisci consequuntur eius molestias,
-            corrupti recusandae corporis, iste pariatur! Ex.
-          </p>
-          <Counter
-            target="200"
-            duration="1000"
-            fontSize="35px"
-            afterNumber="+"
-          />
-        </div>
-      </FullWidthBg>
+      {/* <FullWidthBg bgColor="var(--accent-one)"> */}
+      <section className={styles.section2}>
+        <h2>section2</h2>
+
+        <Counter target="200" duration="1000" fontSize="35px" afterNumber="+" />
+      </section>
+      {/* </FullWidthBg> */}
     </div>
   );
 }

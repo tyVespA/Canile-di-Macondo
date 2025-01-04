@@ -169,4 +169,13 @@
   .menuClosed {
     left: 200%;
   }
+  .ctaButtons {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    transform: translateX(-12%);
+    justify-content: center;
+  }
 }

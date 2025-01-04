@@ -6,16 +6,40 @@
   font-size: 15px;
 
   transition: all 0.3s;
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.white {
+  background-color: white;
+  color: var(--text-dark);
+  box-shadow: 4px 4px 0px var(--accent-one);
+}
+.white:hover {
+  box-shadow: 0px 0px 0px var(--accent-one);
+  transform: translate(4px, 4px);
 }
 
 .dark {
   background-color: var(--surface);
   color: var(--accent-one);
+  box-shadow: 4px 4px 0px var(--accent-one);
+}
+.dark:hover {
+  box-shadow: 0px 0px 0px var(--accent-one);
+  transform: translate(4px, 4px);
 }
 
 .light {
   background-color: var(--accent-one);
   color: var(--text-dark);
+  box-shadow: 4px 4px 0px var(--surface3);
+}
+.light:hover {
+  box-shadow: 0px 0px 0px var(--surface3);
+  transform: translate(4px, 4px);
 }
 
 .accent-two {
@@ -23,7 +47,9 @@
   color: var(--text-light);
 }
 
-.accent-two:hover {
+/* .accent-two:hover,
+.light:hover,
+.dark:hover {
   background-color: white;
   color: var(--text-dark);
-}
+} */
