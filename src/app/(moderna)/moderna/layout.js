@@ -1,9 +1,13 @@
 import { Comfortaa } from "next/font/google";
 import { Red_Hat_Display, Red_Hat_Text } from "next/font/google";
 import "./globals.css";
+import styles from "./layout.module.css";
+import FullWidthBg from "@shared-components/FullWidthBg";
 import Header from "./components/header/Header";
-import Footer from "./components/Footer";
+import Footer from "@shared-components/Footer";
 import SwitchVersionButton from "@shared-components/SwitchVersionButton";
+
+import { Bone, Paw } from "@phosphor-icons/react/dist/ssr";
 
 const redHatDisplay = Red_Hat_Display({
   variable: "--font-redhat-display",
@@ -69,10 +73,21 @@ export default function VersionModernLayout({ children }) {
         }
          ${"max-width-container"}`}
       >
+        <Bone
+          size={150}
+          weight="thin"
+          className={styles.boneOne}
+          aria-hidden="true"
+        />
         <SwitchVersionButton />
         <Header />
         {children}
-        <Footer />
+        <FullWidthBg
+          backgroundColor="var(--text-dark)"
+          color="var(--text-light)"
+        >
+          <Footer />
+        </FullWidthBg>
       </body>
     </html>
   );

@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import FullWidthBg from "./components/FullWidthBg";
 import Button from "@shared-components/Button";
+import Counter from "@shared-components/Counter";
 
 export const metadata = {
   title: "Home | Canile di Macondo",
@@ -15,6 +16,12 @@ export default function Home() {
       <section className={styles.heroContainer}>
         <div className={styles.textContainer}>
           <h1>Home</h1>
+          <Counter
+            target="200"
+            duration="1000"
+            fontSize="35px"
+            afterNumber="+"
+          />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
             velit vel officiis ut repellat ratione dicta? Et vitae neque, fuga
@@ -51,6 +58,12 @@ export default function Home() {
             reprehenderit officiis adipisci consequuntur eius molestias,
             corrupti recusandae corporis, iste pariatur! Ex.
           </p>
+          <Counter
+            target="200"
+            duration="1000"
+            fontSize="35px"
+            afterNumber="+"
+          />
         </div>
       </FullWidthBg>
     </div>

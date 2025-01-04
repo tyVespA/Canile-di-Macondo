@@ -1,0 +1,10 @@
+.boneOne {
+  position: absolute;
+  top: 600px;
+  left: -150px;
+  fill: var(--accent-one);
+  opacity: 0.5;
+  transform: rotate(10deg);
+  /* z-index: -1; */
+  display: hidden;
+}

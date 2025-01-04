@@ -23,7 +23,7 @@
   color: var(--text-light);
 }
 
-.button:hover {
+.accent-two:hover {
   background-color: white;
   color: var(--text-dark);
 }
