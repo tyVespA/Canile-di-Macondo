@@ -1,7 +1,6 @@
 .donateContainer img {
   width: 600px;
   height: 50px;
-  /* border: 1px solid black; */
   border-radius: 25px;
 }
 
@@ -15,25 +14,19 @@
 }
 
 .donateBtnContainer::before {
-  position: absolute; /* Positioning the text over the button */
+  position: absolute;
   content: "";
   pointer-events: none;
-  /* width: 100%; */
   height: 50px;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-
   border-radius: 125px !important;
-
-  /* background-image: url("../../../../../../public/images/paypalLogo.png"); */
   background-image: url("../../../public/images/paypalLogo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
-  /* change this in media queries */
   background-size: 25%;
   background-color: #f8c566;
 }

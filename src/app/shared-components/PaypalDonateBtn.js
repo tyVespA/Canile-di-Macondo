@@ -1,22 +1,32 @@
 "use client";
 import Script from "next/script";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import styles from "./PaypalDonateBtn.module.css";
 
 export default function PaypalDonateBtn() {
+  const buttonRendered = useRef(false);
+
+  // Re-add the useEffect but with a check for both window.PayPal and buttonRendered
   useEffect(() => {
-    if (window.PayPal) {
+    // Check if PayPal is already loaded
+    if (window.PayPal && !buttonRendered.current) {
+      buttonRendered.current = true;
       window.PayPal.Donation.Button({
         env: "production",
-        hosted_button_id: "EZZW2B7S5GKR2",
+        hosted_button_id: "5MWVZ2KT58Y9E",
         image: {
-          src: "https://pics.paypal.com/00/s/NWU4zY4MzExYTdi/file.JPG",
+          src: "https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donate_LG.gif",
           alt: "Fai una donazione con il pulsante PayPal",
           title: "PayPal - The safer, easier way to pay online!",
         },
       }).render("#donate-button");
     }
+
+    return () => {
+      buttonRendered.current = false;
+    };
   }, []);
+
   return (
     <div className={styles.donateContainer}>
       <div className={styles.donateBtnContainer}>
@@ -29,13 +39,13 @@ export default function PaypalDonateBtn() {
           }}
         >
           <div id="donate-button"></div>
-          {/* Load the PayPal SDK only on the client side */}
           <Script
-            strategy="afterInteractive"
+            strategy="beforeInteractive"
             src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
             onLoad={() => {
-              // The PayPal button will be rendered once the script is loaded
-              if (window.PayPal) {
+              // Only render if button hasn't been rendered yet
+              if (window.PayPal && !buttonRendered.current) {
+                buttonRendered.current = true;
                 window.PayPal.Donation.Button({
                   env: "production",
                   hosted_button_id: "5MWVZ2KT58Y9E",
