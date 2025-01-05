@@ -1,7 +1,53 @@
-.buttonsContainer {
+.pageContainer {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 25px;
+  text-align: center;
+  background-color: hsl(248, 96%, 67%);
+  margin-inline: -40px;
+}
+
+.title {
+  position: relative;
+}
+
+.title svg {
+  position: absolute;
+  top: -85px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.buttonsContainer a {
+  /* border: 1px solid black; */
+  padding: 15px 30px;
+  border-radius: var(--border-radius-standard);
+  background-color: var(--accent-one);
+  color: black;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.buttonsContainer a:last-child {
+  background-color: var(--background2);
+}
+
+.buttonsContainer a:hover {
+  background-color: white;
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 475px) {
+  .buttonsContainer {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 }
