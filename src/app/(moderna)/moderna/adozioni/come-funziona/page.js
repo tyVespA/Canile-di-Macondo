@@ -2,6 +2,8 @@ import styles from "./page.module.css";
 import ReadyToAdoptCard from "@shared-components/ReadyToAdoptCard";
 import comicBaloonDark from "@images/moderna/comicBaloonDark.png";
 import noshadowDark from "@images/moderna/noshadowDark.png";
+import PreviewCardsSection from "@shared-components/PreviewCardsSection";
+import { db } from "@lib/db";
 
 export const metadata = {
   title: "Come funziona | Canile di Macondo",
@@ -12,7 +14,6 @@ export default function page() {
   return (
     <div className={styles.comeFunzionaPage}>
       <section className="first-section">
-        <h1>Il processo di adozione</h1>
         <h2>
           Adopting a new cat or dog is like a marriage. <br /> We want it to be
           a life-long, successful partnership.
@@ -51,6 +52,10 @@ export default function page() {
           dogSrc={noshadowDark}
           comicBaloonTheme={comicBaloonDark}
         />
+      </section>
+      <section>
+        <h1>Il processo di adozione</h1>
+        <PreviewCardsSection data={db} />
       </section>
     </div>
   );

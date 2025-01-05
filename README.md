@@ -45,10 +45,11 @@ lightbox (?)
 variable favicon
 openGraph metadata
 relative pathing
+local storage 4 favs (?)
 
 TODO:
+random height on decoration svg (?)
 underline effect while hover on nav (?)
-page titles? ex. Canile | Home
 compress images
 lightbox
 contact form - put in its own component
@@ -62,3 +63,4 @@ scroll animations - AOS (Animate On Scroll) (o altri?)
 DONE:
 put icon as favicon - make it check color scheme
 chiudere sublinks su desktop dopo click
+page titles? ex. Canile | Home
