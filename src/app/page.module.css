@@ -6,8 +6,7 @@
   align-items: center;
   gap: 25px;
   text-align: center;
-  background-color: hsl(248, 96%, 67%);
-  margin-inline: -40px;
+  /* background-color: hsl(248, 96%, 67%); */
 }
 
 .title {
