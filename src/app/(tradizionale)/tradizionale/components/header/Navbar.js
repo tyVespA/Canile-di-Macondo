@@ -138,7 +138,7 @@ export default function Navbar() {
               onClick={() => toggleSubLinks("adozioni")}
               className={`${styles.parentLink} ${styles.mainLink} ${
                 isAdozioniActive ? styles.active : ""
-              } `}
+              } ${styles.skipUnderline}`}
             >
               Adozioni <CaretDown size={15} weight="bold" />
             </span>

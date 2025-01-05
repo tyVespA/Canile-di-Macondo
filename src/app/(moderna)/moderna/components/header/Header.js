@@ -10,25 +10,27 @@ import LogoWrittenWhite from "@images/moderna/LogoWrittenWhite.png";
 
 export default function Header() {
   const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
-    let lastScrollY = window.scrollY;
-
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      const headerHeight = document.querySelector(
+        `.${styles.stickyHeaderContainer}`
+      ).offsetHeight;
 
-      if (currentScrollY > lastScrollY) {
+      if (currentScrollY > lastScrollY && currentScrollY > headerHeight) {
         setShowHeader(false);
       } else if (currentScrollY < lastScrollY) {
         setShowHeader(true);
       }
 
-      lastScrollY = currentScrollY > 0 ? currentScrollY : 0; // Prevent negative values
+      setLastScrollY(currentScrollY); // Update last scroll position
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   return (
     <div

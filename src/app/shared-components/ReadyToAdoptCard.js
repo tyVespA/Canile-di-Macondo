@@ -1,17 +1,14 @@
 import styles from "./ReadyToAdoptCard.module.css";
 import Image from "next/image";
-import noshadow from "@images/noshadow.png";
-import comicBaloon from "@images/comicBaloon.png";
-import comicBaloonBg from "@images/comicBaloonBg.png";
 
-export default function ReadyToAdoptCard() {
+export default function ReadyToAdoptCard({ dogSrc, comicBaloonTheme }) {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.imageContainer}>
-        <Image src={noshadow} alt="" />
+        <Image src={dogSrc} alt="" />
       </div>
       <div className={styles.ballonContainer}>
-        <Image src={comicBaloonBg} alt="" />
+        <Image src={comicBaloonTheme} alt="" />
       </div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur

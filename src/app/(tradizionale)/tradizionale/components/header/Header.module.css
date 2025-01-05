@@ -37,8 +37,12 @@
   gap: 10px;
 }
 
+.logoContainer a svg {
+  transition: all 0.3s;
+}
+
 .logoContainer a:hover svg {
-  fill: var(--surface);
+  transform: scale(1.2);
 }
 
 .logoContainer svg {

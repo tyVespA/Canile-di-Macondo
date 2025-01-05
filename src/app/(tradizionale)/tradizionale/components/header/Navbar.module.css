@@ -47,8 +47,9 @@
 .parentLink {
   cursor: default;
 }
-.mainLink:hover {
-  color: var(--accent-one);
+.mainLink:not(.skipUnderline):hover {
+  /* color: var(--accent-one); */
+  text-decoration: underline;
 }
 .navbar .subLinks {
   display: flex;
@@ -61,7 +62,7 @@
   position: absolute;
   left: 0;
   top: 100%;
-  width: 230px;
+  width: 250px;
   background-color: var(--background);
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

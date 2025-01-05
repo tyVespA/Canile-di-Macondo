@@ -81,7 +81,7 @@ h6 {
 body {
   background-color: var(--background);
   color: white;
-  font-family: var(--font-redhat-text);
+  font-size: 18px;
 }
 
 h1,

@@ -1,6 +1,6 @@
 .switchVersionButton {
   background-color: hsl(248, 97%, 64%);
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 5px;
   padding: 10px;
   color: white;

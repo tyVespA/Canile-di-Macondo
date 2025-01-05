@@ -1,4 +1,7 @@
 import styles from "./page.module.css";
+import ReadyToAdoptCard from "@shared-components/ReadyToAdoptCard";
+import comicBaloonDark from "@images/moderna/comicBaloonDark.png";
+import noshadowDark from "@images/moderna/noshadowDark.png";
 
 export const metadata = {
   title: "Come funziona | Canile di Macondo",
@@ -44,6 +47,10 @@ export default function page() {
           <li>If you already have a pet, is it neutered?</li>
         </ol>
         <h2>The Adoption Application Procedure</h2>
+        <ReadyToAdoptCard
+          dogSrc={noshadowDark}
+          comicBaloonTheme={comicBaloonDark}
+        />
       </section>
     </div>
   );
