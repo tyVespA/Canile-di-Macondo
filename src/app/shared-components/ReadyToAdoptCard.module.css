@@ -1,0 +1,25 @@
+.cardContainer {
+  position: relative;
+  max-width: 500px;
+  /* border: 1px solid black; */
+  background-color: var(--accent-one);
+  border-radius: var(--border-radius-standard);
+  padding: 20px;
+  padding-top: 100px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.imageContainer {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ballonContainer {
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  transform: translateX(-133%);
+}
