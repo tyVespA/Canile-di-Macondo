@@ -49,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-  text-wrap: balance;
+  /* text-wrap: balance; */
 }
 
 #root,
@@ -126,4 +126,8 @@ button {
   max-width: var(--max-width);
   padding-inline: var(--padding-inline-max-width);
   margin-inline: auto;
+}
+
+.first-section {
+  padding-top: 25px;
 }

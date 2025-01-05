@@ -198,7 +198,7 @@ export default function Navbar() {
               </li>
             </ul>
           </li>
-          <li className={styles.navItem}>
+          {/* <li className={styles.navItem}>
             <span
               onClick={() => toggleSubLinks("comeAiutarci")}
               className={`${styles.parentLink} ${styles.mainLink} ${
@@ -260,6 +260,16 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
+          </li> */}
+          <li>
+            <Link
+              href="/tradizionale/come-aiutarci"
+              className={`${
+                pathname === "/tradizionale/come-aiutarci" ? styles.active : ""
+              } ${styles.mainLink}`}
+            >
+              Come aiutarci
+            </Link>
           </li>
           <li>
             <Link

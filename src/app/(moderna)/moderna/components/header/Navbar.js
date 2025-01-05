@@ -196,7 +196,17 @@ export default function Navbar() {
               </li>
             </ul>
           </li>
-          <li className={styles.navItem}>
+          <li>
+            <Link
+              href="/moderna/come-aiutarci"
+              className={`${
+                pathname === "/moderna/come-aiutarci" ? styles.active : ""
+              } ${styles.mainLink}`}
+            >
+              Come aiutarci
+            </Link>
+          </li>
+          {/* <li className={styles.navItem}>
             <span
               onClick={() => toggleSubLinks("comeAiutarci")}
               className={`${styles.parentLink} ${styles.mainLink} ${
@@ -258,7 +268,7 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/moderna/contatti"
@@ -271,12 +281,12 @@ export default function Navbar() {
           </li>
         </ul>
         <div className={styles.ctaButtons}>
-          <Link href="/tradizionale/come-aiutarci/donazioni">
+          <Link href="/moderna/come-aiutarci/donazioni">
             <Button theme="white">
               Dona <Bone size={25} weight="fill" />
             </Button>
           </Link>
-          <Link href="/tradizionale/adozioni/come-funziona">
+          <Link href="/moderna/adozioni/come-funziona">
             <Button theme="light">
               Adotta <PawPrint size={25} weight="fill" />
             </Button>
