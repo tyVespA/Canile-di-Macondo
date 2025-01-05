@@ -51,6 +51,7 @@
   /* color: var(--accent-one); */
   text-decoration: underline;
 }
+
 .navbar .subLinks {
   display: flex;
   flex-direction: column;
