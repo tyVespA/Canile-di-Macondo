@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Dog } from "@phosphor-icons/react/dist/ssr";
+import { Dog, Heart } from "@phosphor-icons/react/dist/ssr";
 import styles from "./Header.module.css";
 import Navbar from "./Navbar";
 import Button from "@shared-components/Button";
@@ -51,6 +51,9 @@ export default function Header() {
         </div>
         <Navbar />
         <div className={styles.ctaButtons}>
+          <Link href="/moderna/preferiti">
+            <Heart size={38} className={styles.heart} />
+          </Link>
           <Button theme="dark">Dona</Button>
           <Button theme="light">Adotta</Button>
         </div>

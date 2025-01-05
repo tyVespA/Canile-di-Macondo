@@ -172,10 +172,15 @@
   .ctaButtons {
     margin-top: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 15px;
     align-items: center;
     transform: translateX(-12%);
     justify-content: center;
+  }
+  .heart {
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 3px;
   }
 }

@@ -50,6 +50,7 @@
 
 .ctaButtons {
   display: flex;
+  align-items: center;
   gap: 15px;
 }
 
@@ -60,6 +61,12 @@
 
 .header nav button {
   display: none;
+}
+
+.heart {
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 3px;
 }
 
 /* MOBILE */

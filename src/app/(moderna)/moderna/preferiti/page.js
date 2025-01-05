@@ -2,6 +2,7 @@
 import useFavorites from "@/utils/useFavorites";
 import { db } from "@/lib/db";
 import Image from "next/image";
+import PreviewCardsSection from "@shared-components/PreviewCardsSection";
 
 export default function Page() {
   const { favorites } = useFavorites();
@@ -13,21 +14,11 @@ export default function Page() {
 
   return (
     <div>
-      <h1>My Favorites</h1>
+      <h1>Preferiti</h1>
       {favoriteItems.length > 0 ? (
-        favoriteItems.map((item) => (
-          <div key={item.id}>
-            <h2>{item.nome}</h2>
-            <Image
-              alt=""
-              src={item.img1}
-              width={3142 / 10}
-              height={3927 / 10}
-            />
-          </div>
-        ))
+        <PreviewCardsSection data={favoriteItems} />
       ) : (
-        <p>You have no favorites yet.</p>
+        <p>Non hai ancora nessun preferito!</p>
       )}
     </div>
   );

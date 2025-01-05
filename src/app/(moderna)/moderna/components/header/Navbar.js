@@ -11,6 +11,7 @@ import {
   X,
   Bone,
   PawPrint,
+  Heart,
 } from "@phosphor-icons/react/dist/ssr";
 import Button from "@shared-components/Button";
 
@@ -281,6 +282,11 @@ export default function Navbar() {
           </li>
         </ul>
         <div className={styles.ctaButtons}>
+          <Link href="/moderna/preferiti">
+            <button>
+              <Heart size={38} className={styles.heart} />
+            </button>
+          </Link>
           <Link href="/moderna/come-aiutarci/donazioni">
             <Button theme="white">
               Dona <Bone size={25} weight="fill" />
