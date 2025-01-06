@@ -55,7 +55,7 @@ export default function page() {
       </section>
       <section>
         <h1>Il processo di adozione</h1>
-        <PreviewCardsSection data={db} />
+        {/* <PreviewCardsSection data={db} /> */}
       </section>
     </div>
   );

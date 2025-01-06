@@ -163,7 +163,7 @@
   }
   .menuOpened {
     left: 100%;
-    transform: translateX(-75%);
+    transform: translateX(-82%);
     display: block;
   }
   .menuClosed {
@@ -172,10 +172,14 @@
   .ctaButtons {
     margin-top: 5px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
     gap: 15px;
-    align-items: center;
-    transform: translateX(-12%);
+  }
+  .ctaButtons button {
+    width: 160px;
+    margin-left: 30px;
+    display: flex;
     justify-content: center;
   }
   .heart {

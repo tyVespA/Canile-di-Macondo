@@ -18,7 +18,7 @@ export default function PreviewCardsSection({ data }) {
             <Link href={`/tradizionale/adozioni/i-nostri-ospiti/${item.id}`}>
               <PreviewCard item={data[index]} />
             </Link>
-            <button
+            {/* <button
               onClick={() =>
                 isFavorite(item.id)
                   ? removeFavorite(item.id)
@@ -28,7 +28,7 @@ export default function PreviewCardsSection({ data }) {
               {isFavorite(item.id)
                 ? "Remove from Favorites"
                 : "Add to Favorites"}
-            </button>
+            </button> */}
           </div>
         ))}
       </section>

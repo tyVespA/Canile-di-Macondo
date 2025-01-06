@@ -51,9 +51,9 @@ export default function Header() {
         </div>
         <Navbar />
         <div className={styles.ctaButtons}>
-          <Link href="/moderna/preferiti">
+          {/* <Link href="/moderna/preferiti">
             <Heart size={38} className={styles.heart} />
-          </Link>
+          </Link> */}
           <Button theme="dark">Dona</Button>
           <Button theme="light">Adotta</Button>
         </div>

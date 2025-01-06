@@ -282,11 +282,11 @@ export default function Navbar() {
           </li>
         </ul>
         <div className={styles.ctaButtons}>
-          <Link href="/moderna/preferiti">
+          {/* <Link href="/moderna/preferiti">
             <button>
               <Heart size={38} className={styles.heart} />
             </button>
-          </Link>
+          </Link> */}
           <Link href="/moderna/come-aiutarci/donazioni">
             <Button theme="white">
               Dona <Bone size={25} weight="fill" />
