@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import ReadyToAdoptCard from "@shared-components/ReadyToAdoptCard";
 import comicBaloonDark from "@images/moderna/comicBaloonDark.png";
 import noshadowDark from "@images/moderna/noshadowDark.png";
+import ComeFunziona from "@shared-components/come-funziona/ComeFunziona";
 import PreviewCardsSection from "@shared-components/PreviewCardsSection";
 import { db } from "@lib/db";
 
@@ -14,16 +15,16 @@ export default function page() {
   return (
     <div className={styles.comeFunzionaPage}>
       <section className="first-section">
-        <h2>
-          Adopting a new cat or dog is like a marriage. <br /> We want it to be
-          a life-long, successful partnership.
-        </h2>
-        <p>
-          To ensure its success we need to know as much as possible about each
-          individual/family’s needs and lifestyle, so that we can recommend the
-          best possible match.
+        <h1>Il nostro percorso</h1>
+        <p className="centered">
+          Adottare un cane è come un matrimonio: vogliamo che sia un legame
+          duraturo e di successo. <br />
+          Per garantirne il successo, abbiamo bisogno di conoscere il più
+          possibile le esigenze e lo stile di vita di ogni persona o famiglia,
+          così da poter consigliare l’abbinamento migliore possibile.
         </p>
-        <h2>Important Points to Consider:</h2>
+        <ComeFunziona />
+        <h2 style={{ marginTop: "50px" }}>Important Points to Consider:</h2>
         <ol>
           <li>
             Experience and knowledge of dogs/cats, their behaviour, needs,
