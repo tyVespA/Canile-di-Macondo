@@ -287,12 +287,12 @@ export default function Navbar() {
               <Heart size={38} className={styles.heart} />
             </button>
           </Link> */}
-          <Link href="/moderna/come-aiutarci/donazioni">
+          <Link href="/moderna/come-aiutarci">
             <Button theme="white">
               Dona <Bone size={25} weight="fill" />
             </Button>
           </Link>
-          <Link href="/moderna/adozioni/come-funziona">
+          <Link href="/tradizionale/adozioni/i-nostri-ospiti">
             <Button theme="light">
               Adotta <PawPrint size={25} weight="fill" />
             </Button>

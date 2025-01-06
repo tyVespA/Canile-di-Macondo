@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Dog, Heart } from "@phosphor-icons/react/dist/ssr";
+import { Dog, Heart, PawPrint, Bone } from "@phosphor-icons/react/dist/ssr";
 import styles from "./Header.module.css";
 import Navbar from "./Navbar";
 import Button from "@shared-components/Button";
@@ -54,8 +54,16 @@ export default function Header() {
           {/* <Link href="/moderna/preferiti">
             <Heart size={38} className={styles.heart} />
           </Link> */}
-          <Button theme="dark">Dona</Button>
-          <Button theme="light">Adotta</Button>
+          <Link href="/moderna/come-aiutarci">
+            <Button theme="dark">
+              Dona <Bone size={25} weight="fill" />
+            </Button>
+          </Link>
+          <Link href="/moderna/adozioni/i-nostri-ospiti">
+            <Button theme="light">
+              Adotta <PawPrint size={25} weight="fill" />
+            </Button>
+          </Link>
         </div>
       </header>
     </div>
