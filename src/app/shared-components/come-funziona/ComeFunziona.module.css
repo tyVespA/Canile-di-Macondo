@@ -1,0 +1,38 @@
+.comeFunzionaContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-block: 50px;
+}
+
+.imagesSection {
+  /* max-width: 700px; */
+  /* max-height: 600px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: auto; */
+}
+
+.wideImage {
+  grid-column: span 2;
+  margin-inline: auto;
+  align-self: flex-end;
+}
+.narrowImage {
+  align-self: flex-start;
+}
+
+.imgContainer {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.imagesSection img {
+  object-fit: cover;
+  height: auto;
+  /* maxh */
+}

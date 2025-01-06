@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  padding-block: 20px;
+}
+
+.container.firstChild {
+  padding-top: 0;
+}
+
+.container.borderBottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container.borderTop {
+  border-top: 1px solid white;
+}
+
+.container h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.decorativeNumber {
+  position: absolute;
+  line-height: 0.75;
+  bottom: 20px;
+  right: 0;
+  font-size: 180px;
+  opacity: 0.1;
+}
