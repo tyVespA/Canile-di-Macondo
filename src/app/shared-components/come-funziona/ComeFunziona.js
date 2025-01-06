@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./ComeFunziona.module.css";
 import ComeFunzionaText from "./ComeFunzionaText";
 import Munia from "@images/foto-varie/Munia.jpg";
 import Kara from "@images/foto-varie/Kara.jpg";
 import Velo from "@images/foto-varie/Velo.jpg";
 
-export default function ComeFunziona() {
+export default function ComeFunziona({ versione }) {
   return (
     <div className={styles.comeFunzionaContainer}>
       <div className={styles.imagesSection}>
@@ -18,6 +19,11 @@ export default function ComeFunziona() {
         <div className={`${styles.imgContainer} ${styles.narrowImage}`}>
           <Image src={Velo} alt="Foto di Velo" />
         </div>
+        <div
+          className={`${styles.imgContainer} ${styles.wideImage} ${styles.additionalImage}`}
+        >
+          <Image src={Munia} alt="Foto di Munia" />
+        </div>
       </div>
       <div className={styles.textSection}>
         <ComeFunzionaText
@@ -27,7 +33,10 @@ export default function ComeFunziona() {
         >
           Ti aspettiamo al rifugio per una visita! Potrai vedere da vicino i
           nostri ospiti, scoprire le loro storie e iniziare a immaginare una
-          nuova vita insieme a uno di loro.
+          nuova vita insieme a uno di loro. <br />
+          <Link href={`/${versione}/contatti`} className="underlined">
+            Orari e posizione →
+          </Link>
         </ComeFunzionaText>
         <ComeFunzionaText
           title="Colloquio conoscitivo"

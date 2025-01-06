@@ -23,7 +23,7 @@ export default function page() {
           possibile le esigenze e lo stile di vita di ogni persona o famiglia,
           così da poter consigliare l’abbinamento migliore possibile.
         </p>
-        <ComeFunziona />
+        <ComeFunziona versione="moderna" />
         <h2 style={{ marginTop: "50px" }}>Important Points to Consider:</h2>
         <ol>
           <li>
@@ -53,10 +53,6 @@ export default function page() {
           dogSrc={noshadowDark}
           comicBaloonTheme={comicBaloonDark}
         />
-      </section>
-      <section>
-        <h1>Il processo di adozione</h1>
-        {/* <PreviewCardsSection data={db} /> */}
       </section>
     </div>
   );

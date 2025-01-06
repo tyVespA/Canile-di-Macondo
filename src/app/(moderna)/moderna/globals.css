@@ -128,3 +128,11 @@ button {
   padding-inline: var(--padding-inline-max-width);
   margin-inline: auto;
 }
+
+.underlined {
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.underlined:hover {
+  color: var(--accent-one);
+}
