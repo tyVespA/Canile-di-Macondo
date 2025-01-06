@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
-import FullWidthBg from "./components/FullWidthBg";
+import FullWidthBg from "@shared-components/FullWidthBg";
 import Button from "@shared-components/Button";
 import Counter from "@shared-components/Counter";
 

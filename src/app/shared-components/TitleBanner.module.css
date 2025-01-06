@@ -1,0 +1,39 @@
+.bannerContainer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  position: relative;
+  overflow: hidden;
+  height: 200px; /* change for mobiles */
+
+  display: flex;
+  align-items: center;
+}
+
+.backgroundImage {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+}
+
+.backgroundImage::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.backgroundImage img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.bannerContainer h2 {
+  max-width: var(--max-width);
+  padding-inline: var(--padding-inline-max-width);
+  margin-inline: auto;
+  color: white;
+}
