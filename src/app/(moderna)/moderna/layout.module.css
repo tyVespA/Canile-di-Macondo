@@ -1,7 +1,7 @@
 .boneOne {
   position: absolute;
   top: 450px;
-  right: -100px;
+  right: -150px;
   fill: var(--accent-one);
   opacity: 0.5;
   /* opacity: 0; */

@@ -95,6 +95,10 @@ button {
   font-family: var(--font-comfortaa);
 }
 
+h1 {
+  font-size: 40px;
+}
+
 p {
   /* font-weight: 450; */
   /* font-size: 17px; */
@@ -131,5 +135,9 @@ button {
 }
 
 .first-section {
-  padding-top: 25px;
+  padding-top: 15px;
+}
+
+.centered {
+  text-align: center;
 }
