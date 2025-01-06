@@ -1,4 +1,4 @@
-import FullWidthBg from "../components/FullWidthBg";
+import FullWidthBg from "@shared-components/FullWidthBg";
 import styles from "./page.module.css";
 import MapWrapper from "@/src/app/shared-components/Map/MapWrapper";
 

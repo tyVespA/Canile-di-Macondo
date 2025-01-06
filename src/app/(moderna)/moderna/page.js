@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import styles from "./page.module.css";
-import FullWidthBg from "./components/FullWidthBg";
+import FullWidthBg from "@shared-components/FullWidthBg";
 import cane_hero_1 from "@images/moderna/cane_hero_1.png";
 import cane_hero_2 from "@images/moderna/cane_hero_2.png";
 import cane_hero_3 from "@images/moderna/cane_hero_3.png";
