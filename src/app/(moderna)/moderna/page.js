@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import styles from "./page.module.css";
+import { PawPrint } from "@phosphor-icons/react/dist/ssr";
 import FullWidthBg from "@shared-components/FullWidthBg";
 import cane_hero_1 from "@images/moderna/cane_hero_1.png";
 import cane_hero_2 from "@images/moderna/cane_hero_2.png";
@@ -76,6 +77,7 @@ export default function Home() {
             pariatur, ratione officiis tenetur eveniet odio eum nisi molestias
             soluta!
           </p>
+          <PawPrint size={150} className={styles.pawIcon} weight="fill" />
         </div>
         <div className={styles.heroImgContainer}>
           {randomDog && (
@@ -95,7 +97,7 @@ export default function Home() {
           )}
         </div>
       </section>
-      <FullWidthBg bgColor="var(--accent-one)">
+      <FullWidthBg backgroundColor="var(--accent-one)">
         <div className={styles.section2}>
           <h2>section2</h2>
           <p>

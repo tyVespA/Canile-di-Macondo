@@ -1,9 +1,10 @@
 .boneOne {
   position: absolute;
-  top: 550px;
-  left: -200px;
+  top: 450px;
+  right: -100px;
   fill: var(--accent-one);
   opacity: 0.5;
+  /* opacity: 0; */
   transform: rotate(10deg);
   /* z-index: -1; */
   display: hidden;
