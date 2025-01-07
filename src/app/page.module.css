@@ -24,7 +24,7 @@
 .buttonsContainer {
   font-family: var(--font-redhat-text);
   display: flex;
-  gap: 30px;
+  gap: 15px;
 }
 
 .buttonsContainer a {
@@ -46,9 +46,20 @@
   transform: translateY(-5px);
 }
 
+.drawing {
+  position: absolute;
+  bottom: -10px;
+  max-width: 280px;
+  height: auto;
+}
+
 @media screen and (max-width: 475px) {
+  .pageContainer {
+    padding-bottom: 130px;
+    padding-inline: 10px;
+  }
   .buttonsContainer {
     flex-direction: column-reverse;
-    gap: 20px;
+    gap: 10px;
   }
 }

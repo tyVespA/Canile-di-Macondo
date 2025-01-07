@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import SwitchVersionButton from "./shared-components/SwitchVersionButton";
 import { Dog } from "@phosphor-icons/react/dist/ssr";
 import FullWidthBg from "./shared-components/FullWidthBg";
+import drawing from "@images/cane-drawing.png";
 
 export const metadata = {
   title: "Home | Canile di Macondo",
@@ -20,8 +21,10 @@ export default function Home() {
         </div>
         <div className={styles.buttonsContainer}>
           <Link href="/moderna">Versione colorata</Link>
+          <br />
           <Link href="/tradizionale">Versione chiara</Link>
         </div>
+        <Image src={drawing} alt="" className={styles.drawing} />
       </div>
     </FullWidthBg>
   );
