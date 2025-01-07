@@ -1,10 +1,10 @@
 .cardContainer {
   position: relative;
-  max-width: 500px;
+  width: 500px;
   background-color: var(--accent-one);
   border-radius: var(--border-radius-standard);
   padding: 20px;
-  padding-top: 90px;
+  padding-top: 100px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-top: 130px;
@@ -29,4 +29,16 @@
   left: 50%;
   top: 0;
   transform: translate(-130%, -95%);
+}
+
+.cardContainer p {
+  margin-bottom: 15px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

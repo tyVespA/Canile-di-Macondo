@@ -1,7 +1,16 @@
 import styles from "./ReadyToAdoptCard.module.css";
 import Image from "next/image";
+import Button from "./Button";
+import Link from "next/link";
 
-export default function ReadyToAdoptCard({ dogSrc, comicBaloonTheme }) {
+export default function ReadyToAdoptCard({
+  dogSrc,
+  comicBaloonTheme,
+  children,
+  btnTheme,
+  href,
+  paddingInline,
+}) {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.imageContainer}>
@@ -10,11 +19,14 @@ export default function ReadyToAdoptCard({ dogSrc, comicBaloonTheme }) {
       <div className={styles.ballonContainer}>
         <Image src={comicBaloonTheme} alt="" />
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-        ipsum obcaecati at vel. Harum ut maiores, aliquid, tenetur cumque ipsam
-        in amet, repudiandae sit fugit ipsum accusamus? Sit, dolores porro?
-      </p>
+      <p>{children}</p>
+      <div className={styles.btnContainer}>
+        <Link href={href}>
+          <Button theme={btnTheme} paddingInline={paddingInline}>
+            I nostri ospiti
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }
