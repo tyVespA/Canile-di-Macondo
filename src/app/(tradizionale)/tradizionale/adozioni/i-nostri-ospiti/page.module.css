@@ -1,0 +1,11 @@
+.ospitiPage h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 35px;
+}
