@@ -18,39 +18,41 @@ export default function page() {
     return true;
   });
   return (
-    <>
+    <div>
       <title>I nostri ospiti | Canile di Macondo</title>
       <meta
         name="description"
         content="Scopri i nostri ospiti, i cani in attesa di adozione presso il Canile di Macondo."
       />
-      <h1>i nostri ospiti</h1>
-      <div className={styles.filters}>
-        <select
-          value={filters.sesso}
-          onChange={(e) => setFilters({ ...filters, sesso: e.target.value })}
-        >
-          <option value="all">All sesso</option>
-          <option value="Maschio">Maschio</option>
-          <option value="Femmina">Femmina</option>
-        </select>
-        <select
-          value={filters.taglia}
-          onChange={(e) => setFilters({ ...filters, taglia: e.target.value })}
-        >
-          <option value="all">All taglia</option>
-          <option value="piccola">piccola</option>
-          <option value="media">media</option>
-          <option value="grande">grande</option>
-        </select>
-      </div>
-      <div>
-        {filteredData.length > 0 ? (
-          <PreviewCardsSection data={filteredData} />
-        ) : (
-          <p>No data</p>
-        )}
-      </div>
-    </>
+      <section className="first-section">
+        <h1>i nostri ospiti</h1>
+        <div className={styles.filters}>
+          <select
+            value={filters.sesso}
+            onChange={(e) => setFilters({ ...filters, sesso: e.target.value })}
+          >
+            <option value="all">All sesso</option>
+            <option value="Maschio">Maschio</option>
+            <option value="Femmina">Femmina</option>
+          </select>
+          <select
+            value={filters.taglia}
+            onChange={(e) => setFilters({ ...filters, taglia: e.target.value })}
+          >
+            <option value="all">All taglia</option>
+            <option value="piccola">piccola</option>
+            <option value="media">media</option>
+            <option value="grande">grande</option>
+          </select>
+        </div>
+        <div>
+          {filteredData.length > 0 ? (
+            <PreviewCardsSection data={filteredData} />
+          ) : (
+            <p>No data</p>
+          )}
+        </div>
+      </section>
+    </div>
   );
 }

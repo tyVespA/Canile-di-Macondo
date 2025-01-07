@@ -17,7 +17,7 @@ export default function page() {
     return true;
   });
   return (
-    <>
+    <div>
       <title>I nostri ospiti | Canile di Macondo</title>
       <meta
         name="description"
@@ -51,6 +51,6 @@ export default function page() {
           <p>No data</p>
         )}
       </div>
-    </>
+    </div>
   );
 }
