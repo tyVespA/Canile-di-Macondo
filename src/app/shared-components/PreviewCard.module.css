@@ -1,12 +1,17 @@
 .previewCardContainer {
   border-radius: 15px;
   overflow: hidden;
-  background-color: var(--surface);
+  transition: all 0.3s;
+  will-change: contents;
+}
+
+.previewCardContainer:hover {
+  transform: translateY(-10px);
 }
 
 .imageContainer {
-  max-width: 320px;
-  max-height: 250px;
+  max-width: 325px;
+  max-height: 300px;
   /* overflow: hidden; */
   border-radius: 15px;
 }
@@ -18,8 +23,8 @@
 }
 
 .textContainer {
-  padding: 10px 20px 20px 20px;
-  background-color: var(--surface);
+  padding: 10px 30px 15px 30px;
+  /* background-color: var(--surface); */
   position: relative;
 }
 
@@ -28,11 +33,18 @@
   font-weight: 700;
   font-family: var(--font-comfortaa);
   margin-bottom: 5px;
+  text-align: center;
 }
 
-.stats {
-  display: grid;
-  grid-template-columns: 1.25fr 1fr;
+.stats1,
+.stats2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.stats1 {
+  margin-bottom: 10px;
 }
 
 .sesso,
@@ -45,7 +57,7 @@
 
 .sesso,
 .età {
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 .taglia {
