@@ -7,7 +7,7 @@ export default function TitleBanner({ imgSrc, children }) {
       <div className={styles.backgroundImage}>
         <Image src={imgSrc} alt=""></Image>
       </div>
-      <h2>{children}</h2>
+      <h1>{children}</h1>
     </div>
   );
 }

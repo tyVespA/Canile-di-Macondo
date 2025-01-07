@@ -31,7 +31,7 @@
   width: 100%;
 }
 
-.bannerContainer h2 {
+.bannerContainer h1 {
   max-width: var(--max-width);
   padding-inline: var(--padding-inline-max-width);
   margin-inline: auto;
