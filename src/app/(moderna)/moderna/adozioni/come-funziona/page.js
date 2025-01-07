@@ -24,35 +24,20 @@ export default function page() {
           così da poter consigliare l’abbinamento migliore possibile.
         </p>
         <ComeFunziona versione="moderna" />
-        <h2 style={{ marginTop: "50px" }}>Important Points to Consider:</h2>
-        <ol>
-          <li>
-            Experience and knowledge of dogs/cats, their behaviour, needs,
-            habits, comforts, food, health and exercise;
-          </li>
-          <li>
-            Your family circumstances: <br /> Do you have enough space, time and
-            money to care for a dog/cat?
-          </li>
-          <li>
-            Housing conditions: <br /> Are you allowed to keep a pet? Is there
-            likely to be trouble with neighbours?
-          </li>
-          <li>
-            On average, how long are you away from home each day/week? Some
-            animals left all day alone get stressed out from loneliness;
-          </li>
-          <li>
-            Are you able to make a long-term commitment to this dog/cat?
-            Dogs/cats live an average of 18 years;
-          </li>
-          <li>If you already have a pet, is it neutered?</li>
-        </ol>
-        <h2>The Adoption Application Procedure</h2>
-        <ReadyToAdoptCard
-          dogSrc={noshadowDark}
-          comicBaloonTheme={comicBaloonDark}
-        />
+
+        <div className={styles.cardContainer}>
+          <ReadyToAdoptCard
+            dogSrc={noshadowDark}
+            comicBaloonTheme={comicBaloonDark}
+            btnTheme="dark"
+            href="/moderna/adozioni/i-nostri-ospiti"
+            paddingInline="36px"
+          >
+            Adottare è un percorso importante, e ora hai tutti gli strumenti per
+            iniziarlo. <br /> Incontra i nostri amici a quattro zampe in cerca
+            di una famiglia e trova quello che è perfetto per te!
+          </ReadyToAdoptCard>
+        </div>
       </section>
     </div>
   );
