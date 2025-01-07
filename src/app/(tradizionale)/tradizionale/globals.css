@@ -50,6 +50,7 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+  color: var(--accent-three);
 }
 
 #root,
@@ -68,6 +69,7 @@ h6 {
 
   --accent-one: hsl(47, 100%, 68%);
   --accent-two: hsl(13, 90%, 58%);
+  --accent-three: #9c6644;
 
   --max-width: 1260px;
   --padding-inline-max-width: 40px;
@@ -125,4 +127,12 @@ button {
   max-width: var(--max-width);
   padding-inline: var(--padding-inline-max-width);
   margin-inline: auto;
+}
+
+.underlined {
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.underlined:hover {
+  color: var(--accent-three);
 }

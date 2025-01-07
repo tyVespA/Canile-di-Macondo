@@ -1,4 +1,10 @@
-.comeFunzionaPage h1,
-.comeFunzionaPage h2 {
+.comeFunzionaPage h1 {
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
 }
