@@ -1,7 +1,8 @@
-export function calculateAge(anno_di_nascita, mese_di_nascita) {
+export function calculateAge(anno_di_nascita, mese_di_nascita, item_sesso) {
   anno_di_nascita = Number(anno_di_nascita);
   const anno_corrente = new Date().getFullYear();
   const mese_corrente = new Date().getMonth() + 1;
+  const sesso = item_sesso.toLowerCase();
 
   let etàMesi;
   if (mese_di_nascita > mese_corrente) {
@@ -28,15 +29,19 @@ export function calculateAge(anno_di_nascita, mese_di_nascita) {
   let ageReturned;
 
   if (etàAnni === 1 && anno_corrente != anno_di_nascita + 1) {
-    ageReturned = "un anno";
+    ageReturned = "Un anno";
   } else if (etàAnni < 1) {
-    if (etàMesi === 0) {
+    if (etàMesi === 0 && sesso === "maschio") {
       ageReturned = "Appena nato";
+    } else if (etàMesi === 0 && sesso === "femmina") {
+      ageReturned = "Appena nata";
     } else if (etàMesi === 1) {
       ageReturned = "un mese";
     } else {
       ageReturned = `${etàMesi} ${meseOMesi}`;
     }
+  } else if (etàAnni >= 1 && etàMesi === 0) {
+    ageReturned = `${etàAnni} ${annoOAnni}`;
   } else {
     ageReturned = `${etàAnni} ${annoOAnni} e ${etàMesi} ${meseOMesi}`;
   }

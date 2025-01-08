@@ -12,7 +12,7 @@ export default function PreviewCard({ item, backgroundColor, color }) {
   const anno_di_nascita = item.anno_di_nascita;
   const mese_di_nascita = item.mese_di_nascita;
 
-  const età = calculateAge(anno_di_nascita, mese_di_nascita);
+  const età = calculateAge(anno_di_nascita, mese_di_nascita, item.sesso);
 
   return (
     <div className={styles.previewCardContainer}>
