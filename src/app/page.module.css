@@ -63,4 +63,7 @@
     flex-direction: column-reverse;
     gap: 10px;
   }
+  .drawing {
+    max-width: 200px;
+  }
 }

@@ -4,6 +4,8 @@ import styles from "./page.module.css";
 import { db } from "@lib/db";
 import PreviewCardsSection from "@shared-components/PreviewCardsSection";
 import Filter from "@shared-components/Filter";
+import ReadRulesCard from "@shared-components/ReadRulesCard";
+import HelpCard from "@/src/app/shared-components/HelpCard";
 
 export default function page() {
   const anno_corrente = new Date().getFullYear();
@@ -56,7 +58,8 @@ export default function page() {
       />
       <section className="first-section">
         <h1>I nostri ospiti</h1>
-        <p>inserire warning card</p>
+
+        <ReadRulesCard />
 
         <Filter filters={filters} setFilters={setFilters} />
 
@@ -74,6 +77,7 @@ export default function page() {
             </p>
           )}
         </div>
+        <HelpCard />
       </section>
     </div>
   );

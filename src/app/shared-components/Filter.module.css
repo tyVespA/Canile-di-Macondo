@@ -38,8 +38,7 @@
 }
 
 .filters input[type="checkbox"]:checked {
-  background-color: var(--accent-three); /* Green background for checked */
-  border-color: #4caf50; /* Match border color */
+  background-color: var(--accent-three);
 }
 
 .filters input[type="checkbox"]:checked::after {
