@@ -93,7 +93,7 @@ export default function page() {
             </div>
           )}
         </div>
-        <HelpCard />
+        {/* <HelpCard /> */}
       </section>
     </div>
   );

@@ -6,6 +6,7 @@ import PreviewCardsSection from "@shared-components/PreviewCardsSection";
 import Filter from "@shared-components/Filter";
 import ReadRulesCard from "@shared-components/ReadRulesCard";
 import HelpCard from "@/src/app/shared-components/HelpCard";
+import background_paws from "@images/background_paws.svg";
 
 export default function page() {
   const anno_corrente = new Date().getFullYear();
@@ -158,7 +159,7 @@ export default function page() {
             </div>
           )}
         </div>
-        <HelpCard />
+        {/* <HelpCard /> */}
       </section>
     </div>
   );
