@@ -59,7 +59,7 @@ export default function page() {
       <section className="first-section">
         <h1>i nostri ospiti</h1>
 
-        <ReadRulesCard />
+        <ReadRulesCard versione="tradizionale" />
 
         <Filter filters={filters} setFilters={setFilters} />
 
