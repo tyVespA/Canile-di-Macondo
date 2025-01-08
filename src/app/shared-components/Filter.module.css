@@ -1,0 +1,59 @@
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.filters fieldset {
+  display: flex;
+  gap: 15px;
+  border-radius: 55px;
+  padding-inline: 20px;
+  padding-bottom: 20px;
+}
+
+.filters legend {
+  color: var(--accent-three);
+  font-weight: 500;
+}
+.filters label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.filters input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  border: 1px solid var(--text);
+  border-radius: 4px;
+  /* background-color: white; */
+  position: relative;
+}
+
+.filters input[type="checkbox"]:checked {
+  background-color: var(--accent-three); /* Green background for checked */
+  border-color: #4caf50; /* Match border color */
+}
+
+.filters input[type="checkbox"]:checked::after {
+  content: "✔"; /* Checkmark */
+  color: var(--background);
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1084px) {
+  .filters {
+    gap: 10px;
+  }
+}
