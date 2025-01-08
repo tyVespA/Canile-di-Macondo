@@ -151,6 +151,7 @@
   .navbar .subLinksOpened {
     opacity: 1;
     max-height: 200px;
+    pointer-events: auto;
   }
   .navbar .subLinksClosed {
     opacity: 0;
