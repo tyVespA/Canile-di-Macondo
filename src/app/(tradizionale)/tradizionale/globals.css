@@ -62,7 +62,7 @@ h6 {
 
 :root {
   --background: #fff3d4;
-  --surface: hsl(248, 96%, 67%);
+  --surface: hsla(23, 39%, 44%, 0.75);
 
   --text: hsl(217, 74%, 9%);
   --text-light: hsl(0, 0%, 100%);
