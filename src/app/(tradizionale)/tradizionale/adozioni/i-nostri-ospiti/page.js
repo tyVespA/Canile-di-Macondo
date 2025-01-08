@@ -3,19 +3,50 @@ import { useState } from "react";
 import styles from "./page.module.css";
 import { db } from "@lib/db";
 import PreviewCardsSection from "@shared-components/PreviewCardsSection";
+import Filter from "@shared-components/Filter";
 
 export default function page() {
+  const anno_corrente = new Date().getFullYear();
+
   const [filters, setFilters] = useState({
-    taglia: "all",
-    sesso: "all",
+    taglia: [],
+    sesso: [],
+    età: [],
   });
 
   const filteredData = db.filter((animal) => {
-    if (filters.taglia !== "all" && animal.taglia !== filters.taglia)
+    const età = anno_corrente - animal.anno_di_nascita;
+
+    if (filters.taglia.length > 0 && !filters.taglia.includes(animal.taglia))
       return false;
-    if (filters.sesso !== "all" && animal.sesso !== filters.sesso) return false;
+    if (filters.sesso.length > 0 && !filters.sesso.includes(animal.sesso))
+      return false;
+    if (filters.età.length > 0) {
+      if (
+        filters.età.includes("cucciolo") &&
+        età > 1 &&
+        !filters.età.includes("adulto") &&
+        !filters.età.includes("anziano")
+      )
+        return false;
+      if (
+        filters.età.includes("adulto") &&
+        (età <= 1 || età > 4) &&
+        !filters.età.includes("cucciolo") &&
+        !filters.età.includes("anziano")
+      )
+        return false;
+      if (
+        filters.età.includes("anziano") &&
+        età < 5 &&
+        !filters.età.includes("cucciolo") &&
+        !filters.età.includes("adulto")
+      )
+        return false;
+    }
     return true;
   });
+
   return (
     <div className={styles.ospitiPage}>
       <title>I nostri ospiti | Canile di Macondo</title>
@@ -25,34 +56,8 @@ export default function page() {
       />
       <section className="first-section">
         <h1>i nostri ospiti</h1>
-        <div className={styles.filters}>
-          <select
-            value={filters.sesso}
-            onChange={(e) => setFilters({ ...filters, sesso: e.target.value })}
-          >
-            <option value="all">All sesso</option>
-            <option value="Maschio">Maschio</option>
-            <option value="Femmina">Femmina</option>
-          </select>
-          <select
-            value={filters.taglia}
-            onChange={(e) => setFilters({ ...filters, taglia: e.target.value })}
-          >
-            <option value="all">All taglia</option>
-            <option value="piccola">piccola</option>
-            <option value="media">media</option>
-            <option value="grande">grande</option>
-          </select>
-          <select
-            value={filters.taglia}
-            onChange={(e) => setFilters({ ...filters, taglia: e.target.value })}
-          >
-            <option value="all">All età</option>
-            <option value="piccola">piccola</option>
-            <option value="media">media</option>
-            <option value="grande">grande</option>
-          </select>
-        </div>
+
+        <Filter filters={filters} setFilters={setFilters} />
 
         <div>
           {filteredData.length > 0 ? (
