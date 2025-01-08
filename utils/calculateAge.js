@@ -1,8 +1,8 @@
-export function calculateAge(anno_di_nascita, mese_di_nascita, item_sesso) {
+export function calculateAge(anno_di_nascita, mese_di_nascita, sesso) {
   anno_di_nascita = Number(anno_di_nascita);
   const anno_corrente = new Date().getFullYear();
   const mese_corrente = new Date().getMonth() + 1;
-  const sesso = item_sesso.toLowerCase();
+  sesso = sesso.toLowerCase();
 
   let etàMesi;
   if (mese_di_nascita > mese_corrente) {
