@@ -9,3 +9,9 @@
   /* z-index: -1; */
   display: hidden;
 }
+
+@media screen and (max-width: 1000px) {
+  .boneOne {
+    display: none;
+  }
+}
