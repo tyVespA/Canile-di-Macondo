@@ -64,6 +64,7 @@ h6 {
   --background: #fff3d4;
   --surface: hsl(248, 96%, 67%);
 
+  --text: hsl(217, 74%, 9%);
   --text-light: hsl(0, 0%, 100%);
   --text-dark: hsl(217, 74%, 9%);
 

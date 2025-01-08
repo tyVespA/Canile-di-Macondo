@@ -81,7 +81,7 @@
 }
 
 .subLinks a:hover {
-  color: var(--accent-one);
+  text-decoration: underline;
 }
 
 /* to not close the menu before mouse reaches the subLinks box */

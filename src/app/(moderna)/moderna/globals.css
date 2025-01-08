@@ -65,11 +65,13 @@ h6 {
   --background: hsl(248, 97%, 64%);
   --surface: hsl(248, 96%, 67%);
 
+  --text: hsl(0, 0%, 100%);
   --text-light: hsl(0, 0%, 100%);
   --text-dark: hsl(217, 74%, 9%);
 
   --accent-one: hsl(47, 100%, 68%);
   --accent-two: hsl(13, 90%, 58%);
+  --accent-three: hsl(47, 100%, 68%);
 
   --max-width: 1260px;
   --padding-inline-max-width: 40px;
