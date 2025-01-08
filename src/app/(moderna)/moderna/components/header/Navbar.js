@@ -287,16 +287,30 @@ export default function Navbar() {
               <Heart size={38} className={styles.heart} />
             </button>
           </Link> */}
-          <Link href="/moderna/come-aiutarci">
-            <Button theme="white">
-              Dona <Bone size={25} weight="fill" />
-            </Button>
-          </Link>
-          <Link href="/tradizionale/adozioni/i-nostri-ospiti">
-            <Button theme="light">
-              Adotta <PawPrint size={25} weight="fill" />
-            </Button>
-          </Link>
+          <div className={styles.ctaButtons}>
+            <Link
+              href="/moderna/come-aiutarci"
+              className={`${
+                pathname === "/moderna/come-aiutarci" ? styles.btnHidden : ""
+              }`}
+            >
+              <Button theme="white">
+                Dona <Bone size={25} weight="fill" />
+              </Button>
+            </Link>
+            <Link
+              href="/moderna/adozioni/i-nostri-ospiti"
+              className={`${
+                pathname === "/moderna/adozioni/i-nostri-ospiti"
+                  ? styles.btnHidden
+                  : ""
+              }`}
+            >
+              <Button theme="light">
+                Adotta <PawPrint size={25} weight="fill" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </nav>
     </>

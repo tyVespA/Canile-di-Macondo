@@ -188,4 +188,7 @@
     border-radius: 100%;
     padding: 3px;
   }
+  .btnHidden {
+    display: none;
+  }
 }

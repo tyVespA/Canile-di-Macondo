@@ -282,12 +282,26 @@ export default function Navbar() {
             </Link>
           </li>
           <div className={styles.ctaButtons}>
-            <Link href="/tradizionale/come-aiutarci">
+            <Link
+              href="/tradizionale/come-aiutarci"
+              className={`${
+                pathname === "/tradizionale/come-aiutarci"
+                  ? styles.btnHidden
+                  : ""
+              }`}
+            >
               <Button theme="white">
                 Dona <Bone size={25} weight="fill" />
               </Button>
             </Link>
-            <Link href="/tradizionale/adozioni/i-nostri-ospiti">
+            <Link
+              href="/tradizionale/adozioni/i-nostri-ospiti"
+              className={`${
+                pathname === "/tradizionale/adozioni/i-nostri-ospiti"
+                  ? styles.btnHidden
+                  : ""
+              }`}
+            >
               <Button theme="light">
                 Adotta <PawPrint size={25} weight="fill" />
               </Button>
