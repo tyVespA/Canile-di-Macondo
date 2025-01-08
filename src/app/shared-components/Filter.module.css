@@ -27,8 +27,8 @@
 
 .filters input[type="checkbox"] {
   appearance: none;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   cursor: pointer;
 
   border: 1px solid var(--text);
@@ -55,5 +55,8 @@
 @media screen and (max-width: 1084px) {
   .filters {
     gap: 10px;
+  }
+  .filters label {
+    line-height: 1.2;
   }
 }
