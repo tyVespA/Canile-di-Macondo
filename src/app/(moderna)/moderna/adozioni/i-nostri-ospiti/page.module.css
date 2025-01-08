@@ -9,3 +9,14 @@
   gap: 25px;
   margin-bottom: 35px;
 }
+
+.svg {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.svg svg {
+  max-width: 150px;
+  max-height: 150px;
+}
