@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import { calculateAge } from "@/utils/calculateAge";
+import Button from "@shared-components/Button";
 import Tag from "@shared-components/Tag";
 import {
   GenderMale,
@@ -81,93 +82,67 @@ export default async function Page({ params }) {
               </Tag>
             </div>
 
-            {/* <p className={styles.descrizione}>{cane.descrizione}</p> */}
+            <p className={styles.descrizione}>{cane.descrizione}</p>
 
-            <p
+            {/* <p
               className={styles.descrizione}
               dangerouslySetInnerHTML={{ __html: cane.descrizione }}
-            />
+            /> */}
 
-            {cane.sesso.toLowerCase() === "maschio" ? (
+            <div className={styles.tagsAndBtn}>
               <div className={`${styles.secondaryTags} ${styles[rowOrColumn]}`}>
-                {" "}
-                <p>
-                  <GenderNeuter size={34} />{" "}
-                  {cane.sterilizzato ? "Sterilizzato" : "Non sterilizzato"}{" "}
-                </p>
-                <p>
-                  <Bug size={34} weight="fill" />{" "}
-                  {cane.sverminato ? "Sverminato" : "Non sverminato"}{" "}
-                </p>
-                <p>
-                  <Syringe size={34} />{" "}
-                  {cane.vaccinato ? "Vaccinato" : "Non vaccinato"}{" "}
-                </p>
-                <p>
-                  <Circuitry size={34} weight="fill" />{" "}
-                  {cane.microchip ? "Dotato di microchip" : "Senza microchip"}{" "}
-                </p>{" "}
+                {cane.sesso.toLowerCase() === "maschio" ? (
+                  <div>
+                    {" "}
+                    <p>
+                      <GenderNeuter size={34} />{" "}
+                      {cane.sterilizzato ? "Sterilizzato" : "Non sterilizzato"}{" "}
+                    </p>
+                    <p>
+                      <Bug size={34} weight="fill" />{" "}
+                      {cane.sverminato ? "Sverminato" : "Non sverminato"}{" "}
+                    </p>
+                    <p>
+                      <Syringe size={34} />{" "}
+                      {cane.vaccinato ? "Vaccinato" : "Non vaccinato"}{" "}
+                    </p>
+                    <p>
+                      <Circuitry size={34} weight="fill" />{" "}
+                      {cane.microchip
+                        ? "Dotato di microchip"
+                        : "Senza microchip"}{" "}
+                    </p>{" "}
+                  </div>
+                ) : (
+                  <div
+                    className={`${styles.secondaryTags} ${styles[rowOrColumn]}`}
+                  >
+                    {" "}
+                    <p>
+                      <GenderNeuter size={34} />{" "}
+                      {cane.sterilizzato ? "Sterilizzata" : "Non sterilizzata"}{" "}
+                    </p>
+                    <p>
+                      <Bug size={34} weight="fill" />{" "}
+                      {cane.sverminato ? "Sverminata" : "Non sverminata"}{" "}
+                    </p>
+                    <p>
+                      <Syringe size={34} />{" "}
+                      {cane.vaccinato ? "Vaccinata" : "Non vaccinata"}{" "}
+                    </p>
+                    <p>
+                      <Circuitry size={34} weight="fill" />{" "}
+                      {cane.microchip
+                        ? "Dotata di microchip"
+                        : "Senza microchip"}{" "}
+                    </p>{" "}
+                  </div>
+                )}
               </div>
-            ) : (
-              <div className={`${styles.secondaryTags} ${styles[rowOrColumn]}`}>
-                {" "}
-                <p>
-                  <GenderNeuter size={34} />{" "}
-                  {cane.sterilizzato ? "Sterilizzata" : "Non sterilizzata"}{" "}
-                </p>
-                <p>
-                  <Bug size={34} weight="fill" />{" "}
-                  {cane.sverminato ? "Sverminata" : "Non sverminata"}{" "}
-                </p>
-                <p>
-                  <Syringe size={34} />{" "}
-                  {cane.vaccinato ? "Vaccinata" : "Non vaccinata"}{" "}
-                </p>
-                <p>
-                  <Circuitry size={34} weight="fill" />{" "}
-                  {cane.microchip ? "Dotata di microchip" : "Senza microchip"}{" "}
-                </p>{" "}
-              </div>
-            )}
-
-            {/* <div className={styles.secondaryTags}>
-              {cane.sverminato ? (
-                <Tag>
-                  <Ruler size={55} weight="fill" /> Sverminato
-                </Tag>
-              ) : (
-                <Tag>
-                  <Ruler size={55} weight="fill" /> Non sverminato
-                </Tag>
-              )}
-              {cane.vaccinato ? (
-                <Tag>
-                  <Ruler size={55} weight="fill" /> Vaccinato
-                </Tag>
-              ) : (
-                <Tag>
-                  <Ruler size={55} weight="fill" /> Non vaccinato
-                </Tag>
-              )}
-              {cane.sterilizzato ? (
-                <Tag>
-                  <Ruler size={55} weight="fill" /> Sterilizzato
-                </Tag>
-              ) : (
-                <Tag>
-                  <Ruler size={55} weight="fill" /> Non sterilizzato
-                </Tag>
-              )}
-              {cane.microchip ? (
-                <Tag>
-                  <Ruler size={55} weight="fill" /> Dotato di microchip
-                </Tag>
-              ) : (
-                <Tag>
-                  <Ruler size={55} weight="fill" /> Non microchip
-                </Tag>
-              )}
-            </div> */}
+              <Link href="/">
+                <Button theme="white">Richiedi informazioni</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
