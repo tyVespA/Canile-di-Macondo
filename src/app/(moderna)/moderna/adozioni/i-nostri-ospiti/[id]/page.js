@@ -90,9 +90,11 @@ export default async function Page({ params }) {
             /> */}
 
             <div className={styles.tagsAndBtn}>
-              <div className={`${styles.secondaryTags} ${styles[rowOrColumn]}`}>
+              <div>
                 {cane.sesso.toLowerCase() === "maschio" ? (
-                  <div>
+                  <div
+                    className={`${styles.secondaryTags} ${styles[rowOrColumn]}`}
+                  >
                     {" "}
                     <p>
                       <GenderNeuter size={34} />{" "}
@@ -139,7 +141,7 @@ export default async function Page({ params }) {
                   </div>
                 )}
               </div>
-              <Link href="/">
+              <Link href="/moderna/contatti#form">
                 <Button theme="white">Richiedi informazioni</Button>
               </Link>
             </div>

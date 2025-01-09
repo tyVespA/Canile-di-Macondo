@@ -15,7 +15,7 @@ export default function page() {
       {/* <Map /> */}
       <MapWrapper />
 
-      <h2>Contattaci</h2>
+      <h2 id="form">Form</h2>
       {/* <div className={styles.contactContainer}>
         <h2>Contact Us</h2>
         <form className={styles.contactForm}>
