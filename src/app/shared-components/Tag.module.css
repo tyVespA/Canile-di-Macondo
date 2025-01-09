@@ -1,5 +1,5 @@
 .tagContainer {
-  border: 1px solid rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: 15px;
   overflow: hidden;
   padding-right: 15px;
@@ -16,4 +16,7 @@
   padding: 10px;
   background-color: var(--surface);
   color: var(--accent-one);
+}
+.svgColorBackground svg {
+  color: var(--background);
 }
