@@ -50,8 +50,13 @@
   /* max-width: 50ch; */
 }
 
-.secondaryTags {
+.tagsAndBtn {
   margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondaryTags {
   display: flex;
   flex-wrap: wrap-reverse;
   /* flex-direction: column; */
@@ -72,13 +77,12 @@
 
 .secondaryTags p {
   display: flex;
+  /* flex-wrap: wrap; */
   align-items: center;
   gap: 10px;
 }
 
-/* .secondaryTags {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  gap: 25px;
+.tagsAndBtn a {
   margin-top: auto;
-} */
+  text-align: center;
+}
