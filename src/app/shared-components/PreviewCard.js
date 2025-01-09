@@ -26,6 +26,9 @@ export default function PreviewCard({ item, backgroundColor, color }) {
         >
           <p className={styles.nome}>{item.nome}</p>
           <div className={styles.stats1}>
+            <p className={styles.taglia}>
+              <Ruler size={18} /> Taglia {item.taglia}
+            </p>
             <p className={styles.sesso}>
               {item.sesso.toLowerCase() === "maschio" ? (
                 <GenderMale size={18} />
@@ -33,9 +36,6 @@ export default function PreviewCard({ item, backgroundColor, color }) {
                 <GenderFemale size={18} />
               )}
               {item.sesso}
-            </p>
-            <p className={styles.taglia}>
-              <Ruler size={18} /> Taglia {item.taglia}
             </p>
           </div>
           <div className={styles.stats2}>
