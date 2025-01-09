@@ -90,3 +90,38 @@
 .tagsAndBtn button {
   /* font-weight: 400; */
 }
+
+@media screen and (max-width: 1085px) {
+  .tagsAndBtn {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+  .secondaryTags {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .secondaryTags p {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .mainContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .textContainer {
+    text-align: center;
+    height: auto;
+  }
+  .mainTags,
+  .tagsAndBtn {
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .tagsAndBtn {
+    gap: 25px;
+  }
+}

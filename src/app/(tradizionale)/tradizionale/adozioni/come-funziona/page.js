@@ -21,7 +21,7 @@ export default function page() {
           possibile le esigenze e lo stile di vita di ogni persona o famiglia,
           così da poter consigliare l’abbinamento migliore possibile.
         </p>
-        <ComeFunziona versione="moderna" />
+        <ComeFunziona versione="tradizionale" />
         <div className={styles.cardContainer}>
           <ReadyToAdoptCard
             dogSrc={noshadowLight}

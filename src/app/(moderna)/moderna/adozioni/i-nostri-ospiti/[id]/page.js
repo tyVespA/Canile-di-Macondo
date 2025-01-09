@@ -56,13 +56,6 @@ export default async function Page({ params }) {
           <div className={styles.textContainer}>
             <h1>{cane.nome}</h1>
 
-            {/* <h2>Caratteristiche</h2> */}
-            {/* {cane.taglia && (
-              <Tag>
-                <Ruler size={50} weight="fill" /> Taglia {cane.taglia}
-              </Tag>
-            )} */}
-
             <div className={styles.mainTags}>
               <Tag>
                 <Ruler size={55} weight="fill" /> Taglia {cane.taglia}
@@ -83,11 +76,6 @@ export default async function Page({ params }) {
             </div>
 
             <p className={styles.descrizione}>{cane.descrizione}</p>
-
-            {/* <p
-              className={styles.descrizione}
-              dangerouslySetInnerHTML={{ __html: cane.descrizione }}
-            /> */}
 
             <div className={styles.tagsAndBtn}>
               <div>
