@@ -1,0 +1,19 @@
+.tagContainer {
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 15px;
+  overflow: hidden;
+  padding-right: 15px;
+  /* margin-right: auto; */
+}
+
+.tagContainer p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tagContainer svg {
+  padding: 10px;
+  background-color: var(--surface);
+  color: var(--accent-one);
+}
