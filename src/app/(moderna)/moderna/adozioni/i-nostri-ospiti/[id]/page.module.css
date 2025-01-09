@@ -107,9 +107,16 @@
 }
 
 @media screen and (max-width: 950px) {
+  .navigation {
+    margin-bottom: 15px;
+  }
   .mainContent {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
+  }
+  .mainContent h1 {
+    margin-bottom: 5px;
   }
   .textContainer {
     text-align: center;
@@ -123,5 +130,15 @@
   }
   .tagsAndBtn {
     gap: 25px;
+  }
+  .secondaryTags {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .secondaryTags {
+    flex-direction: column;
+    align-items: center;
   }
 }
