@@ -1,4 +1,84 @@
-.pageContainer img {
-  max-height: 400px;
-  border-radius: 15px;
+.pageContainer {
+  margin-bottom: 50px;
 }
+
+.navigation {
+  margin-bottom: 25px;
+}
+
+.navigation a {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.mainContent {
+  display: flex;
+  gap: 35px;
+}
+
+.imagesContainer {
+  flex-shrink: 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.pageContainer img {
+  height: 500px;
+  width: auto;
+}
+
+.textContainer {
+  height: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pageContainer h1 {
+  margin-bottom: 15px;
+}
+
+.mainTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.descrizione {
+  margin-bottom: 15px;
+  /* max-width: 50ch; */
+}
+
+.secondaryTags {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.column {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.secondaryTags p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* .secondaryTags {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 25px;
+  margin-top: auto;
+} */
