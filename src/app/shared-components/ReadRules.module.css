@@ -1,5 +1,5 @@
 .readRulesContainer {
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 250px;
   display: flex;
   justify-content: center;
@@ -61,7 +61,7 @@
   transform: translateX(-50%);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .readRulesContainer {
     flex-direction: column;
     /* width: auto; */
