@@ -67,7 +67,7 @@ export default function page() {
           {filteredData.length > 0 ? (
             <PreviewCardsSection
               data={filteredData}
-              backgroundColor="var(--accent-three)" /* to change */
+              backgroundColor="var(--accent-three)"
               color="var(--text-light)"
               versione="tradizionale"
             />

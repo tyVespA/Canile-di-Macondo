@@ -41,12 +41,6 @@ export default async function Page({ params }) {
   );
   const rowOrColumn = cane.descrizione.length > 350 ? "row" : "column";
 
-  const filteredData = db.filter(
-    (dog) =>
-      dog.taglia === cane.taglia ||
-      (dog.sesso === cane.sesso && dog.id != cane.id)
-  );
-
   if (!cane) {
     return notFound();
   }
