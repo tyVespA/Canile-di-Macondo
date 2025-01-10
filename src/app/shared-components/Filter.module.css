@@ -17,6 +17,8 @@
 .filters legend {
   color: var(--accent-three);
   font-weight: 500;
+  display: flex;
+  gap: 5px;
 }
 .filters label {
   display: flex;

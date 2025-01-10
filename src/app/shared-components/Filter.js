@@ -1,4 +1,5 @@
 import styles from "./Filter.module.css";
+import { GenderIntersex, Cake, Ruler } from "@phosphor-icons/react/dist/ssr";
 
 export default function Filter({ filters, setFilters }) {
   const handleChange = (key, value) => {
@@ -8,7 +9,10 @@ export default function Filter({ filters, setFilters }) {
   return (
     <div className={styles.filters}>
       <fieldset>
-        <legend>Sesso</legend>
+        <legend>
+          Sesso
+          <GenderIntersex size={26} style={{ marginLeft: "-5px" }} />
+        </legend>
         <label>
           <input
             type="checkbox"
@@ -42,7 +46,9 @@ export default function Filter({ filters, setFilters }) {
       </fieldset>
 
       <fieldset>
-        <legend>Taglia</legend>
+        <legend>
+          Taglia <Ruler size={26} />
+        </legend>
         <label>
           <input
             type="checkbox"
@@ -91,7 +97,9 @@ export default function Filter({ filters, setFilters }) {
       </fieldset>
 
       <fieldset>
-        <legend>Età</legend>
+        <legend>
+          Età <Cake size={26} />
+        </legend>
         <label>
           <input
             type="checkbox"
