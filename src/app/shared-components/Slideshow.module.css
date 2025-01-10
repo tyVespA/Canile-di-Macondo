@@ -36,14 +36,14 @@
 
 .carouselImageContainer {
   /* max-width: 400px; */
-  /* max-height: 500px; */
+  max-height: 500px;
   overflow: hidden;
-  /* margin-right: 10px; */
   padding-right: 10px;
 }
 
 .carouselContainer img {
   width: 100%;
+  max-height: 500px;
   object-fit: cover;
   border-radius: 15px;
   outline: none;
@@ -57,7 +57,7 @@
 
 @media screen and (max-width: 600px) {
   .carouselContainer {
-    max-width: 100%; /* Use full width on very small screens */
+    max-width: 100%;
   }
 
   .carouselImageContainer {

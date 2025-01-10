@@ -77,12 +77,6 @@
   }
 }
 
-/* @media screen and (max-width: 860px) {
-  .writtenLogo {
-    display: none;
-  }
-} */
-
 @media screen and (max-width: 860px) {
   .ctaButtons {
     display: none;

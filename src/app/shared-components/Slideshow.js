@@ -59,15 +59,6 @@ export default function Slideshow({ images }) {
           </div>
         ))}
       </Slider>
-      {/* <div className={styles.carouselImageContainer}>
-          <img src="/images/foto-varie/Kara.jpg" alt="" />
-        </div>
-        <div className={styles.carouselImageContainer}>
-          <img src="/images/foto-varie/Kara.jpg" alt="" />
-        </div>
-        <div className={styles.carouselImageContainer}>
-          <img src="/images/tradizionale/hero_image.jpg" alt="" />
-        </div> */}
     </div>
   );
 }
