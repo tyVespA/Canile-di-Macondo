@@ -130,6 +130,12 @@ button {
   margin-inline: auto;
 }
 
+@media screen and (max-width: 600px) {
+  .max-width-container {
+    padding-inline: 25px;
+  }
+}
+
 .underlined {
   text-decoration: underline;
   transition: all 0.3s;
