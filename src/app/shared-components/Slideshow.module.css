@@ -35,15 +35,32 @@
 }
 
 .carouselImageContainer {
-  max-width: 400px;
-  max-height: 500px;
+  /* max-width: 400px; */
+  /* max-height: 500px; */
   overflow: hidden;
   /* margin-right: 10px; */
   padding-right: 10px;
 }
 
 .carouselContainer img {
+  width: 100%;
   object-fit: cover;
   border-radius: 15px;
   outline: none;
+}
+
+@media screen and (max-width: 950px) {
+  .carouselContainer {
+    max-width: 80%; /* Reduce the width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carouselContainer {
+    max-width: 100%; /* Use full width on very small screens */
+  }
+
+  .carouselImageContainer {
+    padding-right: 0;
+  }
 }

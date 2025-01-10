@@ -139,3 +139,7 @@ button {
 .underlined:hover {
   color: var(--accent-one);
 }
+
+.slick-dots li button:before {
+  color: white !important;
+}
