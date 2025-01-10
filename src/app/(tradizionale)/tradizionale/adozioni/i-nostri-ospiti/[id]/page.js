@@ -11,6 +11,8 @@ import HelpCard from "@shared-components/HelpCard";
 import PreviewCardsSection from "@shared-components/PreviewCardsSection";
 import FilterSimpler from "@/src/app/shared-components/FilterSimpler";
 
+import Slideshow from "@/src/app/shared-components/Slideshow";
+
 import {
   GenderMale,
   GenderFemale,
@@ -47,6 +49,9 @@ export default async function Page({ params }) {
 
   return (
     <div className={styles.pageContainer}>
+      <section style={{ marginTop: "200px", marginBottom: "300px" }}>
+        <Slideshow></Slideshow>
+      </section>
       <section className={`first-section`}>
         <p className={styles.navigation}>
           <Link href="/tradizionale/adozioni/i-nostri-ospiti">
