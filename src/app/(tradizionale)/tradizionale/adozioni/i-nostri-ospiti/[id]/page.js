@@ -7,6 +7,10 @@ import styles from "./page.module.css";
 import { calculateAge } from "@/utils/calculateAge";
 import Button from "@shared-components/Button";
 import Tag from "@shared-components/Tag";
+import HelpCard from "@shared-components/HelpCard";
+import PreviewCardsSection from "@shared-components/PreviewCardsSection";
+import FilterSimpler from "@/src/app/shared-components/FilterSimpler";
+
 import {
   GenderMale,
   GenderFemale,
@@ -64,20 +68,20 @@ export default async function Page({ params }) {
               </Tag>
               {cane.sesso.toLowerCase() === "maschio" ? (
                 <Tag
-                  borderColor="var(--surface) "
+                  borderColor="var(--surface)"
                   iconColor="svgColorBackground"
                 >
                   <GenderMale size={55} /> {cane.sesso}
                 </Tag>
               ) : (
                 <Tag
-                  borderColor="var(--surface) "
+                  borderColor="var(--surface)"
                   iconColor="svgColorBackground"
                 >
                   <GenderFemale size={55} /> {cane.sesso}
                 </Tag>
               )}
-              <Tag borderColor="var(--surface) " iconColor="svgColorBackground">
+              <Tag borderColor="var(--surface)" iconColor="svgColorBackground">
                 <Cake size={55} weight="fill" />
                 {age}
               </Tag>
@@ -144,6 +148,16 @@ export default async function Page({ params }) {
           </div>
         </div>
       </section>
+      <section className={styles.ospitiSimili}>
+        <h2>Altri ospiti con caratteristiche simili </h2>
+        <FilterSimpler
+          cane={cane}
+          versione="tradizionale"
+          backgroundColor="var(--accent-three)"
+          color="var(--text-light)"
+        />
+      </section>
+      {/* <HelpCard /> */}
     </div>
   );
 }

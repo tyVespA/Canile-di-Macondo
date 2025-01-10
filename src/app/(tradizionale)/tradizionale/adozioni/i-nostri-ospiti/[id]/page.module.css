@@ -1,5 +1,5 @@
 .pageContainer {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .navigation {
@@ -14,6 +14,22 @@
 .mainContent {
   display: flex;
   gap: 35px;
+  margin-bottom: 125px;
+
+  position: relative;
+}
+
+.mainContent::after {
+  position: absolute;
+  content: "";
+  width: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: var(--accent-three);
+  bottom: calc(-125px / 2);
+  z-index: 1;
+  /* opacity: 0.5; */
 }
 
 .imagesContainer {
@@ -91,11 +107,20 @@
   /* font-weight: 400; */
 }
 
+.ospitiSimili {
+  margin-bottom: 100px;
+}
+
+.ospitiSimili h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 @media screen and (max-width: 1085px) {
   .tagsAndBtn {
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   .secondaryTags {
     flex-direction: row;
