@@ -59,3 +59,15 @@
     line-height: 1.2;
   }
 }
+
+.svg {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.svg svg {
+  max-width: 200px;
+  max-height: 200px;
+}
