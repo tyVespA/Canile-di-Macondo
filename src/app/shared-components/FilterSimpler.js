@@ -12,7 +12,8 @@ export default function FilterSimpler({ cane, versione }) {
 
   const filteredData = db.filter((dog) => {
     if (!isAnyFilterActive) {
-      return false; // No filters selected, return an empty array
+      return false;
+      ù;
     }
 
     let matches = true;
@@ -26,10 +27,16 @@ export default function FilterSimpler({ cane, versione }) {
     }
 
     if (filterAge) {
-      matches = matches && dog.age === cane.age;
+      const caneAnnoDiNascita = Number(cane.anno_di_nascita);
+      const dogAnnoDiNascita = Number(dog.anno_di_nascita);
+      matches =
+        matches &&
+        (dogAnnoDiNascita === caneAnnoDiNascita ||
+          dogAnnoDiNascita === caneAnnoDiNascita + 1 ||
+          dogAnnoDiNascita === caneAnnoDiNascita - 1);
     }
 
-    return matches && dog.id !== cane.id; // Ensure the current dog is excluded
+    return matches && dog.id !== cane.id;
   });
 
   return (
@@ -41,7 +48,7 @@ export default function FilterSimpler({ cane, versione }) {
             checked={filterSize}
             onChange={() => setFilterSize((prev) => !prev)}
           />
-          Same Size
+          Simile taglia
         </label>
         <label>
           <input
@@ -49,7 +56,7 @@ export default function FilterSimpler({ cane, versione }) {
             checked={filterSex}
             onChange={() => setFilterSex((prev) => !prev)}
           />
-          Same Sex
+          Stesso sesso
         </label>
         <label>
           <input
@@ -57,7 +64,7 @@ export default function FilterSimpler({ cane, versione }) {
             checked={filterAge}
             onChange={() => setFilterAge((prev) => !prev)}
           />
-          Same Age
+          Coetanei
         </label>
       </div>
 
