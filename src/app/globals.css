@@ -148,3 +148,9 @@ button {
 .centered {
   text-align: center;
 }
+
+/* REACT SLICK  */
+
+.slick-slide div {
+  outline: none; /* Removes the blue outline */
+}

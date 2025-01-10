@@ -137,3 +137,38 @@ button {
 .underlined:hover {
   color: var(--accent-three);
 }
+
+/* SLICK */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: background color for better visibility */
+  border-radius: 50%; /* Optional: makes the arrows circular */
+  padding: 10px; /* Adjust the size of the arrows */
+}
+
+.slick-prev {
+  left: 10px; /* Position the "previous" arrow */
+}
+
+.slick-next {
+  right: 10px; /* Position the "next" arrow */
+}
+
+.custom-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: red; /* Adjust arrow styles */
+}
+
+.carousel-container {
+  position: relative;
+}

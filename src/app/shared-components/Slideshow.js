@@ -1,39 +1,66 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Slideshow.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 
+import Image from "next/image";
+import Kara from "../../../public/images/foto-varie/Kara.jpg";
+
+const CustomArrow = ({ direction, onClick }) => {
+  return (
+    <div
+      className={`${styles.slickArrow} ${
+        direction === "next" ? styles.slickNext : styles.slickPrev
+      }`}
+      onClick={onClick}
+    >
+      {direction === "next" ? "→" : "←"}
+    </div>
+  );
+};
+
 export default function Slideshow() {
-  var settings = {
+  const [isDragging, setIsDragging] = useState(false);
+
+  const handleMouseDown = () => setIsDragging(true);
+  const handleMouseUp = () => setIsDragging(false);
+  const handleMouseLeave = () => setIsDragging(false);
+
+  const settings = {
     dots: true,
+    arrows: true,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <CustomArrow direction="next" />,
+    prevArrow: <CustomArrow direction="prev" />,
   };
+
   return (
-    <div className="slider-container">
+    <div
+      className={`${styles.carouselContainer} ${
+        isDragging ? styles.grabbing : styles.grab
+      }`}
+      onMouseDown={handleMouseDown}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseLeave}
+    >
       <Slider {...settings}>
-        <div>
-          <h3>1</h3>
+        <div className={styles.carouselImageContainer}>
+          <img src="/images/foto-varie/Kara.jpg" alt="" />
         </div>
-        <div>
-          <h3>2</h3>
+        <div className={styles.carouselImageContainer}>
+          <img src="/images/foto-varie/Kara.jpg" alt="" />
         </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
+        <div className={styles.carouselImageContainer}>
+          <img src="/images/tradizionale/hero_image.jpg" alt="" />
         </div>
       </Slider>
     </div>
