@@ -18,7 +18,13 @@ export default function PreviewCard({ item, backgroundColor, color }) {
     <div className={styles.previewCardContainer}>
       <div>
         <div className={styles.imageContainer}>
-          <Image src={item.img1} width={3142 / 10} height={3927 / 10} alt="" />
+          <Image
+            src={item.images[0]}
+            width={3142 / 10}
+            height={3927 / 10}
+            alt=""
+          />
+          {/* <img src={item.images[0]} alt="" /> */}
         </div>
         <div
           className={styles.textContainer}

@@ -10,7 +10,6 @@ import Tag from "@shared-components/Tag";
 import HelpCard from "@shared-components/HelpCard";
 import PreviewCardsSection from "@shared-components/PreviewCardsSection";
 import FilterSimpler from "@/src/app/shared-components/FilterSimpler";
-
 import Slideshow from "@/src/app/shared-components/Slideshow";
 
 import {
@@ -49,9 +48,6 @@ export default async function Page({ params }) {
 
   return (
     <div className={styles.pageContainer}>
-      <section style={{ marginTop: "200px", marginBottom: "300px" }}>
-        <Slideshow images={cane.images} />
-      </section>
       <section className={`first-section`}>
         <p className={styles.navigation}>
           <Link href="/tradizionale/adozioni/i-nostri-ospiti">
@@ -59,11 +55,8 @@ export default async function Page({ params }) {
           </Link>{" "}
           &gt; {cane.nome}
         </p>
-        {/* <Image src={cane.img1} alt={cane.nome} /> */}
         <div className={styles.mainContent}>
-          <div className={styles.imagesContainer}>
-            <img src={cane.img1} alt={cane.nome} />
-          </div>
+          <Slideshow images={cane.images} />
           <div className={styles.textContainer}>
             <h1>{cane.nome}</h1>
 
