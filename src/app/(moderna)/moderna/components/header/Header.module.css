@@ -71,9 +71,24 @@
 
 /* MOBILE */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1160px) {
   .ctaButtons {
     display: none;
+  }
+}
+
+/* @media screen and (max-width: 860px) {
+  .writtenLogo {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 860px) {
+  .ctaButtons {
+    display: none;
+  }
+  .writtenLogo {
+    display: block;
   }
   .header nav button {
     display: flex;

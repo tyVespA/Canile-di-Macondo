@@ -112,7 +112,7 @@
 }
 
 /* MOBILE */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 860px) {
   .navbar {
     position: fixed;
     top: 0;
