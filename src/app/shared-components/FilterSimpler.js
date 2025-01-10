@@ -4,7 +4,12 @@ import { db } from "@/lib/db";
 import styles from "./Filter.module.css";
 import PreviewCardsSection from "./PreviewCardsSection";
 
-export default function FilterSimpler({ cane, versione }) {
+export default function FilterSimpler({
+  cane,
+  versione,
+  backgroundColor = "var(--accent-one)",
+  color = "var(--text-dark)",
+}) {
   const [filterSize, setFilterSize] = useState(true);
   const [filterSex, setFilterSex] = useState(false);
   const [filterAge, setFilterAge] = useState(false);
@@ -91,8 +96,8 @@ export default function FilterSimpler({ cane, versione }) {
       ) : filteredData.length > 0 ? (
         <PreviewCardsSection
           data={filteredData}
-          backgroundColor="var(--accent-one)"
-          color="var(--text-dark)"
+          backgroundColor={backgroundColor}
+          color={color}
           versione={versione}
         />
       ) : (
