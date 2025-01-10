@@ -147,7 +147,7 @@ export default async function Page({ params }) {
         </div>
       </section>
       <section className={styles.ospitiSimili}>
-        <h2>Altri ospiti con simili caratteristiche</h2>
+        <h2>Altri ospiti con caratteristiche simili </h2>
         <FilterSimpler cane={cane} versione="moderna" />
       </section>
       {/* <HelpCard /> */}
