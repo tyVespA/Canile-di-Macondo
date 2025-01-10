@@ -1,6 +1,4 @@
 // export const runtime = "edge";
-"use client";
-import { useState } from "react";
 import { db } from "@lib/db";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -11,6 +9,7 @@ import Button from "@shared-components/Button";
 import Tag from "@shared-components/Tag";
 import HelpCard from "@shared-components/HelpCard";
 import PreviewCardsSection from "@shared-components/PreviewCardsSection";
+import FilterSimpler from "@/src/app/shared-components/FilterSimpler";
 
 import {
   GenderMale,
@@ -42,11 +41,11 @@ export default async function Page({ params }) {
   );
   const rowOrColumn = cane.descrizione.length > 350 ? "row" : "column";
 
-  // const filteredData = db.filter(
-  //   (dog) =>
-  //     dog.taglia === cane.taglia ||
-  //     (dog.sesso === cane.sesso && dog.id != cane.id)
-  // );
+  const filteredData = db.filter(
+    (dog) =>
+      dog.taglia === cane.taglia ||
+      (dog.sesso === cane.sesso && dog.id != cane.id)
+  );
 
   if (!cane) {
     return notFound();
@@ -149,12 +148,7 @@ export default async function Page({ params }) {
       </section>
       <section className={styles.ospitiSimili}>
         <h2>Altri ospiti con simili caratteristiche</h2>
-        <PreviewCardsSection
-          data={filteredData}
-          backgroundColor="var(--accent-one)"
-          color="var(--text-dark)"
-          versione="moderna"
-        />
+        <FilterSimpler cane={cane} versione="moderna" />
       </section>
       {/* <HelpCard /> */}
     </div>
