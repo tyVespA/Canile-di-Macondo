@@ -22,7 +22,7 @@ const CustomArrow = ({ direction, onClick }) => {
   );
 };
 
-export default function Slideshow() {
+export default function Slideshow({ images }) {
   const [isDragging, setIsDragging] = useState(false);
 
   const handleMouseDown = () => setIsDragging(true);
@@ -53,7 +53,13 @@ export default function Slideshow() {
       onMouseLeave={handleMouseLeave}
     >
       <Slider {...settings}>
-        <div className={styles.carouselImageContainer}>
+        {images.map((image, index) => (
+          <div className={styles.carouselImageContainer} key={index}>
+            <img src={image} alt="" />
+          </div>
+        ))}
+      </Slider>
+      {/* <div className={styles.carouselImageContainer}>
           <img src="/images/foto-varie/Kara.jpg" alt="" />
         </div>
         <div className={styles.carouselImageContainer}>
@@ -61,8 +67,7 @@ export default function Slideshow() {
         </div>
         <div className={styles.carouselImageContainer}>
           <img src="/images/tradizionale/hero_image.jpg" alt="" />
-        </div>
-      </Slider>
+        </div> */}
     </div>
   );
 }

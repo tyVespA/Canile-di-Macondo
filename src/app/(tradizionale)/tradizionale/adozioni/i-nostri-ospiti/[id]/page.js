@@ -50,7 +50,7 @@ export default async function Page({ params }) {
   return (
     <div className={styles.pageContainer}>
       <section style={{ marginTop: "200px", marginBottom: "300px" }}>
-        <Slideshow></Slideshow>
+        <Slideshow images={cane.images} />
       </section>
       <section className={`first-section`}>
         <p className={styles.navigation}>
