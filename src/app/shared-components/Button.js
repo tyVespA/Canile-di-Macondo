@@ -6,9 +6,11 @@ export default function Button({
   fontSize = 16,
   theme,
   children,
+  type = "",
 }) {
   return (
     <button
+      type={type}
       style={{
         backgroundColor: backgroundColor,
         color: color,

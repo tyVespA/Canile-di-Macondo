@@ -1,11 +1,15 @@
-// "use client";
+"use client";
 import styles from "./ContattaciForm.module.css";
 import Button from "./Button";
+import { useForm, ValidationError } from "@formspree/react";
+import Image from "next/image";
+import cane3_svg from "@images/cane3_svg.svg";
 
 export default function ContattaciForm() {
+  const [state, handleSubmit] = useForm("mvggdwaj");
   return (
     <div className={styles.formContainer}>
-      <form action="">
+      <form onSubmit={handleSubmit}>
         <input type="text" id="name" name="name" placeholder="Nome" required />
 
         <input
@@ -30,43 +34,23 @@ export default function ContattaciForm() {
           placeholder="Messaggio"
           rows="5"
           required
-          // allows to grow if content too much
-          // onInput={(e) => {
-          //   e.target.style.height = "auto"; // Reset height to recalculate
-          //   e.target.style.height = `${e.target.scrollHeight}px`; //
-          // }}
-          // style={{ overflowY: "hidden" }}
         ></textarea>
-        <Button theme="light" paddingInline="40px">
-          Invia
-        </Button>
+        {!state.succeeded ? (
+          <Button type="submit" theme="light" paddingInline="60px">
+            {state.submitting ? "Invio in corso..." : "Invia"}
+          </Button>
+        ) : (
+          <div className={styles.successo}>
+            <Image src={cane3_svg} alt="" />
+            <p>
+              Il tuo messaggio è stato inviato e risponderemo al più presto.{" "}
+              <br />
+              Non vediamo l’ora di aiutarti a scoprire di più sul Canile di
+              Macondo e i nostri amici a quattro zampe!
+            </p>
+          </div>
+        )}
       </form>
-      {/* <div className={styles.contactContainer}>
-        <h2>Contact Us</h2>
-        <form className={styles.contactForm}>
-          <label htmlFor="name">Name</label>
-
-          <label htmlFor="subject">Subject</label>
-          
-
-          <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Your message"
-            rows="5"
-            required
-            // allows to grow if content too much
-            onInput={(e) => {
-              e.target.style.height = "auto"; // Reset height to recalculate
-              e.target.style.height = `${e.target.scrollHeight}px`; // Set height based on scrollHeight
-            }}
-            // style={{ overflowY: "hidden" }}
-          ></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
-      </div> */}
     </div>
   );
 }
