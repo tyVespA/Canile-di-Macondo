@@ -111,6 +111,10 @@ button {
   cursor: pointer;
 }
 
+strong {
+  color: var(--accent-three);
+}
+
 /* HELPER CLASSES */
 .hidden {
   display: none;
