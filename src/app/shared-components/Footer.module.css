@@ -5,6 +5,11 @@
   margin-inline: auto;
 }
 
+.socialsContainer {
+  display: flex;
+  gap: 15px;
+}
+
 .copyright {
   font-family: var(--font-comfortaa);
   font-size: 14px;
