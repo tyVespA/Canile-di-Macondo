@@ -51,16 +51,19 @@
 
 @media screen and (max-width: 950px) {
   .carouselContainer {
-    width: 80%; /* Reduce the width for smaller screens */
+    max-width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .carouselContainer {
-    width: 100%;
+    max-width: 100%;
   }
 
   .carouselImageContainer {
     padding-right: 0;
+  }
+  .carouselContainer img {
+    max-height: 400px;
   }
 }
