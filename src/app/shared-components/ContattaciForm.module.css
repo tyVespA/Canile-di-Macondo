@@ -1,0 +1,94 @@
+.formContainer {
+  padding-block: 25px;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formContainer input,
+.formContainer textarea {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid var(--accent-three);
+  color: var(--accent-three);
+}
+
+.formContainer input:focus,
+.formContainer textarea:focus {
+  outline: 1px solid var(--accent-three);
+}
+
+.formContainer input::placeholder,
+.formContainer textarea::placeholder {
+  opacity: 0.75;
+  color: var(--accent-three);
+}
+
+.formContainer textarea {
+  resize: none;
+}
+
+.formContainer button {
+  margin-inline: auto;
+}
+
+/* .contactContainer {
+  margin-block: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--accent-one);
+  color: var(--text-dark);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formContainer input,
+.formContainer textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  outline: 1px solid var(--text-dark);
+  border: transparent;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.alternateTextarea {
+  width: 300px;
+  min-height: 40px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.formContainer button {
+  background-color: var(--surface);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formContainer button:hover {
+  background-color: #0056b3;
+} */
