@@ -19,11 +19,15 @@ export default function page() {
         Benvenuti al Canile di Macondo, un luogo dove la magia delle seconde
         possibilità prende vita. Ispirato alla città incantata di Cent’anni di
         solitudine, il nostro rifugio è uno spazio speciale, fatto di amore,
-        dedizione e speranza per i nostri amici a quattro zampe. <br /> <br />{" "}
+        dedizione e speranza per i nostri amici a quattro zampe.
+      </p>
+      <p>
         Da anni ci impegniamo a offrire ai cani abbandonati o in difficoltà una
         nuova opportunità di vita. Crediamo che ogni animale meriti una famiglia
         che lo ami e lo protegga, e lavoriamo ogni giorno per realizzare questo
-        sogno. <br /> <br />
+        sogno.
+      </p>
+      <p>
         Come la città immaginaria di Gabriel García Márquez, il nostro canile è
         un luogo speciale, dove ogni giorno accadono piccoli miracoli. Qui, la
         solitudine si trasforma in compagnia, e la tristezza lascia spazio alla
