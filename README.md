@@ -48,6 +48,7 @@ relative pathing
 local storage 4 favs (?)
 
 TODO:
+bug on previewsection?
 random height on decoration svg (?)
 underline effect while hover on nav (?)
 compress images
