@@ -139,7 +139,16 @@ export default async function Page({ params }) {
                   </div>
                 )}
               </div>
-              <Link href="/tradizionale/contatti#form">
+              {/* <Link href="/tradizionale/contatti#form"> */}
+              <Link
+                href={{
+                  pathname: "/tradizionale/contatti",
+                  hash: "form",
+                  query: {
+                    dogName: cane.nome,
+                  },
+                }}
+              >
                 <Button theme="white">Richiedi informazioni</Button>
               </Link>
             </div>
