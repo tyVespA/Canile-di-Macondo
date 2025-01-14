@@ -41,7 +41,7 @@
   gap: 25px;
   flex-wrap: wrap;
   /* transition: max-height 0.3s, ma; */
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
   transform-origin: top;
 
   /* position: absolute; */
