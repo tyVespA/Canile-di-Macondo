@@ -99,6 +99,12 @@ h1 {
   font-size: 40px;
 }
 
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
 h1,
 h2,
 h3,

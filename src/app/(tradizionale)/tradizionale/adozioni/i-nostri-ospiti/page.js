@@ -57,7 +57,7 @@ export default function page() {
         content="Scopri i nostri ospiti, i cani in attesa di adozione presso il Canile di Macondo."
       />
       <section className="first-section">
-        <h1>i nostri ospiti</h1>
+        <h1>I nostri ospiti</h1>
 
         <ReadRulesCard versione="tradizionale" />
 

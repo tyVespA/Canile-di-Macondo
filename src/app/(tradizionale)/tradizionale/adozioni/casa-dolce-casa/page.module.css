@@ -2,6 +2,7 @@
 .casaDolceCasaPage {
   height: calc(100vh - (var(--header-height) + var(--footer-height)));
   display: flex;
+  justify-content: center;
 }
 
 .casaDolceCasaPage section {
@@ -20,6 +21,6 @@
 }
 
 .casaDolceCasaPage img {
-  max-width: 200px;
+  max-width: 250px;
   height: auto;
 }
