@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-const PaypalButton = () => {
+const PaypalButton = ({ width }) => {
   // Use refs to track initialization status
   const scriptLoaded = useRef(false);
   const buttonRendered = useRef(false);
@@ -67,7 +67,11 @@ const PaypalButton = () => {
   };
 
   return (
-    <div id="donate-button-container">
+    <div
+      id="donate-button-container"
+      // style={{ width: `${width}px` }}
+      style={{ width: width }}
+    >
       <div id="donate-button"></div>
     </div>
   );
