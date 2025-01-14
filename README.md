@@ -48,6 +48,8 @@ relative pathing
 local storage 4 favs (?)
 
 TODO:
+
+nuovo account paypal x buttons e campagna
 bug on previewsection?
 random height on decoration svg (?)
 underline effect while hover on nav (?)
@@ -62,6 +64,7 @@ refractor navbar
 scroll animations - AOS (Animate On Scroll) (o altri?)
 
 DONE:
+in i nostri ospiti: "Aggiungi filtri" > dropdown per i filtri
 put icon as favicon - make it check color scheme
 chiudere sublinks su desktop dopo click
 page titles? ex. Canile | Home
