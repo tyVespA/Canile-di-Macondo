@@ -1,12 +1,24 @@
 "use client";
 import styles from "./ContattaciForm.module.css";
 import Button from "./Button";
+import { useSearchParams } from "next/navigation";
 import { useForm, ValidationError } from "@formspree/react";
 import Image from "next/image";
 import cane3_svg from "@images/cane3_svg.svg";
+import { useEffect, useState } from "react";
 
 export default function ContattaciForm() {
   const [state, handleSubmit] = useForm("mvggdwaj");
+  const searchParams = useSearchParams();
+  const [subject, setSubject] = useState("");
+
+  useEffect(() => {
+    const dogName = searchParams.get("dogName");
+    if (dogName) {
+      setSubject(`Oggetto: Informazioni riguardo ${dogName}`);
+    }
+  }, [searchParams]);
+
   return (
     <div className={styles.formContainer}>
       <form onSubmit={handleSubmit}>
@@ -25,6 +37,8 @@ export default function ContattaciForm() {
           id="subject"
           name="subject"
           placeholder="Oggetto"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
           required
         />
 
