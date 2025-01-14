@@ -4,7 +4,7 @@
 
 .aggiungiFiltri {
   padding-top: 10px;
-  margin-bottom: 20px;
+  /* margin-bottom: 30px; */
 }
 
 .aggiungiFiltri p {
@@ -39,7 +39,6 @@
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin-bottom: 35px;
   flex-wrap: wrap;
   /* transition: max-height 0.3s, ma; */
   transition: all 0.3s;
@@ -52,6 +51,9 @@
   opacity: 1;
   will-change: contents;
   max-height: 260px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+
   /* position: static; */
   /* margin-bottom: 115px; */
 }
@@ -59,7 +61,8 @@
 .filtersHidden {
   opacity: 0;
   max-height: 0;
-  /* margin-bottom: 0; */
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .filters fieldset {
@@ -117,12 +120,6 @@
   }
   .filters label {
     line-height: 1.2;
-  }
-}
-
-@media screen and (max-width: 1053px) {
-  .filtersShown {
-    margin-bottom: ;
   }
 }
 
