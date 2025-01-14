@@ -2,6 +2,12 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import inCostruzione from "@images/cane-drawing-page.png";
 
+export const metadata = {
+  title: "Casa dolce casa | Canile di Macondo",
+  description:
+    "Ricordiamo con affetto i nostri amici che hanno trovato una famiglia pronta a dar loro tutto l’amore che meritano.",
+};
+
 export default function page() {
   return (
     <div className={styles.casaDolceCasaPage}>
