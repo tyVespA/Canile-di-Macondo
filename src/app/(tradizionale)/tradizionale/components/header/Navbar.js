@@ -182,6 +182,21 @@ export default function Navbar() {
               <li>
                 <Link
                   onClick={() =>
+                    handleLinkClick("/tradizionale/adozioni/casa-dolce-casa")
+                  }
+                  href="/tradizionale/adozioni/casa-dolce-casa"
+                  className={
+                    pathname === "/tradizionale/adozioni/casa-dolce-casa"
+                      ? `${styles.active}`
+                      : ""
+                  }
+                >
+                  Casa dolce casa
+                </Link>
+              </li>
+              {/* <li>
+                <Link
+                  onClick={() =>
                     handleLinkClick(
                       "/tradizionale/adozioni/adozioni-a-distanza"
                     )
@@ -195,7 +210,7 @@ export default function Navbar() {
                 >
                   Adozioni a distanza
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </li>
           {/* <li className={styles.navItem}>
