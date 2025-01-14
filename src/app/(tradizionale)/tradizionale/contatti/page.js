@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Suspense } from "react";
 import FullWidthBg from "@shared-components/FullWidthBg";
 import styles from "./page.module.css";
 import MapWrapper from "@shared-components/Map/MapWrapper";
@@ -44,7 +45,9 @@ export default function page() {
 
         <div className={styles.formSection}>
           <div className={styles.formSectionForm}>
-            <ContattaciForm />
+            <Suspense>
+              <ContattaciForm />
+            </Suspense>
           </div>
           <div className={styles.formSectionImage}>
             <Image src={shadowBig} alt="" />
