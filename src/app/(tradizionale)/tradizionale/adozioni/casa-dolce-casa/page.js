@@ -1,6 +1,8 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import inCostruzione from "@images/cane-drawing-page.png";
+import TitleBanner from "@shared-components/TitleBanner";
+import testImage from "@images/tradizionale/hero_image.jpg";
 
 export const metadata = {
   title: "Casa dolce casa | Canile di Macondo",
@@ -12,6 +14,7 @@ export default function page() {
   return (
     <div className={styles.casaDolceCasaPage}>
       <section className="first-section">
+        {/* <TitleBanner imgSrc={testImage}>Un rifugio temporaneo, una casa per sempre</TitleBanner> */}
         <div className={styles.title}>
           <h1>Un rifugio temporaneo, una casa per sempre</h1>
           <p>
