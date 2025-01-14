@@ -18,7 +18,6 @@ export default function FilterSimpler({
   const filteredData = db.filter((dog) => {
     if (!isAnyFilterActive) {
       return false;
-      ù;
     }
 
     let matches = true;

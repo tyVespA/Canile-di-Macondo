@@ -16,41 +16,39 @@ export default function PreviewCard({ item, backgroundColor, color }) {
 
   return (
     <div className={styles.previewCardContainer}>
-      <div>
-        <div className={styles.imageContainer}>
-          <Image
-            src={item.images[0]}
-            width={3142 / 10}
-            height={3927 / 10}
-            alt=""
-          />
-          {/* <img src={item.images[0]} alt="" /> */}
+      <div className={styles.imageContainer}>
+        <Image
+          src={item.images[0]}
+          width={3142 / 10}
+          height={3927 / 10}
+          alt=""
+        />
+        {/* <img src={item.images[0]} alt="" /> */}
+      </div>
+      <div
+        className={styles.textContainer}
+        style={{ backgroundColor: backgroundColor, color: color }}
+      >
+        <p className={styles.nome}>{item.nome}</p>
+        <div className={styles.stats1}>
+          <p className={styles.taglia}>
+            <Ruler size={18} /> Taglia {item.taglia}
+          </p>
+          <p className={styles.sesso}>
+            {item.sesso.toLowerCase() === "maschio" ? (
+              <GenderMale size={18} />
+            ) : (
+              <GenderFemale size={18} />
+            )}
+            {item.sesso}
+          </p>
         </div>
-        <div
-          className={styles.textContainer}
-          style={{ backgroundColor: backgroundColor, color: color }}
-        >
-          <p className={styles.nome}>{item.nome}</p>
-          <div className={styles.stats1}>
-            <p className={styles.taglia}>
-              <Ruler size={18} /> Taglia {item.taglia}
-            </p>
-            <p className={styles.sesso}>
-              {item.sesso.toLowerCase() === "maschio" ? (
-                <GenderMale size={18} />
-              ) : (
-                <GenderFemale size={18} />
-              )}
-              {item.sesso}
-            </p>
-          </div>
-          <div className={styles.stats2}>
-            <p className={styles.età}>
-              {" "}
-              <Cake size={18} />
-              {età}
-            </p>
-          </div>
+        <div className={styles.stats2}>
+          <p className={styles.età}>
+            {" "}
+            <Cake size={18} />
+            {età}
+          </p>
         </div>
       </div>
     </div>

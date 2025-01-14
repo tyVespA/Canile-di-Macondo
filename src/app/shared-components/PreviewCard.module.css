@@ -10,7 +10,7 @@
 }
 
 .imageContainer {
-  max-width: 325px;
+  width: 300px;
   max-height: 300px;
   /* overflow: hidden; */
   border-radius: 15px;
@@ -23,7 +23,7 @@
 }
 
 .textContainer {
-  padding: 10px 30px 15px 30px;
+  padding: 10px 20px 15px 20px;
   /* background-color: var(--surface); */
   position: relative;
 }

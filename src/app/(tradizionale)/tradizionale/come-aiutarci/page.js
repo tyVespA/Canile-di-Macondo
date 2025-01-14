@@ -21,7 +21,7 @@ export default function page() {
         ></iframe>
       </div>
       <Link href="https://www.paypal.com/donate/?hosted_button_id=5MWVZ2KT58Y9E">
-        <button>test</button>
+        {/* <button>test</button> */}
       </Link>
       <br />
       <PaypalButton width="200px" />
