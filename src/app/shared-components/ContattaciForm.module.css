@@ -36,6 +36,7 @@
 }
 
 .successo {
+  max-width: 45ch;
   text-align: center;
   margin-inline: auto;
   /* display: flex; */
@@ -45,5 +46,6 @@
   margin-inline: auto;
   max-height: 100px;
   max-width: 100px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }

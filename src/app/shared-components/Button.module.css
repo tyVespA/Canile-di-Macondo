@@ -48,6 +48,17 @@
   color: var(--text-light);
 }
 
+.disabled {
+  cursor: not-allowed;
+  /* cursor: pointer; */
+  filter: grayscale(0.2);
+  box-shadow: none;
+}
+
+.disabled:hover {
+  transform: translate(0, 0);
+}
+
 /* .accent-two:hover,
 .light:hover,
 .dark:hover {

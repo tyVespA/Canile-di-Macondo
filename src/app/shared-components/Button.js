@@ -7,6 +7,7 @@ export default function Button({
   theme,
   children,
   type = "",
+  disabled = "no",
 }) {
   return (
     <button
@@ -17,7 +18,10 @@ export default function Button({
         paddingInline: paddingInline,
         fontSize: fontSize,
       }}
-      className={`${styles.button} ${styles[theme]}`}
+      className={`${styles.button} ${styles[theme]} ${
+        disabled === "yes" ? styles.disabled : ""
+      }`}
+      disabled={disabled === "yes"}
     >
       {children}
     </button>

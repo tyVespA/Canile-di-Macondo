@@ -54,14 +54,24 @@ export default function ContattaciForm() {
             {state.submitting ? "Invio in corso..." : "Invia"}
           </Button>
         ) : (
-          <div className={styles.successo}>
-            <Image src={cane3_svg} alt="" />
-            <p>
-              Il tuo messaggio è stato inviato e risponderemo al più presto.{" "}
-              <br />
-              Non vediamo l’ora di aiutarti a scoprire di più sul Canile di
-              Macondo e i nostri amici a quattro zampe!
-            </p>
+          <div>
+            <div className={styles.successo}>
+              <Button
+                // type="submit"
+                theme="light"
+                paddingInline="60px"
+                disabled="yes"
+              >
+                Inviato!
+              </Button>
+              <Image src={cane3_svg} alt="" />
+              <p>
+                Il tuo messaggio è stato inviato e risponderemo al più presto.{" "}
+                <br />
+                Non vediamo l’ora di aiutarti a scoprire di più sul Canile di
+                Macondo e i nostri amici a quattro zampe!
+              </p>
+            </div>
           </div>
         )}
       </form>
