@@ -49,8 +49,10 @@ relative pathing
 local storage 4 favs (?)
 
 TODO:
-
+filter dropdown animation becomes laggy if spammed
+carosello still bugged
 nuovo account paypal x buttons e campagna
+hide text selection on filters?
 bug on previewsection?
 random height on decoration svg (?)
 underline effect while hover on nav (?)

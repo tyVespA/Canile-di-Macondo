@@ -50,6 +50,9 @@
 }
 
 @media screen and (max-width: 950px) {
+  .carouselContainer img {
+    margin-inline: auto;
+  }
   .carouselContainer {
     width: 80%;
     max-width: 80%;
