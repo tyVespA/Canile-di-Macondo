@@ -51,13 +51,13 @@
 
 @media screen and (max-width: 950px) {
   .carouselContainer {
-    max-width: 80%;
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .carouselContainer {
-    max-width: 100%;
+    width: 100%;
   }
 
   .carouselImageContainer {
