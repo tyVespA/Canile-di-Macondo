@@ -38,7 +38,7 @@
   overflow: hidden;
 }
 
-.pageContainer img {
+.pageContainer .mainContent img {
   height: 500px;
   width: auto;
 }
