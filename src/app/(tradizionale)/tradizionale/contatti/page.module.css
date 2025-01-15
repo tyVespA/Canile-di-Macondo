@@ -40,7 +40,7 @@
   height: auto;
 }
 
-@media screen and (max-width: 850) {
+@media screen and (max-width: 850px) {
   .formSection {
     flex-direction: column;
     gap: 0;
@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 400) {
+@media screen and (max-width: 400px) {
   .formSectionImage img {
     height: 300px;
     width: auto;
