@@ -49,11 +49,12 @@ relative pathing
 local storage 4 favs (?)
 
 TODO:
+bug on previewsection? on altri ospiti simili
+simpleFilter needs own module.css (maybe?)
 filter dropdown animation becomes laggy if spammed
-carosello still bugged
+filter dropdown animation margin lag on chrome mobile
 nuovo account paypal x buttons e campagna
 hide text selection on filters?
-bug on previewsection?
 random height on decoration svg (?)
 underline effect while hover on nav (?)
 compress images
@@ -67,6 +68,7 @@ refractor navbar
 scroll animations - AOS (Animate On Scroll) (o altri?)
 
 DONE:
+carosello still bugged (not perfect but seems good now)
 in i nostri ospiti: "Aggiungi filtri" > dropdown per i filtri
 put icon as favicon - make it check color scheme
 chiudere sublinks su desktop dopo click
