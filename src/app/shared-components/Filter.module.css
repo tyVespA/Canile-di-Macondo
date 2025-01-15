@@ -35,27 +35,20 @@
 }
 
 .filters {
-  /* display: none; */
   display: flex;
   justify-content: center;
   gap: 25px;
   flex-wrap: wrap;
-  /* transition: max-height 0.3s, ma; */
   transition: all 0.3s ease-in-out;
-  transform-origin: top;
-
-  /* position: absolute; */
+  /* transform-origin: bottom; */
 }
 
 .filtersShown {
-  opacity: 1;
   will-change: contents;
+  opacity: 1;
   max-height: 260px;
   margin-top: 15px;
   margin-bottom: 35px;
-
-  /* position: static; */
-  /* margin-bottom: 115px; */
 }
 
 .filtersHidden {

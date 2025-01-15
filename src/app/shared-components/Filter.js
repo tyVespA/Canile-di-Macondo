@@ -22,11 +22,6 @@ export default function Filter({ filters, setFilters }) {
       <div className={styles.aggiungiFiltri}>
         <p onClick={() => setShowFilters(!showFilters)}>
           Aggiungi filtri{" "}
-          {/* {showFilters ? (
-            <FunnelSimpleX size={25} color="#9c6644" />
-          ) : (
-            <FunnelSimple size={25} color="#9c6644" />
-          )} */}
           <FunnelSimple
             size={25}
             color="#9c6644"
