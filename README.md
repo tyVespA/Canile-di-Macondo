@@ -47,9 +47,10 @@ variable favicon
 openGraph metadata
 relative pathing
 local storage 4 favs (?)
+useParams to populate form
 
 TODO:
-bug on previewsection? on altri ospiti simili
+low quality image on mobile on readyToAdopt (maybe?)
 simpleFilter needs own module.css (maybe?)
 filter dropdown animation becomes laggy if spammed
 filter dropdown animation margin lag on chrome mobile
@@ -68,6 +69,7 @@ refractor navbar
 scroll animations - AOS (Animate On Scroll) (o altri?)
 
 DONE:
+bug on previewsection? on altri ospiti simili
 carosello still bugged (not perfect but seems good now)
 in i nostri ospiti: "Aggiungi filtri" > dropdown per i filtri
 put icon as favicon - make it check color scheme
