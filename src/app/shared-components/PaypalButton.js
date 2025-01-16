@@ -51,9 +51,9 @@ const PaypalButton = ({ width }) => {
       try {
         window.PayPal.Donation.Button({
           env: "production",
-          hosted_button_id: "5MWVZ2KT58Y9E",
+          hosted_button_id: "7942AKBA7QBP2",
           image: {
-            src: "https://pics.paypal.com/00/s/YTY1ZTMxOTEtZTU0ZC00MzM1LTk1YTgtNjMwZWNkYzA2YWJj/file.PNG",
+            src: "https://pics.paypal.com/00/s/ZjM0M2I2NTQtOTNkYS00YmE5LWJlZWMtYjgzZWZmY2ZjNDM1/file.PNG",
             alt: "Fai una donazione con il pulsante PayPal",
             title: "PayPal - The safer, easier way to pay online!",
           },
