@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import TitleBanner from "@shared-components/TitleBanner";
-import testImage from "@images/tradizionale/hero_image.jpg";
+import bannerImage from "@images/tradizionale/banner_images/cane_hero_4.jpg";
 import Link from "next/link";
 
 import qrCode from "@images/Codice_QR.png";
@@ -12,7 +12,7 @@ import PaypalButton from "@/src/app/shared-components/PaypalButton";
 export default function page() {
   return (
     <div>
-      <TitleBanner imgSrc={testImage}>Come aiutarci</TitleBanner>
+      <TitleBanner imgSrc={bannerImage}>Come aiutarci</TitleBanner>
       <div className={styles.campagnaContainer}>
         <PaypalCampagna />
       </div>

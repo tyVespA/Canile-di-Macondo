@@ -5,7 +5,7 @@ import comicBaloonLight from "@images/tradizionale/comicBaloonLight.png";
 import noshadowLight from "@images/tradizionale/noshadowLight.png";
 
 import TitleBanner from "@shared-components/TitleBanner";
-import testImage from "@images/tradizionale/hero_image.jpg";
+import bannerImage from "@images/tradizionale/banner_images/cane_hero_3.jpg";
 
 export const metadata = {
   title: "Come funziona | Canile di Macondo",
@@ -17,7 +17,7 @@ export default function page() {
     <div className={styles.comeFunzionaPage}>
       {/* <section className="first-section"> */}
       <section>
-        <TitleBanner imgSrc={testImage}>Il nostro percorso</TitleBanner>
+        <TitleBanner imgSrc={bannerImage}>Il nostro percorso</TitleBanner>
         {/* <h1>Il nostro percorso</h1> */}
         <p className="centered heading-p">
           Adottare un cane è come un matrimonio: vogliamo che sia un legame
