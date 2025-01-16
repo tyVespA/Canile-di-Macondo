@@ -52,26 +52,22 @@ useParams to populate form
 TODO:
 low quality image on mobile on readyToAdopt (maybe?)
 simpleFilter needs own module.css (maybe?)
-filter dropdown animation becomes laggy if spammed
 filter dropdown animation margin lag on chrome mobile
 nuovo account paypal x buttons e campagna
-hide text selection on filters?
-random height on decoration svg (?)
 underline effect while hover on nav (?)
-compress images
 lightbox
-contact form - put in its own component
-donate component
-dove siamo - integrate maps
 i nostri ospiti - style filter
-footer - links + social icons
 refractor navbar
 scroll animations - AOS (Animate On Scroll) (o altri?)
 
 DONE:
+hide text selection on filters?
 bug on previewsection? on altri ospiti simili
 carosello still bugged (not perfect but seems good now)
 in i nostri ospiti: "Aggiungi filtri" > dropdown per i filtri
 put icon as favicon - make it check color scheme
 chiudere sublinks su desktop dopo click
 page titles? ex. Canile | Home
+contact form - put in its own component
+donate component
+dove siamo - integrate maps

@@ -106,7 +106,7 @@
 }
 
 .filters input[type="checkbox"]:checked::after {
-  content: "✔"; /* Checkmark */
+  content: "✔";
   color: var(--background);
   font-size: 14px;
   position: absolute;
