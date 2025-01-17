@@ -1,0 +1,11 @@
+.spacer {
+  padding-block: 75px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer svg {
+  transform: rotate(30deg);
+}

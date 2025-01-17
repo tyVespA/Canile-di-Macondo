@@ -6,12 +6,14 @@ import DonateCard from "@shared-components/DonateCard";
 import PaypalCampagna from "@/src/app/shared-components/PaypalCampagna";
 import PaypalButton from "@/src/app/shared-components/PaypalButton";
 import Button from "@shared-components/Button";
+import Spacer from "@shared-components/Spacer";
 
 import {
   FacebookLogo,
   InstagramLogo,
   YoutubeLogo,
   TiktokLogo,
+  PawPrint,
 } from "@phosphor-icons/react/dist/ssr";
 
 import bannerImage from "@images/tradizionale/banner_images/cane_hero_4.jpg";
@@ -29,9 +31,8 @@ export default function page() {
       <p className="heading-p centered">
         Il Canile di Macondo vive grazie alla generosità di chi, come te, crede
         nell’importanza di dare una seconda possibilità. Scopri come puoi
-        aiutarci, che sia adottando, facendo volontariato, o con una donazione.
-      </p>
-      <p className="heading-p centered">
+        aiutarci, che sia adottando, facendo volontariato, o con una donazione.{" "}
+        <br />
         Le donazioni fatte al Canile di Macondo, essendo una Organizzazione Di
         Volontariato, sono fiscalmente deducibili o detraibili secondo i limiti
         stabiliti dalla normativa fiscale.
@@ -41,38 +42,36 @@ export default function page() {
         <p>
           Le donazioni ci permettono di garantire cibo, cure veterinarie e tutto
           il necessario per il benessere dei nostri ospiti. Ogni contributo,
-          grande o piccolo, fa la differenza
+          grande o piccolo, fa la differenza.
         </p>
         <div className={styles.paypalButtonContainer}>
           <PaypalButton width="200px" />
         </div>
         <p>
-          Se sei da pc e vuoi donare dal cellulare inquadra il QR con la
-          fotocamera attiva:
+          Se sei da pc e vuoi donare dal cellulare, inquadra il QR con la
+          fotocamera attiva
         </p>
         <div className={styles.qrCodeContainer}>
           <Image src={qrCode} alt="codice QR"></Image>
         </div>
       </section>
-      <div className={styles.spacer}>
-        <Image src={spacer} alt=""></Image>
-      </div>
+
+      <Spacer />
+
       <section className={styles.altriMetodi}>
         <h2>Altri metodi</h2>
         <p>
           Se preferisci un metodo di donazione diverso da PayPal, puoi scegliere
-          uno dei seguenti modi per aiutarci
+          uno dei seguenti modi per aiutarci:
         </p>
         <DonateCard />
       </section>
 
-      <div className={styles.spacer}>
-        <Image src={spacer} alt=""></Image>
-      </div>
+      <Spacer />
 
       <section className={styles.cinquePerMille}>
         <h2>5 x 1000</h2>
-        <p style={{ marginBottom: "20px" }}>
+        <p className={styles.cinquePerMillePrimoP}>
           Con il tuo 5x1000 puoi aiutarci a garantire cure, cibo e un rifugio
           sicuro ai nostri amici a quattro zampe. Basta indicare il nostro
           codice fiscale nella tua dichiarazione dei redditi. È semplice e non
@@ -96,9 +95,7 @@ export default function page() {
         </div>
       </section>
 
-      <div className={styles.spacer}>
-        <Image src={spacer} alt=""></Image>
-      </div>
+      <Spacer />
 
       {/* <div className={styles.campagnaContainer}>
         <PaypalCampagna />
@@ -139,7 +136,7 @@ export default function page() {
           <p>
             Puoi aiutarci semplicemente condividendo la nostra missione con
             amici e familiari. Più persone ci conoscono, più cani possono
-            trovare casa. Seguici sui social!
+            trovare casa. Seguici sui nostri social!
           </p>
           <div className={styles.socialsContainer}>
             <Link href="/tradizionale/404temp">
