@@ -176,6 +176,9 @@ strong {
   /* font-weight: 500; */
   /* color: var(--accent-three); */
   line-height: 1.4;
+  max-width: 80ch;
+  margin-inline: auto;
+  margin-bottom: 25px;
 }
 
 /* REACT SLICK  */
