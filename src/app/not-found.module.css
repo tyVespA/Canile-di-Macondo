@@ -4,6 +4,7 @@
   height: 100vh;
   width: 100vw;
   margin-left: calc(50% - 50vw);
+  padding-inline: 20px;
 
   display: flex;
   flex-direction: column;
@@ -14,4 +15,8 @@
 .notFoundPage h2 {
   margin-top: 50px;
   text-decoration: underline;
+}
+
+.notFoundPage img {
+  height: auto;
 }

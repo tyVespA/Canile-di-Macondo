@@ -21,6 +21,12 @@
 }
 
 .casaDolceCasaPage img {
-  max-width: 250px;
+  max-width: 350px;
   height: auto;
+}
+
+@media screen and (max-height: 816px) {
+  .casaDolceCasaPage img {
+    max-width: 250px;
+  }
 }
