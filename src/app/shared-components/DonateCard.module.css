@@ -6,9 +6,9 @@
   display: flex;
   flex-wrap: wrap;
 
-  background-image: url("/images/ospiti/Finn9.webp");
+  background-image: url("/images/tradizionale/parallaxImage.jpg");
   background-attachment: fixed;
-  background-position: top left;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 

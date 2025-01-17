@@ -25,35 +25,12 @@ export default function page() {
         Volontariato, sono fiscalmente deducibili o detraibili secondo i limiti
         stabiliti dalla normativa fiscale.
       </p>
-      <DonateCard></DonateCard>
       <h2>Dona online</h2>
       <div className={styles.buttonContainer}>
         <PaypalButton width="200px" />
       </div>
       <h2>Altre donazioni</h2>
-      <div>
-        <h3>Bonifico</h3>
-        <p>Iban</p>
-        <p>xxxx</p>
-        <p>intestato a</p>
-        <p>Canile di Macondo</p>
-      </div>
-      <div>
-        <h3>Versamento</h3>
-        <p>c/c postale</p>
-        <p>xxxx</p>
-        <p>intestato a</p>
-        <p>Canile di Macondo</p>
-      </div>
-      <div>
-        <h3>Contanti</h3>
-
-        <p>Puoi fare la tua donazione direttamente al canile</p>
-
-        <Link href="/tradizionale/contatti#orari">
-          <p style={{ textDecoration: "underline" }}>Orari e posizione →</p>
-        </Link>
-      </div>
+      <DonateCard />
       <h2>5 x 1000</h2>
       <p>
         Grazie alla legge Finanziaria è possibile destinare il 5 x 1000 della

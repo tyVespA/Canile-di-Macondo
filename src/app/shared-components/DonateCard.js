@@ -1,5 +1,6 @@
 import styles from "./DonateCard.module.css";
 import { Bank, PiggyBank, MoneyWavy } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 
 export default function DonateCard() {
   return (
@@ -22,10 +23,12 @@ export default function DonateCard() {
         <MoneyWavy size={40} weight="fill" />
         <h3>Contanti</h3>
         <p>
-          <br />
           Puoi fare la tua donazione direttamente in canile, ti sarà rilasciata
           la regolare ricevuta
         </p>
+        <Link href="/tradizionale/contatti#orari">
+          <p style={{ textDecoration: "underline" }}>Orari e posizione →</p>
+        </Link>
       </div>
     </div>
   );
