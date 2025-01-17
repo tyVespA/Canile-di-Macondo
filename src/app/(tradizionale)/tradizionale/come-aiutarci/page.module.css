@@ -1,17 +1,70 @@
-.campagnaContainer {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
+.comeAiutarciPage {
+  text-align: center;
 }
 
-.buttonContainer {
+.comeAiutarciPage h2 {
+  margin-bottom: 5px;
+}
+
+.comeAiutarciPage p {
+  max-width: 77ch;
+  margin-inline: auto;
+}
+
+.comeAiutarciPage section {
+  margin-bottom: 40px;
+}
+
+.donaOnline p {
+  margin-bottom: 20px;
+}
+
+.paypalButtonContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 50px;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .qrCodeContainer {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+}
+
+.altriMetodi p {
+  margin-bottom: 15px;
+}
+
+.donazioniMateriali p {
+  margin-bottom: 15px;
+}
+
+.donazioniMateriali button {
+  margin-inline: auto;
+}
+
+.passaparola p {
+  margin-bottom: 15px;
+}
+
+.socialsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socialsContainer svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.socialsContainer a:hover svg {
+  color: var(--accent-three);
+}
+
+.campagnaContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
