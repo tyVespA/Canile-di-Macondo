@@ -23,15 +23,15 @@ export default function page() {
       </TitleBanner>
 
       {/* <section className="first-section"> */}
-      <section>
-        <p className={`heading-p centered ${styles.headingP}`} id="form">
+      <section id="form">
+        <p className={`heading-p centered ${styles.headingP}`}>
           Il Canile di Macondo è aperto a tutti: che tu voglia adottare, fare
           volontariato o semplicemente conoscerci, saremo felici di accoglierti!
         </p>
         {/* <h1>Contatti</h1> */}
 
-        <h2>Contattaci</h2>
         <div>
+          <h2>Contattaci</h2>
           <p>Telefono: +39 121 333 789</p>
           <p>
             Email:{" "}
@@ -57,7 +57,7 @@ export default function page() {
         </div>
       </section>
 
-      <section className={styles.orariSection}>
+      <section className={styles.orariSection} id="orari">
         <h2>Orari di apertura</h2>
         <p>Lunedì 9 - 12</p>
         <p>Martedì 9 - 12 e 14 - 18.30</p>
