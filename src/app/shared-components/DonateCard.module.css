@@ -65,8 +65,8 @@
 }
 
 @media screen and (max-width: 865px) {
-  .otherDonationsSection .div1 {
-    /* border-right: 1px solid rgba(0, 0, 0, 0.5); */
+  .otherDonationsSection {
+    background-position: center center;
   }
 }
 
