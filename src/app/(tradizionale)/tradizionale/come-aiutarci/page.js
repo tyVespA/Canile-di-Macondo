@@ -15,7 +15,10 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 
 import bannerImage from "@images/tradizionale/banner_images/cane_hero_4.jpg";
+
+import spacer from "@images/tradizionale/spacer.svg";
 import qrCode from "@images/Codice_QR.png";
+import cinquePerMille from "@images/tradizionale/cinquePerMille.jpg";
 
 export default function page() {
   return (
@@ -51,6 +54,9 @@ export default function page() {
           <Image src={qrCode} alt="codice QR"></Image>
         </div>
       </section>
+      <div className={styles.spacer}>
+        <Image src={spacer} alt=""></Image>
+      </div>
       <section className={styles.altriMetodi}>
         <h2>Altri metodi</h2>
         <p>
@@ -59,78 +65,98 @@ export default function page() {
         </p>
         <DonateCard />
       </section>
+
+      <div className={styles.spacer}>
+        <Image src={spacer} alt=""></Image>
+      </div>
+
       <section className={styles.cinquePerMille}>
         <h2>5 x 1000</h2>
-        <p>
-          Grazie alla legge Finanziaria è possibile destinare il 5 x 1000 della
-          tua imposta sul reddito al volontariato. Lo scorso anno, grazie al 5 x
-          1000 destinato al canile, abbiamo potuto sostenere sempre di più tutte
-          quelle opere e progetti relativi al benessere dei nostri ospiti cani e
-          gatti.
+        <p style={{ marginBottom: "20px" }}>
+          Con il tuo 5x1000 puoi aiutarci a garantire cure, cibo e un rifugio
+          sicuro ai nostri amici a quattro zampe. Basta indicare il nostro
+          codice fiscale nella tua dichiarazione dei redditi. È semplice e non
+          ti costa nulla!
         </p>
-        <h3>Come destinare il 5 x 1000</h3>
-        <p>Destinare il 5 x 1000 alla PAL è facilissimo </p>
-        <p>
-          Sui modelli per la dichiarazione dei redditi è predisposta una sezione
-          nella quale il contribuente può inserire i dati dell’associazione di
-          volontariato che ha scelto di sostenere.
-        </p>
-        <p>Codice fiscale del Canile di Macondo:</p>
-        <p>XXXXXX</p>
-      </section>
-      <div className={styles.campagnaContainer}>
-        <PaypalCampagna />
-      </div>
-      <section className={styles.volontariato}>
-        <h2>Volontariato</h2>
-        <p>
-          Dedica un po' del tuo tempo per accudire i nostri amici pelosi,
-          portarli a passeggio, o aiutarci nelle attività quotidiane del
-          rifugio. Ogni gesto è prezioso!
-        </p>
-        <Link
-          href={{
-            pathname: "/tradizionale/contatti",
-            hash: "form",
-            query: {
-              subject: "volontariato",
-            },
-          }}
-        >
-          <p style={{ textDecoration: "underline" }}>Diventa volontario →</p>
-        </Link>
-      </section>
-      <section className={styles.donazioniMateriali}>
-        <h2>Donazioni materiali</h2>
-        <p>
-          Servono sempre coperte, guinzagli, cibo per cani e articoli per la
-          pulizia. Ogni donazione materiale è un aiuto concreto per migliorare
-          la vita nel canile.
-        </p>
-        <Button theme="white">Scopri cosa ci serve</Button>
-      </section>
-      <section className={styles.passaparola}>
-        <h2>Passaparola!</h2>
-        <p>
-          Puoi aiutarci semplicemente condividendo la nostra missione con amici
-          e familiari. Più persone ci conoscono, più cani possono trovare casa.
-          Seguici sui social!
-        </p>
-        <div className={styles.socialsContainer}>
-          <Link href="/">
-            <FacebookLogo size={32} />
-          </Link>
-          <Link href="/">
-            <InstagramLogo size={32} />
-          </Link>
-          <Link href="/">
-            <YoutubeLogo size={32} />
-          </Link>
-          <Link href="/">
-            <TiktokLogo size={32} />
-          </Link>
+        <div className={styles.comeDonareCinquePerMille}>
+          <div>
+            <Image src={cinquePerMille} alt="module 5x1000" />
+          </div>
+          <div className={styles.comeDonareCinquePerMilleText}>
+            <h3>Come destinare il 5 x 1000</h3>
+            <p>Destinare il 5 x 1000 alla PAL è facilissimo.</p>
+            <p>
+              Sui modelli per la dichiarazione dei redditi è predisposta una
+              sezione nella quale il contribuente può inserire i dati
+              dell’associazione di volontariato che ha scelto di sostenere.
+            </p>
+            <strong>Codice fiscale del Canile di Macondo:</strong>
+            <p>1012MACONDO</p>
+          </div>
         </div>
       </section>
+
+      <div className={styles.spacer}>
+        <Image src={spacer} alt=""></Image>
+      </div>
+
+      {/* <div className={styles.campagnaContainer}>
+        <PaypalCampagna />
+      </div> */}
+      <div className={styles.altriModiSection}>
+        <div className={styles.volontariato}>
+          <h2>Volontariato</h2>
+          <p>
+            Dedica un po' del tuo tempo per accudire i nostri amici pelosi,
+            portarli a passeggio, o aiutarci nelle attività quotidiane del
+            rifugio. Ogni gesto è prezioso!
+          </p>
+          <Link
+            href={{
+              pathname: "/tradizionale/contatti",
+              hash: "form",
+              query: {
+                subject: "volontariato",
+              },
+            }}
+          >
+            <Button theme="light">Diventa volontario</Button>
+          </Link>
+        </div>
+        <div className={styles.donazioniMateriali}>
+          <h2>Donazioni materiali</h2>
+          <p>
+            Servono sempre coperte, guinzagli, cibo per cani e articoli per la
+            pulizia. Ogni donazione materiale è un aiuto concreto per migliorare
+            la vita nel canile.
+          </p>
+          <Link href="/tradizionale/404temp">
+            <Button theme="white">Scopri cosa ci serve</Button>
+          </Link>
+        </div>
+        <div className={styles.passaparola}>
+          <h2>Passaparola!</h2>
+          <p>
+            Puoi aiutarci semplicemente condividendo la nostra missione con
+            amici e familiari. Più persone ci conoscono, più cani possono
+            trovare casa. Seguici sui social!
+          </p>
+          <div className={styles.socialsContainer}>
+            <Link href="/tradizionale/404temp">
+              <FacebookLogo size={32} />
+            </Link>
+            <Link href="/tradizionale/404temp">
+              <InstagramLogo size={32} />
+            </Link>
+            <Link href="/tradizionale/404temp">
+              <YoutubeLogo size={32} />
+            </Link>
+            <Link href="/tradizionale/404temp">
+              <TiktokLogo size={32} />
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

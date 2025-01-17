@@ -2,6 +2,26 @@
   text-align: center;
 }
 
+.comeAiutarciPage section {
+  position: relative;
+}
+
+.spacer {
+  padding-block: 50px;
+}
+
+.spacer img {
+  margin-inline: auto;
+  max-width: 75px;
+}
+
+.comeAiutarciPage section::after {
+  /* height: 100px; */
+  /* text-align: center; */
+  /* display: flex;
+  justify-content: center; */
+}
+
 .comeAiutarciPage h2 {
   margin-bottom: 5px;
 }
@@ -12,7 +32,7 @@
 }
 
 .comeAiutarciPage section {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .donaOnline p {
@@ -37,11 +57,61 @@
   margin-bottom: 15px;
 }
 
-.donazioniMateriali p {
+.comeDonareCinquePerMille {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.comeDonareCinquePerMille > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comeDonareCinquePerMille .comeDonareCinquePerMilleText {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.comeDonareCinquePerMilleText h3 {
+  text-align: start;
+}
+
+.comeDonareCinquePerMilleText p {
+  margin-left: 0;
+}
+
+.comeDonareCinquePerMille img {
+  max-width: 550px;
+  height: auto;
+}
+
+@media screen and (max-width: 1090px) {
+  .comeDonareCinquePerMille {
+    flex-direction: column;
+  }
+  .comeDonareCinquePerMille .comeDonareCinquePerMilleText {
+    text-align: center;
+  }
+  .comeDonareCinquePerMilleText h3,
+  .comeDonareCinquePerMilleText strong,
+  .comeDonareCinquePerMilleText p {
+    margin-inline: auto;
+  }
+}
+
+.donazioniMateriali p,
+.volontariato p {
   margin-bottom: 15px;
 }
 
-.donazioniMateriali button {
+.donazioniMateriali button,
+.volontariato button {
   margin-inline: auto;
 }
 
@@ -67,4 +137,27 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.altriModiSection {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  margin-inline: auto;
+}
+
+.altriModiSection > div {
+  border: 1px solid var(--accent-three);
+  border-radius: 15px;
+  padding: 20px 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+@media screen and (max-width: 1155px) {
+  .altriModiSection {
+    flex-direction: column;
+    max-width: 60ch;
+  }
 }
