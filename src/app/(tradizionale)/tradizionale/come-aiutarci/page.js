@@ -60,7 +60,7 @@ export default function page() {
 
       <section className={styles.altriMetodi}>
         <h2>Altri metodi</h2>
-        <p>
+        <p className={styles.altriMetodiFirstP}>
           Se preferisci un metodo di donazione diverso da PayPal, puoi scegliere
           uno dei seguenti modi per aiutarci:
         </p>
