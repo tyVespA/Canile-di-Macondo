@@ -17,7 +17,9 @@ export default function page() {
     <div className={styles.comeFunzionaPage}>
       {/* <section className="first-section"> */}
       <section>
-        <TitleBanner imgSrc={bannerImage}>Il nostro percorso</TitleBanner>
+        <TitleBanner imgSrc={bannerImage} objectPosition="left">
+          Il nostro percorso
+        </TitleBanner>
         {/* <h1>Il nostro percorso</h1> */}
         <p className="centered heading-p">
           Adottare un cane è come un matrimonio: vogliamo che sia un legame

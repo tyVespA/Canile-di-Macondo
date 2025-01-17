@@ -12,7 +12,9 @@ import PaypalButton from "@/src/app/shared-components/PaypalButton";
 export default function page() {
   return (
     <div>
-      <TitleBanner imgSrc={bannerImage}>Come aiutarci</TitleBanner>
+      <TitleBanner imgSrc={bannerImage} objectPosition="right">
+        Come aiutarci
+      </TitleBanner>
       <div className={styles.campagnaContainer}>
         <PaypalCampagna />
       </div>

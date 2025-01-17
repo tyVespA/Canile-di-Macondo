@@ -18,7 +18,9 @@ export const metadata = {
 export default function page() {
   return (
     <div className={styles.contattiPage}>
-      <TitleBanner imgSrc={bannerImage}>Contatti</TitleBanner>
+      <TitleBanner imgSrc={bannerImage} objectPosition="right">
+        Contatti
+      </TitleBanner>
 
       {/* <section className="first-section"> */}
       <section>

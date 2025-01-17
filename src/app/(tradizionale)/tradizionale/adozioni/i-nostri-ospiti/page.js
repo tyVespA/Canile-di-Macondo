@@ -62,7 +62,9 @@ export default function page() {
       />
       {/* <section className="first-section"> */}
       <section>
-        <TitleBanner imgSrc={bannerImage}>I nostri ospiti</TitleBanner>
+        <TitleBanner imgSrc={bannerImage} objectPosition="left">
+          I nostri ospiti
+        </TitleBanner>
 
         {/* <h1>I nostri ospiti</h1> */}
 
