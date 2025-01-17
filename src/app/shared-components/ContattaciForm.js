@@ -14,8 +14,12 @@ export default function ContattaciForm() {
 
   useEffect(() => {
     const dogName = searchParams.get("dogName");
+    const otherSubject = searchParams.get("subject");
     if (dogName) {
       setSubject(`Oggetto: Informazioni riguardo ${dogName}`);
+    }
+    if (otherSubject) {
+      setSubject(`Oggetto: Informazioni riguardo ${otherSubject}`);
     }
   }, [searchParams]);
 
