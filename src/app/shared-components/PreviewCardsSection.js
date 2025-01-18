@@ -27,6 +27,7 @@ export default function PreviewCardsSection({
               item={data[index]}
               backgroundColor={backgroundColor}
               color={color}
+              sezione={sezione}
             />
           </Link>
           {/* <button
