@@ -17,10 +17,7 @@ import {
   GenderFemale,
   Cake,
   Ruler,
-  Bug,
-  Circuitry,
-  Syringe,
-  GenderNeuter,
+  Dog,
 } from "@phosphor-icons/react/dist/ssr";
 
 export async function generateMetadata({ params }) {
@@ -28,8 +25,14 @@ export async function generateMetadata({ params }) {
   const cane = adottati_db.find((item) => item.id === id);
   return {
     title: `${cane?.nome} | Canile di Macondo` || "Errore",
-    description: "bau!",
+    description: `Scopri la storia di ${cane.nome}`,
   };
+}
+
+function getNextDogId(currentId, dogs) {
+  const currentIndex = dogs.findIndex((dog) => dog.id === currentId);
+  const nextIndex = (currentIndex + 1) % dogs.length; // Ricomincia dal primo se è l'ultimo
+  return dogs[nextIndex].id; // Ritorna l'ID del cane successivo
 }
 
 export default async function Page({ params }) {
@@ -40,7 +43,7 @@ export default async function Page({ params }) {
     cane.mese_di_nascita,
     cane.sesso
   );
-  const rowOrColumn = cane.descrizione.length > 350 ? "row" : "column";
+  const nextDogId = getNextDogId(id, adottati_db);
 
   if (!cane) {
     return notFound();
@@ -50,8 +53,8 @@ export default async function Page({ params }) {
     <div className={styles.pageContainer}>
       <section className={`first-section`}>
         <p className={styles.navigation}>
-          <Link href="/tradizionale/adozioni/i-nostri-ospiti">
-            I nostri ospiti
+          <Link href="/tradizionale/adozioni/casa-dolce-casa">
+            Casa dolce casa
           </Link>{" "}
           &gt; {cane.nome}
         </p>
@@ -85,86 +88,24 @@ export default async function Page({ params }) {
               </Tag>
             </div>
 
-            <p className={styles.descrizione}>{cane.descrizione}</p>
-
-            <div className={styles.tagsAndBtn}>
-              <div>
-                {cane.sesso.toLowerCase() === "maschio" ? (
-                  <div
-                    className={`${styles.secondaryTags} ${styles[rowOrColumn]}`}
-                  >
-                    {" "}
-                    <p>
-                      <GenderNeuter size={34} />{" "}
-                      {cane.sterilizzato ? "Sterilizzato" : "Non sterilizzato"}{" "}
-                    </p>
-                    <p>
-                      <Bug size={34} weight="fill" />{" "}
-                      {cane.sverminato ? "Sverminato" : "Non sverminato"}{" "}
-                    </p>
-                    <p>
-                      <Syringe size={34} />{" "}
-                      {cane.vaccinato ? "Vaccinato" : "Non vaccinato"}{" "}
-                    </p>
-                    <p>
-                      <Circuitry size={34} weight="fill" />{" "}
-                      {cane.microchip
-                        ? "Dotato di microchip"
-                        : "Senza microchip"}{" "}
-                    </p>{" "}
-                  </div>
-                ) : (
-                  <div
-                    className={`${styles.secondaryTags} ${styles[rowOrColumn]}`}
-                  >
-                    {" "}
-                    <p>
-                      <GenderNeuter size={34} />{" "}
-                      {cane.sterilizzato ? "Sterilizzata" : "Non sterilizzata"}{" "}
-                    </p>
-                    <p>
-                      <Bug size={34} weight="fill" />{" "}
-                      {cane.sverminato ? "Sverminata" : "Non sverminata"}{" "}
-                    </p>
-                    <p>
-                      <Syringe size={34} />{" "}
-                      {cane.vaccinato ? "Vaccinata" : "Non vaccinata"}{" "}
-                    </p>
-                    <p>
-                      <Circuitry size={34} weight="fill" />{" "}
-                      {cane.microchip
-                        ? "Dotata di microchip"
-                        : "Senza microchip"}{" "}
-                    </p>{" "}
-                  </div>
-                )}
-              </div>
-              {/* <Link href="/tradizionale/contatti#form"> */}
-              <Link
-                href={{
-                  pathname: "/tradizionale/contatti",
-                  hash: "form",
-                  query: {
-                    dogName: cane.nome,
-                  },
-                }}
-              >
-                <Button theme="white">Richiedi informazioni</Button>
-              </Link>
-            </div>
+            <p className={styles.descrizione}>
+              {cane.descrizione_dopo_adozione_1}
+            </p>
+            <p className={styles.descrizione}>
+              {cane.descrizione_dopo_adozione_2}
+            </p>
+            <Link
+              href={`/tradizionale/adozioni/casa-dolce-casa/${nextDogId}`}
+              className={styles.altraStoriaLink}
+            >
+              <Button paddingInline="40px" theme="white">
+                Leggi un' altra storia a lieto fine{" "}
+                <Dog size={30} weight="fill" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
-      <section className={styles.ospitiSimili}>
-        <h2>Altri ospiti con caratteristiche simili </h2>
-        <FilterSimpler
-          cane={cane}
-          versione="tradizionale"
-          backgroundColor="var(--accent-three)"
-          color="var(--text-light)"
-        />
-      </section>
-      {/* <HelpCard /> */}
     </div>
   );
 }
