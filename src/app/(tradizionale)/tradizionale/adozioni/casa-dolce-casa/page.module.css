@@ -1,29 +1,27 @@
 /* TEMPORANEI */
 .casaDolceCasaPage {
-  height: calc(100vh - (var(--header-height) + var(--footer-height)));
-  display: flex;
-  justify-content: center;
+  /* height: calc(100vh - (var(--header-height) + var(--footer-height))); */
 }
 
 .casaDolceCasaPage section {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 
 .title {
   text-align: center;
 }
 
-.title h1 {
+/* .title h1 {
   margin-bottom: 15px;
-}
+} */
 
-.casaDolceCasaPage img {
+/* .casaDolceCasaPage img {
   max-width: 350px;
   height: auto;
-}
+} */
 
 @media screen and (max-height: 816px) {
   .casaDolceCasaPage img {
