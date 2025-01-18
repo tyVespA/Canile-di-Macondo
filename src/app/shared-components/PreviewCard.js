@@ -8,6 +8,7 @@ import {
   Cake,
   Ruler,
   HouseLine,
+  PawPrint,
 } from "@phosphor-icons/react/dist/ssr";
 
 export default function PreviewCard({ item, backgroundColor, color, sezione }) {
@@ -29,7 +30,6 @@ export default function PreviewCard({ item, backgroundColor, color, sezione }) {
           height={3927 / 10}
           alt=""
         />
-        {/* <img src={item.images[0]} alt="" /> */}
       </div>
       <div
         className={styles.textContainer}
@@ -61,6 +61,7 @@ export default function PreviewCard({ item, backgroundColor, color, sezione }) {
           </div>
         ) : (
           <div>
+            <HouseLine size={45} className={styles.houseSvg} />
             <p className={styles.adottatoP}>
               {item.sesso.toLowerCase() === "maschio" ? "Adottato" : "Adottata"}{" "}
               da {adottatoDa}

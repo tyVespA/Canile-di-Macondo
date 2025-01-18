@@ -3,8 +3,6 @@
   overflow: hidden;
   transition: all 0.3s;
   will-change: contents;
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
@@ -16,21 +14,18 @@
 .imageContainer {
   width: 300px;
   max-height: 300px;
-  /* overflow: hidden; */
   border-radius: 15px;
 }
 
 .imageContainer img {
   width: 100%;
   height: auto;
-  /* height: 100%; */
   object-fit: contain;
 }
 
 .textContainer {
   padding: 10px 20px 15px 20px;
   border-radius: 15px;
-  /* background-color: var(--surface); */
   position: relative;
 }
 
@@ -65,13 +60,20 @@
   gap: 5px;
 }
 
-.sesso,
-.età {
-  /* margin-bottom: 5px; */
-}
-
 .taglia {
   font-weight: 400;
+}
+
+/* 
+  CASA DOLCE CASA SECTION 
+*/
+
+.houseSvg {
+  position: absolute;
+  color: var(--background);
+  opacity: 0.3;
+  top: 5px;
+  left: 10px;
 }
 
 .adottatoP {
