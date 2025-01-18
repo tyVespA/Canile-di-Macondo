@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
   const cane = db.find((item) => item.id === id);
   return {
     title: `${cane?.nome} | Canile di Macondo` || "Errore",
-    description: "bau!",
+    description: `Scopri la storia di ${cane.nome}`,
   };
 }
 
