@@ -171,6 +171,10 @@ strong {
   text-align: center;
 }
 
+.marginsCenter {
+  margin-inline: auto;
+}
+
 .heading-p {
   font-size: 20px;
   /* font-weight: 500; */

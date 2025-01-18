@@ -41,7 +41,7 @@
 
 .pageContainer .mainContent img {
   height: 500px;
-  width: auto;
+  /* width: auto; */
 }
 
 .textContainer {

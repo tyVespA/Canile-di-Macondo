@@ -79,6 +79,7 @@ export default function page() {
               backgroundColor="var(--accent-three)"
               color="var(--text-light)"
               versione="tradizionale"
+              sezione="ospiti"
             />
           ) : (
             <div>
