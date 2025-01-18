@@ -1,5 +1,5 @@
 // export const runtime = "edge";
-import { db } from "@lib/db";
+import { adottati_db } from "@lib/adottati_db";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,7 +25,7 @@ import {
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
-  const cane = db.find((item) => item.id === id);
+  const cane = adottati_db.find((item) => item.id === id);
   return {
     title: `${cane?.nome} | Canile di Macondo` || "Errore",
     description: "bau!",
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const { id } = await params;
-  const cane = db.find((item) => item.id === id);
+  const cane = adottati_db.find((item) => item.id === id);
   const age = calculateAge(
     cane.anno_di_nascita,
     cane.mese_di_nascita,
@@ -170,7 +170,7 @@ export default async function Page({ params }) {
 }
 
 export async function generateStaticParams() {
-  return db.map((cane) => ({
+  return adottati_db.map((cane) => ({
     id: cane.id,
   }));
 }
