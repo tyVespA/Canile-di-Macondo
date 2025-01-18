@@ -3,6 +3,8 @@
   max-width: var(--max-width);
   padding-inline: var(--padding-inline-max-width);
   margin-inline: auto;
+  /* margin-top: 50px; */
+  font-size: 16px;
 }
 
 .footer p {
@@ -56,12 +58,13 @@
 
 .copyright {
   color: var(--accent-one);
+  font-size: 18px;
 }
 
 .navigation {
   display: flex;
   gap: 40px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .navigation > div {
