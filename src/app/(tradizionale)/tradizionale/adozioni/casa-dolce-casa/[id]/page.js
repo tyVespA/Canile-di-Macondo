@@ -58,51 +58,57 @@ export default async function Page({ params }) {
           </Link>{" "}
           &gt; {cane.nome}
         </p>
-        <div className={styles.mainContent}>
-          <Slideshow images={cane.images} />
-          <div className={styles.textContainer}>
-            <h1>{cane.nome}</h1>
-
-            <div className={styles.mainTags}>
-              <Tag borderColor="var(--surface)" iconColor="svgColorBackground">
-                <Ruler size={55} weight="fill" /> Taglia {cane.taglia}
-              </Tag>
-              {cane.sesso.toLowerCase() === "maschio" ? (
+        <div className={styles.minHeightContainer}>
+          <div className={styles.mainContent}>
+            <Slideshow images={cane.images} />
+            <div className={styles.textContainer}>
+              <h1>{cane.nome}</h1>
+              <div className={styles.mainTags}>
                 <Tag
                   borderColor="var(--surface)"
                   iconColor="svgColorBackground"
                 >
-                  <GenderMale size={55} /> {cane.sesso}
+                  <Ruler size={55} weight="fill" /> Taglia {cane.taglia}
                 </Tag>
-              ) : (
+                {cane.sesso.toLowerCase() === "maschio" ? (
+                  <Tag
+                    borderColor="var(--surface)"
+                    iconColor="svgColorBackground"
+                  >
+                    <GenderMale size={55} /> {cane.sesso}
+                  </Tag>
+                ) : (
+                  <Tag
+                    borderColor="var(--surface)"
+                    iconColor="svgColorBackground"
+                  >
+                    <GenderFemale size={55} /> {cane.sesso}
+                  </Tag>
+                )}
                 <Tag
                   borderColor="var(--surface)"
                   iconColor="svgColorBackground"
                 >
-                  <GenderFemale size={55} /> {cane.sesso}
+                  <Cake size={55} weight="fill" />
+                  {age}
                 </Tag>
-              )}
-              <Tag borderColor="var(--surface)" iconColor="svgColorBackground">
-                <Cake size={55} weight="fill" />
-                {age}
-              </Tag>
+              </div>
+              <p className={styles.descrizione}>
+                {cane.descrizione_dopo_adozione_1}
+              </p>
+              <p className={styles.descrizione}>
+                {cane.descrizione_dopo_adozione_2}
+              </p>
+              <Link
+                href={`/tradizionale/adozioni/casa-dolce-casa/${nextDogId}`}
+                className={styles.altraStoriaLink}
+              >
+                <Button paddingInline="40px" theme="white">
+                  Leggi un' altra storia a lieto fine{" "}
+                  <Dog size={30} weight="fill" />
+                </Button>
+              </Link>
             </div>
-
-            <p className={styles.descrizione}>
-              {cane.descrizione_dopo_adozione_1}
-            </p>
-            <p className={styles.descrizione}>
-              {cane.descrizione_dopo_adozione_2}
-            </p>
-            <Link
-              href={`/tradizionale/adozioni/casa-dolce-casa/${nextDogId}`}
-              className={styles.altraStoriaLink}
-            >
-              <Button paddingInline="40px" theme="white">
-                Leggi un' altra storia a lieto fine{" "}
-                <Dog size={30} weight="fill" />
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
