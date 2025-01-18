@@ -35,8 +35,6 @@ export default function page() {
         backgroundColor="var(--accent-three)"
         color="var(--text-light)"
       />
-      <Image src={inCostruzione} alt="Pagina in costruzione" />
-      {/* </section> */}
     </div>
   );
 }
