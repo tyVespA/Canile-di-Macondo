@@ -88,16 +88,16 @@ export default function Footer() {
         <div className={styles.socials}>
           <p>Seguici sui social !</p>
           <div className={styles.socialsContainer}>
-            <Link href="/">
+            <Link href="/tradizionale/404temp">
               <FacebookLogo size={32} />
             </Link>
-            <Link href="/">
+            <Link href="/tradizionale/404temp">
               <InstagramLogo size={32} />
             </Link>
-            <Link href="/">
+            <Link href="/tradizionale/404temp">
               <YoutubeLogo size={32} />
             </Link>
-            <Link href="/">
+            <Link href="/tradizionale/404temp">
               <TiktokLogo size={32} />
             </Link>
           </div>

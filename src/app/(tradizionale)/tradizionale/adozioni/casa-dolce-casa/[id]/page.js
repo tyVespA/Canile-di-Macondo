@@ -104,7 +104,7 @@ export default async function Page({ params }) {
                 className={styles.altraStoriaLink}
               >
                 <Button paddingInline="40px" theme="white">
-                  Leggi un' altra storia a lieto fine{" "}
+                  Leggi un' altra storia a lieto fine
                   <Dog size={30} weight="fill" />
                 </Button>
               </Link>
