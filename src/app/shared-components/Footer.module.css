@@ -152,4 +152,7 @@
   .writtenLogo {
     display: none;
   }
+  .copyright {
+    text-align: center;
+  }
 }
