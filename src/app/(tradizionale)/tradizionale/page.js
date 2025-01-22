@@ -15,23 +15,31 @@ export default function Home() {
     <div>
       <section className={styles.heroContainer}>
         <div className={styles.textContainer}>
-          <h1>Home</h1>
-          <Counter
-            target="200"
-            duration="1000"
-            fontSize="35px"
-            afterNumber="+"
-          />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
-            velit vel officiis ut repellat ratione dicta? Et vitae neque, fuga
-            pariatur, ratione officiis tenetur eveniet odio eum nisi molestias
-            soluta!
+          <h1>Benvenuti al Canile di Macondo</h1>
+
+          <p style={{ marginBottom: "15px" }}>
+            il luogo dove la magia delle seconde possibilità prende vita.{" "}
           </p>
-          <Button theme="accent-two" paddingInline="40px">
-            Scopri
-          </Button>
+          <p style={{ marginBottom: "20px" }}>
+            Ispirato alla città incantata di Cent’anni di solitudine, il nostro
+            rifugio è uno spazio speciale, fatto di amore, dedizione e speranza
+            per i nostri amici a quattro zampe.
+          </p>
+
+          <div className={styles.heroButtonsContainer}>
+            <div className={styles.firstLink}>
+              <Link href="/tradizionale/adozioni/i-nostri-ospiti">
+                <Button theme="light" paddingInline="37.5px">
+                  Incontra i nostri ospiti
+                </Button>
+              </Link>
+            </div>
+            <Link href="/tradizionale/come-aiutarci">
+              <Button theme="dark">Scopri come puoi aiutare</Button>{" "}
+            </Link>
+          </div>
         </div>
+        <div></div>
         <div className={styles.heroImage}>
           {/* <Image src={cane_hero_1} alt="" /> */}
         </div>
