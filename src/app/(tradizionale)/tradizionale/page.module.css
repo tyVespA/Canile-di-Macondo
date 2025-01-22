@@ -146,9 +146,8 @@
   padding-inline: var(--padding-inline-max-width);
   margin-inline: auto; */
 
-  padding-bottom: 5000px;
   padding-top: var(--section-padding);
-  color: var(--text-dark);
+  /* color: var(--text-dark); */
   position: relative;
   z-index: 1;
 }

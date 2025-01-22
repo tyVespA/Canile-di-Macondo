@@ -25,7 +25,8 @@
 
 .dark {
   background-color: var(--surface5);
-  color: var(--accent-one);
+  /* color: var(--accent-one); */
+  color: var(--text-light);
   box-shadow: 4px 4px 0px var(--accent-one);
 }
 .dark:hover {

@@ -45,12 +45,14 @@ export default function Home() {
         </div>
       </section>
       {/* <FullWidthBg bgColor="var(--accent-one)"> */}
-      <section className={styles.section2}>
+      <section>
         <h2>section2</h2>
+      </section>
+      <section className={styles.section2}>
+        <h2>section3</h2>
 
         <Counter target="200" duration="1000" fontSize="35px" afterNumber="+" />
       </section>
-      {/* </FullWidthBg> */}
     </div>
   );
 }
