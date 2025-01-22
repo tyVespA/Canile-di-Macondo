@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
 
-  height: calc(100vh - 75px);
+  height: calc(100vh - var(--header-height));
   max-height: 700px;
 
   position: relative;
@@ -18,9 +18,9 @@
 }
 
 .textContainer {
-  /* min-width: 300px; */
   position: relative;
   z-index: 1;
+  padding-bottom: 100px;
 }
 
 .textContainer h1 {
@@ -29,7 +29,7 @@
 }
 
 .textContainer p {
-  max-width: 45ch;
+  max-width: 46ch;
 }
 
 .heroButtonsContainer {
@@ -41,6 +41,7 @@
   margin-bottom: 15px;
 }
 
+/* change to heroContainer pseudo? */
 .heroImage {
   position: absolute;
   width: 100vw;
@@ -51,9 +52,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  /* on mobile */
-  /* background-position: 90% center; */
 }
 
 /* overlay */
@@ -68,6 +66,75 @@
     rgba(0, 0, 0, 0) 100%
   );
   margin-left: calc(50% - 50vw);
+}
+
+@media screen and (max-width: 1170px) {
+  .heroButtonsContainer {
+    flex-direction: column;
+    gap: 10px;
+    /* align-items: center; */
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .textContainer {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heroContainer {
+    min-height: calc(100vh - var(--header-height));
+  }
+  .heroImage {
+    background-position: 60%;
+    background-size: cover;
+  }
+  .heroContainer > div {
+    flex: auto;
+  }
+  .textContainer {
+    flex: 2;
+    text-align: center;
+    width: 100%;
+    margin-inline: auto;
+  }
+  .textContainer h1 {
+    margin-bottom: 25px;
+    max-width: 15ch;
+    margin-inline: auto;
+  }
+  .textContainer p {
+    max-width: 30ch;
+    position: relative;
+    margin-inline: auto;
+    margin-bottom: 30px;
+  }
+
+  /* probably change for better layout */
+  .textContainer p::after {
+    position: absolute;
+    content: "";
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+    background-color: hsla(42, 100%, 92%, 0.623);
+    z-index: -1;
+    border-radius: 15px;
+  }
+  .textContainer p:first-of-type::after {
+    bottom: 0;
+    border-radius: 15px 15px 0 0;
+  }
+  .textContainer p:last-of-type::after {
+    border-radius: 0 0 15px 15px;
+  }
+  .heroButtonsContainer {
+    align-items: center;
+    margin-top: 35px;
+    gap: 5px;
+  }
 }
 
 /* 

@@ -16,14 +16,14 @@ export default function Home() {
       <section className={styles.heroContainer}>
         <div className={styles.textContainer}>
           <h1>Benvenuti al Canile di Macondo</h1>
-
-          <p style={{ marginBottom: "15px" }}>
-            il luogo dove la magia delle seconde possibilità prende vita.{" "}
+          <p style={{ marginBottom: "10px" }}>
+            Ispirato alla città incantata di Cent’anni di solitudine, il nostro
+            rifugio è il luogo dove la magia delle seconde possibilità prende
+            vita. <br />{" "}
           </p>
           <p style={{ marginBottom: "20px" }}>
-            Ispirato alla città incantata di Cent’anni di solitudine, il nostro
-            rifugio è uno spazio speciale, fatto di amore, dedizione e speranza
-            per i nostri amici a quattro zampe.
+            Un rifugio fatto di amore, dedizione e speranza per i nostri amici a
+            quattro zampe.
           </p>
 
           <div className={styles.heroButtonsContainer}>
