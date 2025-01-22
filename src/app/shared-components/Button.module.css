@@ -24,7 +24,7 @@
 }
 
 .dark {
-  background-color: var(--surface);
+  background-color: var(--surface5);
   color: var(--accent-one);
   box-shadow: 4px 4px 0px var(--accent-one);
 }

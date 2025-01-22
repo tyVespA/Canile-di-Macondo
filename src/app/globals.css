@@ -67,6 +67,7 @@ h6 {
   --surface3: hsl(248, 51%, 44%);
   --surface3: hsl(217, 74%, 9%);
   --surface4: hsla(23, 39%, 44%, 0.75);
+  --surface5: hsla(23, 39%, 44%);
 
   --text-light: hsl(0, 0%, 100%);
   --text-dark: hsl(217, 74%, 9%);
