@@ -142,12 +142,36 @@
 */
 
 .section2 {
-  /* max-width: var(--max-width);
-  padding-inline: var(--padding-inline-max-width);
-  margin-inline: auto; */
+  margin-block: var(--section-margin);
+}
 
-  padding-top: var(--section-padding);
-  /* color: var(--text-dark); */
+.section2 h2 {
+  margin-bottom: 10px;
+}
+
+.section2 p:first-of-type {
+  margin-bottom: 10px;
+}
+
+.section2 h3 {
+  margin-bottom: 10px;
+}
+
+.section2 li {
+  list-style-type: none;
   position: relative;
-  z-index: 1;
+}
+
+/* make into a component?  */
+.section2 li::before {
+  content: "";
+  display: inline-block;
+  background-image: url("/images/paw-print-fill.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -30px;
+  top: 4px;
 }

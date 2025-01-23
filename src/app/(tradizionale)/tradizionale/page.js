@@ -45,10 +45,36 @@ export default function Home() {
         </div>
       </section>
       {/* <FullWidthBg bgColor="var(--accent-one)"> */}
-      <section>
-        <h2>section2</h2>
-      </section>
       <section className={styles.section2}>
+        <h2>La nostra missione</h2>
+        <p>
+          Il nostro obiettivo principale è quello di creare un legame unico tra
+          gli animali e le persone. Non si tratta solo di trovare una casa per i
+          nostri ospiti, ma di costruire relazioni basate sulla fiducia, sul
+          rispetto e sull’amore reciproco. Ogni cane che accogliamo ha una
+          storia, a volte segnata da difficoltà, ma anche un cuore pieno di
+          affetto da donare.
+        </p>
+        <h3>Cosa facciamo</h3>
+        <ul>
+          <li>
+            <strong>Accoglienza e cura:</strong> Forniamo un ambiente sicuro e
+            confortevole per i nostri cani, assicurandoci che ricevano tutte le
+            cure mediche, l’alimentazione e l’amore di cui hanno bisogno.
+          </li>
+          <li>
+            <strong>Percorso di adozione:</strong> Accompagniamo le famiglie
+            attraverso un processo attento e personalizzato, per garantire
+            un’adozione felice e duratura.
+          </li>
+          <li>
+            <strong>Educazione e sensibilizzazione:</strong> Organizziamo eventi
+            e campagne per promuovere l’adozione responsabile e diffondere la
+            cultura del rispetto verso gli animali
+          </li>
+        </ul>
+      </section>
+      <section>
         <h2>section3</h2>
 
         <Counter target="200" duration="1000" fontSize="35px" afterNumber="+" />
