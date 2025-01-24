@@ -1,12 +1,24 @@
 import styles from "./Spacer.module.css";
-import { PawPrint } from "@phosphor-icons/react/dist/ssr";
+import { PawPrint, Bone } from "@phosphor-icons/react/dist/ssr";
 
-export default function Spacer({ marginBlock = "75px" }) {
+const icons = {
+  PawPrint,
+  Bone,
+};
+
+export default function Spacer({ marginBlock = "75px", icon = "PawPrint" }) {
+  const IconComponent = icons[icon];
+
   return (
-    <div className={styles.spacer} style={{ marginBlock }}>
-      <PawPrint size={24} weight="fill" fill="#9c6644" />
-      <PawPrint size={24} weight="fill" fill="#9c6644" />
-      <PawPrint size={24} weight="fill" fill="#9c6644" />
+    <div
+      className={
+        IconComponent === PawPrint ? styles.spacerRotated : styles.spacer
+      }
+      style={{ marginBlock }}
+    >
+      <IconComponent size={24} weight="fill" fill="#9c6644" />
+      <IconComponent size={24} weight="fill" fill="#9c6644" />
+      <IconComponent size={24} weight="fill" fill="#9c6644" />
     </div>
   );
 }
