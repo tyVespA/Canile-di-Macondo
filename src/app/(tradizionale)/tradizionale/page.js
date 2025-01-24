@@ -3,6 +3,8 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import FullWidthBg from "@shared-components/FullWidthBg";
 import Button from "@shared-components/Button";
+import Spacer from "../../shared-components/Spacer";
+import InfoCard from "../../shared-components/InfoCard";
 import Counter from "@shared-components/Counter";
 
 export const metadata = {
@@ -56,7 +58,28 @@ export default function Home() {
           affetto da donare.
         </p>
         <h3>Cosa facciamo</h3>
-        <ul>
+        <div className="infoCardsSection">
+          <InfoCard
+            title="Accoglienza e cura"
+            text="Forniamo un ambiente sicuro e confortevole per i nostri cani, assicurandoci che ricevano tutte le cure mediche, l’alimentazione e l’amore di cui hanno bisogno."
+          ></InfoCard>
+          <InfoCard
+            title="Percorso di adozione"
+            text=" Accompagniamo le famiglie
+              attraverso un processo attento e personalizzato, per garantire
+              un’adozione felice e duratura."
+          ></InfoCard>
+          <InfoCard
+            title="Educazione e sensibilizzazione"
+            text="Organizziamo eventi
+              e campagne per promuovere l’adozione responsabile e diffondere la
+              cultura del rispetto verso gli animali."
+          ></InfoCard>
+        </div>
+
+        <Spacer marginBlock="50px" />
+
+        <ul className="pawUl">
           <li>
             <strong>Accoglienza e cura:</strong> Forniamo un ambiente sicuro e
             confortevole per i nostri cani, assicurandoci che ricevano tutte le

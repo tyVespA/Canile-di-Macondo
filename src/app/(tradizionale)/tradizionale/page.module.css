@@ -143,6 +143,7 @@
 
 .section2 {
   margin-block: var(--section-margin);
+  text-align: center;
 }
 
 .section2 h2 {
@@ -150,28 +151,11 @@
 }
 
 .section2 p:first-of-type {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .section2 h3 {
-  margin-bottom: 10px;
-}
-
-.section2 li {
-  list-style-type: none;
-  position: relative;
-}
-
-/* make into a component?  */
-.section2 li::before {
-  content: "";
-  display: inline-block;
-  background-image: url("/images/paw-print-fill.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: -30px;
-  top: 4px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 25px;
 }
