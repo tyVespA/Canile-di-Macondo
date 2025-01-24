@@ -6,6 +6,10 @@ import Button from "@shared-components/Button";
 import Spacer from "../../shared-components/Spacer";
 import InfoCard from "../../shared-components/InfoCard";
 import Counter from "@shared-components/Counter";
+import PreviewCardsSection from "@shared-components/PreviewCardsSection";
+
+import { db } from "@/lib/db";
+const slicedDb = db.slice(0, 3);
 
 export const metadata = {
   title: "Home | Canile di Macondo",
@@ -76,32 +80,32 @@ export default function Home() {
               cultura del rispetto verso gli animali."
           ></InfoCard>
         </div>
-
-        <Spacer marginBlock="50px" />
-
-        <ul className="pawUl">
-          <li>
-            <strong>Accoglienza e cura:</strong> Forniamo un ambiente sicuro e
-            confortevole per i nostri cani, assicurandoci che ricevano tutte le
-            cure mediche, l’alimentazione e l’amore di cui hanno bisogno.
-          </li>
-          <li>
-            <strong>Percorso di adozione:</strong> Accompagniamo le famiglie
-            attraverso un processo attento e personalizzato, per garantire
-            un’adozione felice e duratura.
-          </li>
-          <li>
-            <strong>Educazione e sensibilizzazione:</strong> Organizziamo eventi
-            e campagne per promuovere l’adozione responsabile e diffondere la
-            cultura del rispetto verso gli animali
-          </li>
-        </ul>
       </section>
-      <section>
+
+      <Spacer marginBlock="50px" icon="Heart" />
+
+      <section className={styles.section3}>
         <h2>section3</h2>
-
-        <Counter target="200" duration="1000" fontSize="35px" afterNumber="+" />
+        <Counter target={db.length} duration="500" fontSize="35px" />
+        <p>ospiti a Macondo</p>
+        <Counter target="21" duration="1000" fontSize="35px" afterNumber="+" />
+        <p>Adozioni nell'anno passato</p>
+        <h3>Alcuni dei nostri ospiti</h3>
+        <div className={styles.iNostriOspitiContainer}>
+          <PreviewCardsSection
+            data={slicedDb}
+            backgroundColor="var(--accent-three)"
+            color="var(--text-light)"
+            versione="tradizionale"
+            sezione="ospiti"
+          />
+          <Link href="/tradizionale/adozioni/i-nostri-ospiti">
+            <Button theme="light">Gli altri →</Button>
+          </Link>
+        </div>
       </section>
+
+      <Spacer />
     </div>
   );
 }

@@ -159,3 +159,33 @@
   text-align: center;
   font-size: 25px;
 }
+
+/* 
+  SECTION 3 
+*/
+
+.section3 {
+  text-align: center;
+}
+
+.section3 h3 {
+  margin-bottom: 20px;
+}
+
+.iNostriOspitiContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.iNostriOspitiContainer button {
+  align-items: center;
+}
+
+@media screen and (max-width: 1203px) {
+  .iNostriOspitiContainer {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
