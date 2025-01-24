@@ -155,7 +155,7 @@ strong {
 .infoCardsSection {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   margin-inline: auto;
@@ -165,7 +165,7 @@ strong {
 .infoCardsSection > div {
   max-width: 350px;
   min-height: 220px;
-  margin-inline: auto;
+  /* margin-inline: auto; */
   flex: 1 0 auto;
 }
 
