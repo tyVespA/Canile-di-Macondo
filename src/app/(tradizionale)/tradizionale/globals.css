@@ -151,3 +151,46 @@ strong {
 .underlined:hover {
   color: var(--accent-three);
 }
+
+.infoCardsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-inline: auto;
+  margin-bottom: 25px;
+}
+
+.infoCardsSection > div {
+  max-width: 350px;
+  min-height: 220px;
+  margin-inline: auto;
+  flex: 1 0 auto;
+}
+
+@media screen and (max-width: 1155px) {
+  .infoCardsSection {
+    /* flex-direction: column; */
+    /* max-width: 60ch; */
+  }
+}
+
+.pawUl li {
+  list-style-type: none;
+  position: relative;
+  text-align: start;
+}
+
+.pawUl li::before {
+  content: "";
+  display: inline-block;
+  background-image: url("/images/paw-print-fill.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -30px;
+  top: 4px;
+}
