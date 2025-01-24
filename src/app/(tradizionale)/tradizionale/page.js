@@ -7,6 +7,7 @@ import Spacer from "../../shared-components/Spacer";
 import InfoCard from "../../shared-components/InfoCard";
 import Counter from "@shared-components/Counter";
 import PreviewCardsSection from "@shared-components/PreviewCardsSection";
+import { HouseLine, Heart, CalendarDots } from "@phosphor-icons/react/dist/ssr";
 
 import { db } from "@/lib/db";
 const slicedDb = db.slice(0, 3);
@@ -53,7 +54,7 @@ export default function Home() {
       {/* <FullWidthBg bgColor="var(--accent-one)"> */}
       <section className={styles.section2}>
         <h2>La nostra missione</h2>
-        <p>
+        <p style={{ marginBottom: "25px" }}>
           Il nostro obiettivo principale è quello di creare un legame unico tra
           gli animali e le persone. Non si tratta solo di trovare una casa per i
           nostri ospiti, ma di costruire relazioni basate sulla fiducia, sul
@@ -66,19 +67,22 @@ export default function Home() {
           <InfoCard
             title="Accoglienza e cura"
             text="Forniamo un ambiente sicuro e confortevole per i nostri cani, assicurandoci che ricevano tutte le cure mediche, l’alimentazione e l’amore di cui hanno bisogno."
-          ></InfoCard>
+          >
+            {" "}
+            <HouseLine size={32} />
+          </InfoCard>
           <InfoCard
             title="Percorso di adozione"
-            text=" Accompagniamo le famiglie
-              attraverso un processo attento e personalizzato, per garantire
-              un’adozione felice e duratura."
-          ></InfoCard>
+            text=" Accompagniamo le famiglie attraverso un processo attento e personalizzato, per garantire un’adozione felice e duratura, rispettando i bisogni di tutti i coinvolti."
+          >
+            <Heart size={32} />
+          </InfoCard>
           <InfoCard
             title="Educazione e sensibilizzazione"
-            text="Organizziamo eventi
-              e campagne per promuovere l’adozione responsabile e diffondere la
-              cultura del rispetto verso gli animali."
-          ></InfoCard>
+            text="Organizziamo eventi, campagne e attività dedicate per sensibilizzare sull’adozione responsabile e diffondere la cultura del rispetto verso gli animali."
+          >
+            <CalendarDots size={32} />
+          </InfoCard>
         </div>
       </section>
 
