@@ -164,7 +164,7 @@ strong {
 
 .infoCardsSection > div {
   max-width: 350px;
-  min-height: 220px;
+  /* min-height: 243px; */
   /* margin-inline: auto; */
   flex: 1 0 auto;
 }
