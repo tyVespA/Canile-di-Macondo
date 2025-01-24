@@ -1,9 +1,10 @@
 import styles from "./Spacer.module.css";
-import { PawPrint, Bone } from "@phosphor-icons/react/dist/ssr";
+import { PawPrint, Bone, Heart } from "@phosphor-icons/react/dist/ssr";
 
 const icons = {
   PawPrint,
   Bone,
+  Heart,
 };
 
 export default function Spacer({ marginBlock = "75px", icon = "PawPrint" }) {

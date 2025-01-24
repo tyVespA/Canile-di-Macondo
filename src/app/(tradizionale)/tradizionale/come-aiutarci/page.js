@@ -67,7 +67,7 @@ export default function page() {
         <DonateCard />
       </section>
 
-      <Spacer />
+      <Spacer icon="Bone" />
 
       <section className={styles.cinquePerMille}>
         <h2>5 x 1000</h2>
@@ -95,7 +95,7 @@ export default function page() {
         </div>
       </section>
 
-      <Spacer />
+      <Spacer icon="Heart" />
 
       {/* <div className={styles.campagnaContainer}>
         <PaypalCampagna />
