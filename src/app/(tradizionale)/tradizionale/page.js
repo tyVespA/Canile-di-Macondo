@@ -3,11 +3,13 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import FullWidthBg from "@shared-components/FullWidthBg";
 import Button from "@shared-components/Button";
-import Spacer from "../../shared-components/Spacer";
-import InfoCard from "../../shared-components/InfoCard";
+import Spacer from "@shared-components/Spacer";
+import InfoCard from "@shared-components/InfoCard";
 import Counter from "@shared-components/Counter";
 import PreviewCardsSection from "@shared-components/PreviewCardsSection";
 import PaypalButton from "@shared-components/PaypalButton";
+import Testimonial from "@shared-components/Testimonial";
+import TestimonialsSection from "@shared-components/TestimonialsSection";
 
 import {
   HouseLine,
@@ -209,6 +211,20 @@ export default function Home() {
 
       <section className={styles.section5}>
         <h2>Storie di rinascita</h2>
+
+        <TestimonialsSection
+          testimonials={[
+            <Testimonial key="1" name="paolo">
+              test1
+            </Testimonial>,
+            <Testimonial key="2" name="paolo2">
+              test2
+            </Testimonial>,
+            <Testimonial key="3" name="paolo3">
+              test3
+            </Testimonial>,
+          ]}
+        ></TestimonialsSection>
       </section>
     </div>
   );
