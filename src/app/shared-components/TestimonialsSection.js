@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import styles from "./Testimonial.module.css";
+import styles from "./TestimonialsSection.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -14,18 +14,27 @@ export default function TestimonialsSection({ testimonials }) {
 
   const settings = {
     dots: true,
-    arrows: true,
+    arrows: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 6000,
     pauseOnHover: true,
     speed: 1000,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1060,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
+
   return (
     <div
-      className={`${styles.carouselContainer} ${
+      className={`${styles.testimonialsSectionContainer} ${
         isDragging ? "grabbing" : "grab"
       }`}
       onMouseDown={handleMouseDown}
@@ -34,7 +43,9 @@ export default function TestimonialsSection({ testimonials }) {
     >
       <Slider {...settings}>
         {testimonials.map((testimonial, key) => (
-          <div key={key}>{testimonial}</div>
+          <div key={key} className={styles.testimonialContainer}>
+            {testimonial}
+          </div>
         ))}
       </Slider>
     </div>
