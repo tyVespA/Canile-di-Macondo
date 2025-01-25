@@ -188,7 +188,15 @@ export default function Home() {
               Se ti va di accudire i nostri amici pelosi, portarli a passeggio,
               o aiutarci nelle attività quotidiane del rifugio.
             </p>
-            <Link href="/tradizionale/contatti#orari">
+            <Link
+              href={{
+                pathname: "/tradizionale/contatti",
+                hash: "form",
+                query: {
+                  subject: "volontariato",
+                },
+              }}
+            >
               <p style={{ textDecoration: "underline" }}>
                 Richiedi informazioni →
               </p>
