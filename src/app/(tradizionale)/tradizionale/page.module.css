@@ -319,6 +319,7 @@
 
 .testimonialsSection {
   margin-bottom: 40px;
+  margin-inline: -20px;
 }
 
 .section5 button {

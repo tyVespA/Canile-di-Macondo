@@ -110,6 +110,10 @@
   text-align: end;
   z-index: 10000;
   position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .madeBy a {

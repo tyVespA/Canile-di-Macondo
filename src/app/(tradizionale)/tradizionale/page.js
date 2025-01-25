@@ -148,7 +148,7 @@ export default function Home() {
         <h2>Vuoi darci una zampa?</h2>
         <p style={{ marginBottom: "25px" }}>
           Dal volontariato alle donazioni, ogni gesto contribuisce a migliorare
-          la vita dei nostri amici a 4 zampe.
+          la vita dei nostri amici a quattro zampe.
         </p>
         <div className={styles.otherDonationsSection}>
           <div className={styles.div1}>

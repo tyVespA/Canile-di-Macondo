@@ -11,6 +11,7 @@ import {
   InstagramLogo,
   YoutubeLogo,
   TiktokLogo,
+  Heart,
 } from "@phosphor-icons/react/dist/ssr";
 
 import LogoWrittenWhite from "@images/tradizionale/LogoWrittenWhite.png";
@@ -111,7 +112,7 @@ export default function Footer() {
         </div>
         <div>
           <p className={styles.madeBy}>
-            Sito sviluppato da{" "}
+            Sito sviluppato con <Heart size={15} /> da{" "}
             <Link
               href="mailto:meyo.studio@outlook.it
                 "

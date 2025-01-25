@@ -71,7 +71,7 @@ export default function VersionTraditionalLayout({ children }) {
         }
          ${"max-width-container"}`}
       >
-        <SwitchVersionButton />
+        {/* <SwitchVersionButton /> */}
         <Header />
         <div style={{ marginTop: "85px" }}>{children}</div>
         <FullWidthBg
