@@ -172,15 +172,15 @@ strong {
 
 .infoCardsSection > div {
   max-width: 350px;
-  /* min-height: 243px; */
-  /* margin-inline: auto; */
   flex: 1 0 auto;
 }
 
-@media screen and (max-width: 1155px) {
+@media screen and (max-width: 400px) {
   .infoCardsSection {
-    /* flex-direction: column; */
-    /* max-width: 60ch; */
+    /* padding-inline: 20px; */
+  }
+  .infoCardsSection > div {
+    max-width: 100%;
   }
 }
 
