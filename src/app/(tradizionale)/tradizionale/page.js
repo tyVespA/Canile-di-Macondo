@@ -89,11 +89,31 @@ export default function Home() {
       <Spacer marginBlock="50px" icon="Heart" />
 
       <section className={styles.section3}>
-        <h2>section3</h2>
-        <Counter target={db.length} duration="500" fontSize="35px" />
-        <p>ospiti a Macondo</p>
-        <Counter target="21" duration="1000" fontSize="35px" afterNumber="+" />
-        <p>Adozioni nell'anno passato</p>
+        {/* <h2>section3</h2> */}
+        <div className={styles.countersSection}>
+          <div className={styles.counterContainer}>
+            <Counter target="7" duration="500" fontSize="35px" />
+            <p>Eventi organizzati</p>
+          </div>
+          <div className={styles.counterContainer}>
+            <Counter target={db.length} duration="1000" fontSize="35px" />
+            <p>Ospiti a Macondo</p>
+          </div>
+          <div className={styles.counterContainer}>
+            <Counter
+              target="21"
+              duration="1500"
+              fontSize="35px"
+              afterNumber="+"
+            />
+            <p>Adozioni nell'anno passato</p>
+          </div>
+        </div>
+        <p style={{ marginBottom: "25px" }}>
+          Adottare un cane è un percorso emozionante e noi siamo qui per
+          guidarti passo dopo passo: dal colloquio conoscitivo fino all’adozione
+          definitiva.
+        </p>
         <h3>Alcuni dei nostri ospiti</h3>
         <div className={styles.iNostriOspitiContainer}>
           <PreviewCardsSection
@@ -104,12 +124,26 @@ export default function Home() {
             sezione="ospiti"
           />
           <Link href="/tradizionale/adozioni/i-nostri-ospiti">
-            <Button theme="light">Gli altri →</Button>
+            <Button theme="light">Incontrali tutti →</Button>
           </Link>
         </div>
       </section>
 
       <Spacer />
+
+      <section className={styles.section4}>
+        <h2>Vuoi darci una zampa?</h2>
+        <p>
+          Dal volontariato alle donazioni, ogni gesto contribuisce a migliorare
+          la vita dei nostri amici a 4 zampe.
+        </p>
+      </section>
+
+      <Spacer icon="Bone" />
+
+      <section className={styles.section5}>
+        <h2>Storie di rinascita</h2>
+      </section>
     </div>
   );
 }
