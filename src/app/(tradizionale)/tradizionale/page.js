@@ -7,7 +7,18 @@ import Spacer from "../../shared-components/Spacer";
 import InfoCard from "../../shared-components/InfoCard";
 import Counter from "@shared-components/Counter";
 import PreviewCardsSection from "@shared-components/PreviewCardsSection";
-import { HouseLine, Heart, CalendarDots } from "@phosphor-icons/react/dist/ssr";
+import PaypalButton from "@shared-components/PaypalButton";
+
+import {
+  HouseLine,
+  Heart,
+  CalendarDots,
+  Bank,
+  PiggyBank,
+  MoneyWavy,
+  Globe,
+  Clover,
+} from "@phosphor-icons/react/dist/ssr";
 
 import { db } from "@/lib/db";
 const slicedDb = db.slice(0, 3);
@@ -133,10 +144,57 @@ export default function Home() {
 
       <section className={styles.section4}>
         <h2>Vuoi darci una zampa?</h2>
-        <p>
+        <p style={{ marginBottom: "25px" }}>
           Dal volontariato alle donazioni, ogni gesto contribuisce a migliorare
           la vita dei nostri amici a 4 zampe.
         </p>
+        <div className={styles.otherDonationsSection}>
+          <div className={styles.div1}>
+            <Globe size={40} weight="fill" />
+            <h3 style={{ marginBottom: "0px" }}>Online</h3>
+            <div className={styles.paypalButtonContainer}>
+              <PaypalButton width="200px" />
+            </div>
+          </div>
+          <div className={styles.div1}>
+            <Bank size={40} weight="fill" />
+            <h3>Bonifico</h3>
+            <p>Iban</p>
+            <strong style={{ color: "white" }}>CN91272000000000MACONDO</strong>
+            <p>intestato a “Canile di Macondo ODV”</p>
+          </div>
+          <div className={styles.div2}>
+            <PiggyBank size={40} weight="fill" />
+            <h3>Versamento</h3>
+            <p>c/c postale</p>
+            <strong style={{ color: "white" }}>1012MACONDO</strong>
+            <p>intestato a “Canile di Macondo ODV”</p>
+          </div>
+          <div className={styles.div4}>
+            <MoneyWavy size={40} weight="fill" />
+            <h3>Contanti</h3>
+            <p>
+              Puoi fare la tua donazione direttamente in canile, ti sarà
+              rilasciata la regolare ricevuta
+            </p>
+            <Link href="/tradizionale/contatti#orari">
+              <p style={{ textDecoration: "underline" }}>Orari e posizione →</p>
+            </Link>
+          </div>
+          <div className={styles.div3}>
+            <Clover size={40} />
+            <h3>Volontariato</h3>
+            <p>
+              Se ti va di accudire i nostri amici pelosi, portarli a passeggio,
+              o aiutarci nelle attività quotidiane del rifugio.
+            </p>
+            <Link href="/tradizionale/contatti#orari">
+              <p style={{ textDecoration: "underline" }}>
+                Richiedi informazioni →
+              </p>
+            </Link>
+          </div>
+        </div>
       </section>
 
       <Spacer icon="Bone" />

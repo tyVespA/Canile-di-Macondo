@@ -170,14 +170,16 @@
 
 .countersSection {
   display: flex;
+  flex-wrap: wrap;
+
   justify-content: center;
   /* gap: 25px; */
   margin-bottom: 30px;
 }
 
-.countersSection > div {
+.counterContainer {
+  width: 250px;
   flex: 1 0 auto;
-  max-width: 300px;
 }
 
 .section3 h3 {
@@ -201,6 +203,95 @@
 
 .section4 h2 {
   margin-bottom: 20px;
+}
+
+.otherDonationsSection {
+  width: 100%;
+  min-height: 300px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-image: url("/images/tradizionale/parallaxImage2.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--text-light);
+  position: relative;
+
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.otherDonationsSection::after {
+  position: absolute;
+  content: "";
+  background-color: hsla(23, 39%, 44%, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.otherDonationsSection h3 {
+  color: var(--text-light);
+  margin-bottom: 25px;
+}
+
+.otherDonationsSection > div {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+
+  padding-inline: 10px;
+  padding-block: 30px;
+  text-align: center;
+  min-height: 300px;
+}
+
+.otherDonationsSection > div p {
+  max-width: 40ch;
+}
+
+.paypalButtonContainer {
+  padding: 20px;
+}
+
+.otherDonationsSection .div1,
+.otherDonationsSection .div2 {
+  border-right: 1px solid var(--background);
+  border-bottom: 1px solid var(--background);
+}
+
+.otherDonationsSection .div4 {
+  border-right: 1px solid var(--background);
+}
+
+@media screen and (max-width: 979px) {
+  .otherDonationsSection .div4 {
+    border-bottom: 1px solid var(--background);
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .otherDonationsSection {
+    /* background-position: center center; */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .otherDonationsSection {
+    background-attachment: scroll;
+    background-position: 20%;
+  }
+  .otherDonationsSection > div {
+    min-width: 250px;
+  }
 }
 
 /* 
