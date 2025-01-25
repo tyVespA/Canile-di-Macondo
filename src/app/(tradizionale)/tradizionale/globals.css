@@ -152,6 +152,14 @@ strong {
   color: var(--accent-three);
 }
 
+.grabbing {
+  cursor: grabbing;
+}
+
+.grab {
+  cursor: grab;
+}
+
 .infoCardsSection {
   display: flex;
   flex-wrap: wrap;
