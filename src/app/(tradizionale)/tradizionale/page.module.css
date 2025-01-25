@@ -304,9 +304,23 @@
 
 .section5 {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 125px;
 }
 
 .section5 h2 {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+.testimonialsIntro {
+  margin-bottom: 30px;
+  max-width: 70ch;
+  margin-inline: auto;
+}
+
+.testimonialsSection {
+  margin-bottom: 40px;
+}
+
+.section5 button {
+  margin-inline: auto;
 }

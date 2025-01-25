@@ -211,20 +211,47 @@ export default function Home() {
 
       <section className={styles.section5}>
         <h2>Storie di rinascita</h2>
+        <p className={styles.testimonialsIntro}>
+          Ogni adozione è una nuova avventura, per il cane e per la famiglia che
+          lo accoglie. Scopri alcune delle nostre storie di successo e lasciati
+          ispirare dalla magia di una nuova amicizia.
+        </p>
 
-        <TestimonialsSection
-          testimonials={[
-            <Testimonial key="1" name="paolo">
-              test1
-            </Testimonial>,
-            <Testimonial key="2" name="paolo2">
-              test2
-            </Testimonial>,
-            <Testimonial key="3" name="paolo3">
-              test3
-            </Testimonial>,
-          ]}
-        ></TestimonialsSection>
+        <div className={styles.testimonialsSection}>
+          <TestimonialsSection
+            testimonials={[
+              <Testimonial key="1" name="Dalla timidezza alla felicità">
+                Luna era una cagnolina timida e riservata, ma con l’amore e la
+                pazienza di Sara e Mauro, ha trovato il coraggio di fidarsi. Ora
+                passa le sue giornate correndo nei prati e dormendo sul divano
+                accanto ai suoi nuovi amici umani. "Non possiamo immaginare la
+                nostra vita senza di lei," raccontano i suoi nuovi genitori.
+              </Testimonial>,
+              <Testimonial key="2" name="Un secondo capitolo pieno di amore">
+                Rocky ha trascorso due anni in canile prima di essere adottato
+                da Giulia. "Appena l’ho visto, ho capito che era lui," dice
+                Giulia. Ora Rocky è un compagno fedele che accompagna la sua
+                nuova padrona in ogni avventura, dalle passeggiate in montagna
+                alle serate accoccolati davanti al camino.
+              </Testimonial>,
+              <Testimonial
+                key="3"
+                name="Da sola, a parte di una grande famiglia"
+              >
+                Mia è arrivata al Canile di Macondo dopo essere stata trovata
+                per strada. Dopo settimane di cure, ha incontrato Alessio e
+                Valentina. Oggi Mia vive con loro e i loro due bambini, con cui
+                gioca instancabilmente ogni giorno. "È diventata un membro
+                inseparabile della nostra famiglia," dicono.
+              </Testimonial>,
+            ]}
+          />
+        </div>
+        <Link href="/tradizionale/adozioni/casa-dolce-casa">
+          <Button theme="white">
+            I nostri amici e le loro nuove famiglie →
+          </Button>
+        </Link>
       </section>
     </div>
   );
