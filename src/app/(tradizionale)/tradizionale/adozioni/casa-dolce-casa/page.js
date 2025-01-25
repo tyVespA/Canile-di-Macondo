@@ -6,6 +6,7 @@ import PreviewCardsSection from "@shared-components/PreviewCardsSection";
 import cane_hero from "@images/tradizionale/banner_images/cane_hero_6.jpg";
 import { db } from "@/lib/db";
 import { adottati_db } from "@/lib/adottati_db";
+import { Dog } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata = {
   title: "Casa dolce casa | Canile di Macondo",
@@ -27,6 +28,7 @@ export default function page() {
           accogliente a una casa per sempre, ogni viaggio è un inno alla
           speranza.
         </p>
+        <Dog size={45} weight="duotone" />
       </div>
       <PreviewCardsSection
         data={adottati_db}
