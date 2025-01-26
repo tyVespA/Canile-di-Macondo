@@ -6,8 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 
-import Image from "next/image";
-import Kara from "../../../public/images/foto-varie/Kara.jpg";
+import AOSComponent from "./AOSComponent";
 
 const CustomArrow = ({ direction, onClick }) => {
   return (
@@ -44,21 +43,23 @@ export default function Slideshow({ images }) {
   };
 
   return (
-    <div
-      className={`${styles.carouselContainer} ${
-        isDragging ? styles.grabbing : styles.grab
-      }`}
-      onMouseDown={handleMouseDown}
-      onMouseUp={handleMouseUp}
-      onMouseLeave={handleMouseLeave}
-    >
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div className={styles.carouselImageContainer} key={index}>
-            <img src={image} alt="" />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <AOSComponent animationType="fade-right">
+      <div
+        className={`${styles.carouselContainer} ${
+          isDragging ? styles.grabbing : styles.grab
+        }`}
+        onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseLeave}
+      >
+        <Slider {...settings}>
+          {images.map((image, index) => (
+            <div className={styles.carouselImageContainer} key={index}>
+              <img src={image} alt="" />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </AOSComponent>
   );
 }

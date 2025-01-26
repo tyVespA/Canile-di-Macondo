@@ -57,9 +57,8 @@ export default async function Page({ params }) {
           &gt; {cane.nome}
         </p>
         <div className={styles.mainContent}>
-          <AOSComponent animationType="fade-right">
-            <Slideshow images={cane.images} />
-          </AOSComponent>
+          <Slideshow images={cane.images} />
+
           <div className={styles.textContainer}>
             <h1>{cane.nome}</h1>
 
