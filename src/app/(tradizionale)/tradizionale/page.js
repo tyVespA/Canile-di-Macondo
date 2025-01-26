@@ -220,14 +220,22 @@ export default function Home() {
         <div className={styles.testimonialsSection}>
           <TestimonialsSection
             testimonials={[
-              <Testimonial key="1" name="Dalla timidezza alla felicità">
+              <Testimonial
+                key="1"
+                name="Dalla timidezza alla felicità"
+                ospite="luna"
+              >
                 Luna era una cagnolina timida e riservata, ma con l’amore e la
                 pazienza di Sara e Mauro, ha trovato il coraggio di fidarsi. Ora
                 passa le sue giornate correndo nei prati e dormendo sul divano
                 accanto ai suoi nuovi amici umani. "Non possiamo immaginare la
                 nostra vita senza di lei," raccontano i suoi nuovi genitori.
               </Testimonial>,
-              <Testimonial key="2" name="Un secondo capitolo pieno di amore">
+              <Testimonial
+                key="2"
+                name="Un secondo capitolo pieno di amore"
+                ospite="rocky"
+              >
                 Rocky ha trascorso due anni in canile prima di essere adottato
                 da Giulia. "Appena l’ho visto, ho capito che era lui," dice
                 Giulia. Ora Rocky è un compagno fedele che accompagna la sua
@@ -237,6 +245,7 @@ export default function Home() {
               <Testimonial
                 key="3"
                 name="Da sola, a parte di una grande famiglia"
+                ospite="mia"
               >
                 Mia è arrivata al Canile di Macondo dopo essere stata trovata
                 per strada. Dopo settimane di cure, ha incontrato Alessio e
