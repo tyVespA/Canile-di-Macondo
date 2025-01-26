@@ -50,13 +50,8 @@ local storage 4 favs (?)
 useParams to populate form
 
 TODO:
-low quality image on mobile on readyToAdopt (maybe?)
-simpleFilter needs own module.css (maybe?)
-filter dropdown animation margin lag on chrome mobile
-nuovo account paypal x buttons e campagna
 underline effect while hover on nav (?)
-lightbox
-i nostri ospiti - style filter
+lightbox (maybe?)
 refractor navbar
 scroll animations - AOS (Animate On Scroll) (o altri?)
 
