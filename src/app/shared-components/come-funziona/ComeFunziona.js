@@ -5,26 +5,29 @@ import ComeFunzionaText from "./ComeFunzionaText";
 import Munia from "@images/foto-varie/Munia.jpg";
 import Kara from "@images/foto-varie/Kara.jpg";
 import Velo from "@images/foto-varie/Velo.jpg";
+import AOSComponent from "../AOSComponent";
 
 export default function ComeFunziona({ versione }) {
   return (
     <div className={styles.comeFunzionaContainer}>
-      <div className={styles.imagesSection}>
-        <div className={`${styles.imgContainer} ${styles.wideImage}`}>
-          <Image src={Munia} alt="Foto di Munia" />
+      <AOSComponent animationType="fade-right">
+        <div className={styles.imagesSection}>
+          <div className={`${styles.imgContainer} ${styles.wideImage}`}>
+            <Image src={Munia} alt="Foto di Munia" />
+          </div>
+          <div className={`${styles.imgContainer} ${styles.narrowImage}`}>
+            <Image src={Kara} alt="Foto di Kara" />
+          </div>
+          <div className={`${styles.imgContainer} ${styles.narrowImage}`}>
+            <Image src={Velo} alt="Foto di Velo" />
+          </div>
+          <div
+            className={`${styles.imgContainer} ${styles.wideImage} ${styles.additionalImage}`}
+          >
+            <Image src={Munia} alt="Foto di Munia" />
+          </div>
         </div>
-        <div className={`${styles.imgContainer} ${styles.narrowImage}`}>
-          <Image src={Kara} alt="Foto di Kara" />
-        </div>
-        <div className={`${styles.imgContainer} ${styles.narrowImage}`}>
-          <Image src={Velo} alt="Foto di Velo" />
-        </div>
-        <div
-          className={`${styles.imgContainer} ${styles.wideImage} ${styles.additionalImage}`}
-        >
-          <Image src={Munia} alt="Foto di Munia" />
-        </div>
-      </div>
+      </AOSComponent>
       <div className={styles.textSection}>
         <ComeFunzionaText
           title="Visita il nostro rifugio"
