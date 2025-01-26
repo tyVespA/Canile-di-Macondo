@@ -49,16 +49,20 @@ export default function Home() {
           </p>
 
           <div className={styles.heroButtonsContainer}>
-            <div className={styles.firstLink}>
-              <Link href="/tradizionale/adozioni/i-nostri-ospiti">
-                <Button theme="light" paddingInline="37.5px">
-                  Incontra i nostri ospiti
-                </Button>
+            <AOSComponent animationType="fade-right">
+              <div className={styles.firstLink}>
+                <Link href="/tradizionale/adozioni/i-nostri-ospiti">
+                  <Button theme="light" paddingInline="37.5px">
+                    Incontra i nostri ospiti
+                  </Button>
+                </Link>
+              </div>
+            </AOSComponent>
+            <AOSComponent animationType="fade-right" delay="200">
+              <Link href="/tradizionale/come-aiutarci">
+                <Button theme="dark">Scopri come puoi aiutare</Button>{" "}
               </Link>
-            </div>
-            <Link href="/tradizionale/come-aiutarci">
-              <Button theme="dark">Scopri come puoi aiutare</Button>{" "}
-            </Link>
+            </AOSComponent>
           </div>
         </div>
         <div></div>
@@ -145,16 +149,10 @@ export default function Home() {
             versione="tradizionale"
             sezione="ospiti"
           />
-          <AOSComponent>
-            <div
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-delay="200"
-            >
-              <Link href="/tradizionale/adozioni/i-nostri-ospiti">
-                <Button theme="light">Incontrali tutti →</Button>
-              </Link>
-            </div>
+          <AOSComponent animationType="fade-up" delay="200">
+            <Link href="/tradizionale/adozioni/i-nostri-ospiti">
+              <Button theme="light">Incontrali tutti →</Button>
+            </Link>
           </AOSComponent>
         </div>
       </section>
@@ -273,11 +271,13 @@ export default function Home() {
             ]}
           />
         </div>
-        <Link href="/tradizionale/adozioni/casa-dolce-casa">
-          <Button theme="white">
-            I nostri amici e le loro nuove famiglie →
-          </Button>
-        </Link>
+        <AOSComponent animationType="fade-up" delay="200">
+          <Link href="/tradizionale/adozioni/casa-dolce-casa">
+            <Button theme="white">
+              I nostri amici e le loro nuove famiglie →
+            </Button>
+          </Link>
+        </AOSComponent>
       </section>
     </div>
   );

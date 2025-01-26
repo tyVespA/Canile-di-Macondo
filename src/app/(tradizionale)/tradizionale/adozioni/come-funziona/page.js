@@ -6,6 +6,7 @@ import noshadowLight from "@images/tradizionale/noshadowLight.png";
 
 import TitleBanner from "@shared-components/TitleBanner";
 import bannerImage from "@images/tradizionale/banner_images/cane_hero_3.jpg";
+import AOSComponent from "@/src/app/shared-components/AOSComponent";
 
 export const metadata = {
   title: "Come funziona | Canile di Macondo",
@@ -29,19 +30,21 @@ export default function page() {
           così da poter consigliare l’abbinamento migliore possibile.
         </p>
         <ComeFunziona versione="tradizionale" />
-        <div className={styles.cardContainer}>
-          <ReadyToAdoptCard
-            dogSrc={noshadowLight}
-            comicBaloonTheme={comicBaloonLight}
-            btnTheme="white"
-            href="/tradizionale/adozioni/i-nostri-ospiti"
-            paddingInline="36px"
-          >
-            Adottare è un percorso importante, e ora hai tutti gli strumenti per
-            iniziarlo. <br /> Incontra i nostri amici a quattro zampe in cerca
-            di una famiglia e trova quello che è perfetto per te!
-          </ReadyToAdoptCard>
-        </div>
+        <AOSComponent>
+          <div className={styles.cardContainer}>
+            <ReadyToAdoptCard
+              dogSrc={noshadowLight}
+              comicBaloonTheme={comicBaloonLight}
+              btnTheme="white"
+              href="/tradizionale/adozioni/i-nostri-ospiti"
+              paddingInline="36px"
+            >
+              Adottare è un percorso importante, e ora hai tutti gli strumenti
+              per iniziarlo. <br /> Incontra i nostri amici a quattro zampe in
+              cerca di una famiglia e trova quello che è perfetto per te!
+            </ReadyToAdoptCard>
+          </div>
+        </AOSComponent>
       </section>
     </div>
   );

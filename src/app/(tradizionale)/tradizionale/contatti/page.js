@@ -9,6 +9,7 @@ import bannerImage from "@images/tradizionale/banner_images/cane_hero_1.jpg";
 import noshadowLight from "@images/tradizionale/noshadowLight.png";
 import noShadowBig from "@images/tradizionale/noShadowBig.png";
 import shadowBig from "@images/tradizionale/shadowBig.png";
+import AOSComponent from "@/src/app/shared-components/AOSComponent";
 
 export const metadata = {
   title: "Contatti | Canile di Macondo",
@@ -52,7 +53,10 @@ export default function page() {
             </Suspense>
           </div>
           <div className={styles.formSectionImage}>
-            <Image src={shadowBig} alt="" />
+            {/* might be laggy? */}
+            <AOSComponent animationType="fade-left">
+              <Image src={shadowBig} alt="" />
+            </AOSComponent>
           </div>
         </div>
       </section>
@@ -70,64 +74,10 @@ export default function page() {
       <section className={styles.doveSiamoSection}>
         <h2>Dove siamo</h2>
         <p>Via della Speranza, 100 - 381333 Macondo</p>
-        <MapWrapper />
+        <AOSComponent>
+          <MapWrapper />
+        </AOSComponent>
       </section>
-
-      {/* MOVE TO OTHER PAGES */}
-
-      {/* <h2>Unisciti a noi</h2>
-      <p>
-        Sei parte fondamentale di questa magia. Che tu decida di adottare, fare
-        volontariato, o semplicemente condividere il nostro messaggio, il tuo
-        contributo può fare la differenza. Insieme, possiamo costruire un mondo
-        migliore, un’amicizia alla volta.
-      </p>
-
-      <h2>Chi siamo</h2>
-      <p>
-        Benvenuti al Canile di Macondo, un luogo dove la magia delle seconde
-        possibilità prende vita. Ispirato alla città incantata di Cent’anni di
-        solitudine, il nostro rifugio è uno spazio speciale, fatto di amore,
-        dedizione e speranza per i nostri amici a quattro zampe.
-      </p>
-      <p>
-        Da anni ci impegniamo a offrire ai cani abbandonati o in difficoltà una
-        nuova opportunità di vita. Crediamo che ogni animale meriti una famiglia
-        che lo ami e lo protegga, e lavoriamo ogni giorno per realizzare questo
-        sogno.
-      </p>
-      <p>
-        Come la città immaginaria di Gabriel García Márquez, il nostro canile è
-        un luogo speciale, dove ogni giorno accadono piccoli miracoli. Qui, la
-        solitudine si trasforma in compagnia, e la tristezza lascia spazio alla
-        gioia di un nuovo inizio
-      </p>
-      <h2>Cosa facciamo</h2>
-      <p>
-        Il nostro obiettivo principale è quello di creare un legame unico tra
-        gli animali e le persone. Non si tratta solo di trovare una casa per i
-        nostri ospiti, ma di costruire relazioni basate sulla fiducia, sul
-        rispetto e sull’amore reciproco. Ogni cane che accogliamo ha una storia,
-        spesso segnata da difficoltà, ma anche un cuore pieno di affetto da
-        donare.
-      </p>
-      <ul className={styles.ul}>
-        <li>
-          <strong>Accoglienza e cura</strong>: Forniamo un ambiente sicuro e
-          confortevole per i nostri cani, assicurandoci che ricevano tutte le
-          cure mediche, l’alimentazione e l’amore di cui hanno bisogno.
-        </li>
-        <li>
-          <strong>Percorso di adozione</strong>: Accompagniamo le famiglie
-          attraverso un processo attento e personalizzato, per garantire
-          un’adozione felice e duratura.
-        </li>
-        <li>
-          <strong>Educazione e sensibilizzazione:</strong> Organizziamo eventi e
-          campagne per promuovere l’adozione responsabile e diffondere la
-          cultura del rispetto verso gli animali.
-        </li>
-      </ul> */}
     </div>
   );
 }

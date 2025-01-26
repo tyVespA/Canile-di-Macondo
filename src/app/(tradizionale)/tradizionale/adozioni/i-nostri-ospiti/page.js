@@ -10,6 +10,7 @@ import HelpCard from "@/src/app/shared-components/HelpCard";
 import TitleBanner from "@shared-components/TitleBanner";
 import testImage from "@images/tradizionale/hero_image.jpg";
 import bannerImage from "@images/tradizionale/banner_images/cane_hero_5.jpg";
+import AOSComponent from "@/src/app/shared-components/AOSComponent";
 
 export default function page() {
   const anno_corrente = new Date().getFullYear();
@@ -68,7 +69,9 @@ export default function page() {
 
         {/* <h1>I nostri ospiti</h1> */}
 
-        <ReadRulesCard versione="tradizionale" />
+        <AOSComponent>
+          <ReadRulesCard versione="tradizionale" />
+        </AOSComponent>
 
         <Filter filters={filters} setFilters={setFilters} />
 

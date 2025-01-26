@@ -7,6 +7,7 @@ import PaypalCampagna from "@/src/app/shared-components/PaypalCampagna";
 import PaypalButton from "@/src/app/shared-components/PaypalButton";
 import Button from "@shared-components/Button";
 import Spacer from "@shared-components/Spacer";
+import AOSComponent from "@/src/app/shared-components/AOSComponent";
 
 import {
   FacebookLogo,
@@ -44,9 +45,11 @@ export default function page() {
           il necessario per il benessere dei nostri ospiti. Ogni contributo,
           grande o piccolo, fa la differenza.
         </p>
-        <div className={styles.paypalButtonContainer}>
-          <PaypalButton width="200px" />
-        </div>
+        <AOSComponent animationType="fade-right">
+          <div className={styles.paypalButtonContainer}>
+            <PaypalButton width="200px" />
+          </div>
+        </AOSComponent>
         <p>
           Se sei da pc e vuoi donare dal cellulare, inquadra il QR con la
           fotocamera attiva
@@ -78,9 +81,11 @@ export default function page() {
           ti costa nulla!
         </p>
         <div className={styles.comeDonareCinquePerMille}>
-          <div>
-            <Image src={cinquePerMille} alt="module 5x1000" />
-          </div>
+          <AOSComponent animationType="fade-left">
+            <div>
+              <Image src={cinquePerMille} alt="module 5x1000" />
+            </div>
+          </AOSComponent>
           <div className={styles.comeDonareCinquePerMilleText}>
             <h3>Come destinare il 5 x 1000</h3>
             <p>Destinare il 5 x 1000 alla PAL è facilissimo.</p>
@@ -108,6 +113,7 @@ export default function page() {
             portarli a passeggio, o aiutarci nelle attività quotidiane del
             rifugio. Ogni gesto è prezioso!
           </p>
+
           <Link
             href={{
               pathname: "/tradizionale/contatti",
@@ -127,6 +133,7 @@ export default function page() {
             pulizia. Ogni donazione materiale è un aiuto concreto per migliorare
             la vita nel canile.
           </p>
+
           <Link href="/tradizionale/404temp">
             <Button theme="white">Scopri cosa ci serve</Button>
           </Link>
@@ -139,18 +146,26 @@ export default function page() {
             trovare casa. Seguici sui nostri social!
           </p>
           <div className={styles.socialsContainer}>
-            <Link href="/tradizionale/404temp">
-              <FacebookLogo size={32} />
-            </Link>
-            <Link href="/tradizionale/404temp">
-              <InstagramLogo size={32} />
-            </Link>
-            <Link href="/tradizionale/404temp">
-              <YoutubeLogo size={32} />
-            </Link>
-            <Link href="/tradizionale/404temp">
-              <TiktokLogo size={32} />
-            </Link>
+            <AOSComponent>
+              <Link href="/tradizionale/404temp">
+                <FacebookLogo size={32} />
+              </Link>
+            </AOSComponent>
+            <AOSComponent delay="100">
+              <Link href="/tradizionale/404temp">
+                <InstagramLogo size={32} />
+              </Link>
+            </AOSComponent>
+            <AOSComponent delay="200">
+              <Link href="/tradizionale/404temp">
+                <YoutubeLogo size={32} />
+              </Link>
+            </AOSComponent>
+            <AOSComponent delay="300">
+              <Link href="/tradizionale/404temp">
+                <TiktokLogo size={32} />
+              </Link>
+            </AOSComponent>
           </div>
         </div>
       </div>
