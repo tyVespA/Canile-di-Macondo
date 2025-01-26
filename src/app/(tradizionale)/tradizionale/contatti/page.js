@@ -54,7 +54,7 @@ export default function page() {
           </div>
           <div className={styles.formSectionImage}>
             {/* might be laggy? */}
-            <AOSComponent animationType="fade-left">
+            <AOSComponent>
               <Image src={shadowBig} alt="" />
             </AOSComponent>
           </div>
@@ -74,9 +74,7 @@ export default function page() {
       <section className={styles.doveSiamoSection}>
         <h2>Dove siamo</h2>
         <p>Via della Speranza, 100 - 381333 Macondo</p>
-        <AOSComponent>
-          <MapWrapper />
-        </AOSComponent>
+        <MapWrapper />
       </section>
     </div>
   );

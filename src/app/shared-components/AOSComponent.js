@@ -8,6 +8,7 @@ export default function AOSComponent({
   children,
   animationType = "fade-up",
   delay = 0,
+  mobileDelay = false, // if true, delay applied to mobiles
 }) {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -20,7 +21,7 @@ export default function AOSComponent({
     <div
       data-aos={animationType}
       data-aos-easing="ease-in-out"
-      data-aos-delay={!isMobile ? delay : 0}
+      data-aos-delay={!isMobile || mobileDelay ? delay : 0}
     >
       {children}
     </div>

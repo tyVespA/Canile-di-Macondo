@@ -81,7 +81,7 @@ export default function page() {
           ti costa nulla!
         </p>
         <div className={styles.comeDonareCinquePerMille}>
-          <AOSComponent animationType="fade-left">
+          <AOSComponent animationType="fade-right">
             <div>
               <Image src={cinquePerMille} alt="module 5x1000" />
             </div>
@@ -151,17 +151,17 @@ export default function page() {
                 <FacebookLogo size={32} />
               </Link>
             </AOSComponent>
-            <AOSComponent delay="100">
+            <AOSComponent delay="100" mobileDelay={true}>
               <Link href="/tradizionale/404temp">
                 <InstagramLogo size={32} />
               </Link>
             </AOSComponent>
-            <AOSComponent delay="200">
+            <AOSComponent delay="200" mobileDelay={true}>
               <Link href="/tradizionale/404temp">
                 <YoutubeLogo size={32} />
               </Link>
             </AOSComponent>
-            <AOSComponent delay="300">
+            <AOSComponent delay="300" mobileDelay={true}>
               <Link href="/tradizionale/404temp">
                 <TiktokLogo size={32} />
               </Link>
