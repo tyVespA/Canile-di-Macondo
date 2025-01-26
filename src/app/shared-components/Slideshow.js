@@ -43,15 +43,15 @@ export default function Slideshow({ images }) {
   };
 
   return (
-    <AOSComponent animationType="fade-right">
-      <div
-        className={`${styles.carouselContainer} ${
-          isDragging ? styles.grabbing : styles.grab
-        }`}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseLeave}
-      >
+    <div
+      className={`${styles.carouselContainer} ${
+        isDragging ? styles.grabbing : styles.grab
+      }`}
+      onMouseDown={handleMouseDown}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseLeave}
+    >
+      <AOSComponent animationType="fade-right">
         <Slider {...settings}>
           {images.map((image, index) => (
             <div className={styles.carouselImageContainer} key={index}>
@@ -59,7 +59,7 @@ export default function Slideshow({ images }) {
             </div>
           ))}
         </Slider>
-      </div>
-    </AOSComponent>
+      </AOSComponent>
+    </div>
   );
 }

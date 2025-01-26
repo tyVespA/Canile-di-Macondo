@@ -58,7 +58,6 @@ export default async function Page({ params }) {
         </p>
         <div className={styles.mainContent}>
           <Slideshow images={cane.images} />
-
           <div className={styles.textContainer}>
             <h1>{cane.nome}</h1>
 

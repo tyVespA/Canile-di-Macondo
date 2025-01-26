@@ -11,6 +11,7 @@ import HelpCard from "@shared-components/HelpCard";
 import PreviewCardsSection from "@shared-components/PreviewCardsSection";
 import FilterSimpler from "@/src/app/shared-components/FilterSimpler";
 import Slideshow from "@/src/app/shared-components/Slideshow";
+import AOSComponent from "@/src/app/shared-components/AOSComponent";
 
 import {
   GenderMale,
@@ -103,10 +104,12 @@ export default async function Page({ params }) {
                 href={`/tradizionale/adozioni/casa-dolce-casa/${nextDogId}`}
                 className={styles.altraStoriaLink}
               >
-                <Button paddingInline="40px" theme="white">
-                  Leggi un' altra storia a lieto fine
-                  <Dog size={30} weight="fill" />
-                </Button>
+                <AOSComponent>
+                  <Button paddingInline="40px" theme="white">
+                    Leggi un' altra storia a lieto fine
+                    <Dog size={30} weight="fill" />
+                  </Button>
+                </AOSComponent>
               </Link>
             </div>
           </div>
