@@ -11,6 +11,7 @@ import HelpCard from "@shared-components/HelpCard";
 import PreviewCardsSection from "@shared-components/PreviewCardsSection";
 import FilterSimpler from "@/src/app/shared-components/FilterSimpler";
 import Slideshow from "@/src/app/shared-components/Slideshow";
+import AOSComponent from "@/src/app/shared-components/AOSComponent";
 
 import {
   GenderMale,
@@ -56,7 +57,9 @@ export default async function Page({ params }) {
           &gt; {cane.nome}
         </p>
         <div className={styles.mainContent}>
-          <Slideshow images={cane.images} />
+          <AOSComponent animationType="fade-right">
+            <Slideshow images={cane.images} />
+          </AOSComponent>
           <div className={styles.textContainer}>
             <h1>{cane.nome}</h1>
 
