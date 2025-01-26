@@ -11,7 +11,7 @@ import PaypalButton from "@shared-components/PaypalButton";
 import Testimonial from "@shared-components/Testimonial";
 import TestimonialsSection from "@shared-components/TestimonialsSection";
 
-import AOSComponent from "@shared-components/AOSComponent";
+import AOSComponent from "@/src/app/shared-components/AOSComponent";
 
 import {
   HouseLine,
@@ -81,43 +81,29 @@ export default function Home() {
         <h3>Cosa facciamo</h3>
         <div className="infoCardsSection">
           <AOSComponent>
-            <div data-aos="fade-up" data-aos-easing="ease-in-out">
-              <InfoCard
-                title="Accoglienza e cura"
-                text="Forniamo un ambiente sicuro e confortevole per i nostri cani, assicurandoci che ricevano tutte le cure mediche, l’alimentazione e l’amore di cui hanno bisogno."
-              >
-                {" "}
-                <HouseLine size={32} />
-              </InfoCard>
-            </div>
-          </AOSComponent>
-          <AOSComponent>
-            <div
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-delay="200"
+            <InfoCard
+              title="Accoglienza e cura"
+              text="Forniamo un ambiente sicuro e confortevole per i nostri cani, assicurandoci che ricevano tutte le cure mediche, l’alimentazione e l’amore di cui hanno bisogno."
             >
-              <InfoCard
-                title="Percorso di adozione"
-                text=" Accompagniamo le famiglie attraverso un processo attento e personalizzato, per garantire un’adozione felice e duratura, rispettando i bisogni di tutti i coinvolti."
-              >
-                <Heart size={32} />
-              </InfoCard>
-            </div>
+              {" "}
+              <HouseLine size={32} />
+            </InfoCard>
           </AOSComponent>
-          <AOSComponent>
-            <div
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-delay="400"
+          <AOSComponent delay="200">
+            <InfoCard
+              title="Percorso di adozione"
+              text=" Accompagniamo le famiglie attraverso un processo attento e personalizzato, per garantire un’adozione felice e duratura, rispettando i bisogni di tutti i coinvolti."
             >
-              <InfoCard
-                title="Educazione e sensibilizzazione"
-                text="Organizziamo eventi, campagne e attività dedicate per sensibilizzare sull’adozione responsabile e diffondere la cultura del rispetto verso gli animali."
-              >
-                <CalendarDots size={32} />
-              </InfoCard>
-            </div>
+              <Heart size={32} />
+            </InfoCard>
+          </AOSComponent>
+          <AOSComponent delay="400">
+            <InfoCard
+              title="Educazione e sensibilizzazione"
+              text="Organizziamo eventi, campagne e attività dedicate per sensibilizzare sull’adozione responsabile e diffondere la cultura del rispetto verso gli animali."
+            >
+              <CalendarDots size={32} />
+            </InfoCard>
           </AOSComponent>
         </div>
       </section>
