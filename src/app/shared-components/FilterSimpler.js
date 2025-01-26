@@ -18,7 +18,6 @@ export default function FilterSimpler({
   const filteredData = db.filter((dog) => {
     if (!isAnyFilterActive) {
       return false;
-      ù;
     }
 
     let matches = true;
@@ -45,8 +44,8 @@ export default function FilterSimpler({
   });
 
   return (
-    <div>
-      <div className={styles.filters}>
+    <>
+      <div className={styles.filters} style={{ marginBottom: "25px" }}>
         <label>
           <input
             type="checkbox"
@@ -121,6 +120,6 @@ export default function FilterSimpler({
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

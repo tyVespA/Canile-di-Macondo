@@ -1,7 +1,7 @@
 .stickyHeaderContainer {
   background-color: var(--background);
   width: 100vw;
-  padding-block: 15px;
+  padding-block: 20px;
   margin-left: calc(50% - 50vw);
   position: fixed;
   top: 0;
@@ -67,7 +67,7 @@
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 890px) {
   .ctaButtons {
     display: none;
   }

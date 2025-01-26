@@ -1,19 +1,88 @@
+import Image from "next/image";
+import { Suspense } from "react";
 import FullWidthBg from "@shared-components/FullWidthBg";
 import styles from "./page.module.css";
 import MapWrapper from "@shared-components/Map/MapWrapper";
 import TitleBanner from "@shared-components/TitleBanner";
 import ContattaciForm from "@shared-components/ContattaciForm";
-import testImage from "@images/tradizionale/hero_image.jpg";
+import bannerImage from "@images/tradizionale/banner_images/cane_hero_1.jpg";
+import noshadowLight from "@images/tradizionale/noshadowLight.png";
+import noShadowBig from "@images/tradizionale/noShadowBig.png";
+import shadowBig from "@images/tradizionale/shadowBig.png";
 
 export const metadata = {
   title: "Contatti | Canile di Macondo",
-  description: "Benvenuti!" /* change */,
+  description: "Come contattarci e dove ci troviamo",
 };
 
 export default function page() {
   return (
-    <div>
-      <TitleBanner imgSrc={testImage}>Contatti</TitleBanner>
+    <div className={styles.contattiPage}>
+      <TitleBanner imgSrc={bannerImage} objectPosition="right">
+        Contatti
+      </TitleBanner>
+
+      {/* <section className="first-section"> */}
+      <section id="form">
+        <p className={`heading-p centered ${styles.headingP}`}>
+          Il Canile di Macondo è aperto a tutti: che tu voglia adottare, fare
+          volontariato o semplicemente conoscerci, saremo felici di accoglierti!
+        </p>
+        {/* <h1>Contatti</h1> */}
+
+        <div>
+          <h2>Contattaci</h2>
+          <p>Telefono: +39 121 333 789</p>
+          <p>
+            Email:{" "}
+            <a href="mailto:info@caniledimacondo.net">
+              info@caniledimacondo.net
+            </a>
+          </p>
+          <p>
+            oppure compila il form sottostante, ti risponderemo il prima
+            possibile!
+          </p>
+        </div>
+
+        <div className={styles.formSection}>
+          <div className={styles.formSectionForm}>
+            <Suspense>
+              <ContattaciForm />
+            </Suspense>
+          </div>
+          <div className={styles.formSectionImage}>
+            <Image src={shadowBig} alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.orariSection} id="orari">
+        <h2>Orari di apertura</h2>
+        <p>Lunedì 9 - 12</p>
+        <p>Martedì 9 - 12 e 14 - 18.30</p>
+        <p>Mercoledì 9 - 12 e 14 - 18</p>
+        <p>Giovedì 9 - 12 e 14 - 18.30</p>
+        <p>Venerdì 9 - 12 e 14 - 17.30</p>
+        <p>Sabato 9 - 12 e 14 - 18.30</p>
+        <p>Domenica 9 - 12</p>
+      </section>
+      <section className={styles.doveSiamoSection}>
+        <h2>Dove siamo</h2>
+        <p>Via della Speranza, 100 - 381333 Macondo</p>
+        <MapWrapper />
+      </section>
+
+      {/* MOVE TO OTHER PAGES */}
+
+      {/* <h2>Unisciti a noi</h2>
+      <p>
+        Sei parte fondamentale di questa magia. Che tu decida di adottare, fare
+        volontariato, o semplicemente condividere il nostro messaggio, il tuo
+        contributo può fare la differenza. Insieme, possiamo costruire un mondo
+        migliore, un’amicizia alla volta.
+      </p>
+
       <h2>Chi siamo</h2>
       <p>
         Benvenuti al Canile di Macondo, un luogo dove la magia delle seconde
@@ -58,33 +127,7 @@ export default function page() {
           campagne per promuovere l’adozione responsabile e diffondere la
           cultura del rispetto verso gli animali.
         </li>
-      </ul>
-      <h2>Unisciti a noi</h2>
-      <p>
-        Sei parte fondamentale di questa magia. Che tu decida di adottare, fare
-        volontariato, o semplicemente condividere il nostro messaggio, il tuo
-        contributo può fare la differenza. Insieme, possiamo costruire un mondo
-        migliore, un’amicizia alla volta.
-      </p>
-      <h2>Contattaci</h2>
-      <p>
-        Il Canile di Macondo è aperto a tutti: che tu voglia adottare, fare
-        volontariato o semplicemente conoscerci, saremo felici di accoglierti!
-      </p>
-      <p>Via della Speranza, 100 - 381333 Macondo</p>
-      <p>Telefono: +39 121 333 789</p>
-      <p>
-        Email:{" "}
-        <a href="mailto:info@caniledimacondo.net">info@caniledimacondo.net</a>
-      </p>
-      <p></p>
-      <ContattaciForm />
-      <h2>Orari di apertura</h2>
-      <p>Lunedì 9-12</p>
-      <p>Da Martedì a Sabato: 9-12 e 14-18</p>
-      <p>Domenica 9-12</p>
-      <h2>Dove siamo</h2>
-      <MapWrapper />
+      </ul> */}
     </div>
   );
 }

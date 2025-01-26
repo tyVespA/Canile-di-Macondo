@@ -10,9 +10,7 @@ export default function page() {
   return (
     <>
       <h1>donazioni</h1>
-      <div className={styles.wrapper}>
-        <PaypalDonateBtn />
-      </div>
+      <div className={styles.wrapper}>{/* <PaypalDonateBtn /> */}</div>
     </>
   );
 }

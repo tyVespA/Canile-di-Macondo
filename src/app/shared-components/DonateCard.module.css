@@ -1,0 +1,78 @@
+.otherDonationsSection {
+  width: 100%;
+  min-height: 300px;
+  /* border: 1px solid black; */
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-image: url("/images/tradizionale/parallaxImage.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--text-light);
+  position: relative;
+
+  border-radius: 15px;
+  overflow: hidden;
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
+}
+
+.otherDonationsSection::after {
+  position: absolute;
+  content: "";
+  background-color: hsla(23, 39%, 44%, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.otherDonationsSection h3 {
+  color: var(--text-light);
+  margin-bottom: 25px;
+}
+
+.otherDonationsSection > div {
+  flex: 1;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+
+  padding-inline: 10px;
+  padding-block: 30px;
+  text-align: center;
+  min-height: 300px;
+}
+
+.otherDonationsSection .div1,
+.otherDonationsSection .div2 {
+  border-right: 1px solid var(--background);
+  border-bottom: 1px solid var(--background);
+}
+
+/* @media screen and (max-width: 1258px) {
+  .otherDonationsSection .div1,
+  .otherDonationsSection .div2 {
+    border-bottom: 1px solid var(--background);
+  } */
+
+@media screen and (max-width: 865px) {
+  .otherDonationsSection {
+    /* background-position: center center; */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .otherDonationsSection {
+    /* disable parallax on mobile */
+    background-attachment: scroll;
+  }
+  .otherDonationsSection > div {
+    min-width: 250px;
+  }
+}

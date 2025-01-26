@@ -50,8 +50,10 @@ const Counter = ({ target, duration, fontSize, fontWeight, afterNumber }) => {
       ref={counterRef}
       style={{ fontSize: fontSize, fontWeight: fontWeight }}
     >
-      {Math.round(count)}
-      {afterNumber}
+      <p>
+        {Math.round(count)}
+        {afterNumber}
+      </p>
     </div>
   );
 };

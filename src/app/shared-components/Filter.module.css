@@ -1,14 +1,76 @@
+.aggiungiFiltri {
+  padding-top: 10px;
+  /* margin-bottom: 30px; */
+}
+
+.aggiungiFiltri p {
+  cursor: pointer;
+  font-size: 20px;
+
+  display: flex;
+  place-content: center;
+  max-width: 200px;
+  margin-inline: auto;
+  gap: 5px;
+
+  border: 1px solid var(--accent-three);
+  padding: 10px 15px;
+  border-radius: 25px;
+
+  margin-bottom: 30px;
+}
+
+.aggiungiFiltri svg {
+  transition: all 0.25s;
+}
+
+.showFiltersIcon {
+  transform: rotate(-180deg);
+}
+
+.hideFiltersIcon {
+  transform: rotate(0);
+}
+
 .filters {
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin-bottom: 35px;
   flex-wrap: wrap;
+
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    padding 0.3s ease-in-out;
+
+  will-change: transform, opacity, margin-bottom;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+
+  margin-bottom: 0;
+  user-select: none;
+}
+
+.filtersShown {
+  opacity: 1;
+  max-height: 260px;
+  visibility: visible;
+
+  margin-bottom: 35px;
+}
+
+.filtersHidden {
+  opacity: 0;
+  max-height: 0;
+  visibility: hidden;
+
+  margin-bottom: 0;
 }
 
 .filters fieldset {
   display: flex;
   gap: 15px;
+  /* border: 1px solid var(--accent-three); */
+  border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 55px;
   padding-inline: 20px;
   padding-bottom: 20px;
@@ -44,7 +106,7 @@
 }
 
 .filters input[type="checkbox"]:checked::after {
-  content: "✔"; /* Checkmark */
+  content: "✔";
   color: var(--background);
   font-size: 14px;
   position: absolute;

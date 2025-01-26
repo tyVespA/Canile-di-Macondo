@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
   const cane = db.find((item) => item.id === id);
   return {
     title: `${cane?.nome} | Canile di Macondo` || "Errore",
-    description: "bau!",
+    description: `Scopri la storia di ${cane.nome}`,
   };
 }
 
@@ -139,7 +139,16 @@ export default async function Page({ params }) {
                   </div>
                 )}
               </div>
-              <Link href="/tradizionale/contatti#form">
+              {/* <Link href="/tradizionale/contatti#form"> */}
+              <Link
+                href={{
+                  pathname: "/tradizionale/contatti",
+                  hash: "form",
+                  query: {
+                    dogName: cane.nome,
+                  },
+                }}
+              >
                 <Button theme="white">Richiedi informazioni</Button>
               </Link>
             </div>

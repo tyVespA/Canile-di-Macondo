@@ -36,16 +36,16 @@ export const metadata = {
       },
     ],
   },
-  openGraph: {
-    images: [
-      {
-        url: "https://cdn.7tv.app/emote/01HKWA1EB00005BZE9KQ0QYJW7/4x.avif",
-        width: 200,
-        height: 200,
-        alt: "Canile di Macondo",
-      },
-    ],
-  },
+  // openGraph: {
+  //   images: [
+  //     {
+  //       url: "https://cdn.7tv.app/emote/01HKWA1EB00005BZE9KQ0QYJW7/4x.avif",
+  //       width: 200,
+  //       height: 200,
+  //       alt: "Canile di Macondo",
+  //     },
+  //   ],
+  // },
 };
 
 export default function VersionTraditionalLayout({ children }) {
@@ -71,9 +71,9 @@ export default function VersionTraditionalLayout({ children }) {
         }
          ${"max-width-container"}`}
       >
-        <SwitchVersionButton />
+        {/* <SwitchVersionButton /> */}
         <Header />
-        <div style={{ marginTop: "75px" }}>{children}</div>
+        <div style={{ marginTop: "85px" }}>{children}</div>
         <FullWidthBg
           backgroundColor="var(--text-dark)"
           color="var(--text-light)"

@@ -24,8 +24,9 @@
 }
 
 .dark {
-  background-color: var(--surface);
-  color: var(--accent-one);
+  background-color: var(--surface5);
+  /* color: var(--accent-one); */
+  color: var(--text-light);
   box-shadow: 4px 4px 0px var(--accent-one);
 }
 .dark:hover {
@@ -46,6 +47,17 @@
 .accent-two {
   background-color: var(--accent-two);
   color: var(--text-light);
+}
+
+.disabled {
+  cursor: not-allowed;
+  /* cursor: pointer; */
+  filter: grayscale(0.2);
+  box-shadow: none;
+}
+
+.disabled:hover {
+  transform: translate(0, 0);
 }
 
 /* .accent-two:hover,

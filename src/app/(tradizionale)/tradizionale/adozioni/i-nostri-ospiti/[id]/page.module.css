@@ -12,6 +12,7 @@
 }
 
 .mainContent {
+  min-height: 100%;
   display: flex;
   gap: 25px;
   margin-bottom: 125px;
@@ -38,13 +39,13 @@
   overflow: hidden;
 }
 
-.pageContainer img {
+.pageContainer .mainContent img {
   height: 500px;
-  width: auto;
+  /* width: auto; */
 }
 
 .textContainer {
-  height: 500;
+  /* height: 500; */
   display: flex;
   flex-direction: column;
   gap: 5px;

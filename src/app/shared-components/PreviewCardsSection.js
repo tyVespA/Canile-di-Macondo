@@ -11,18 +11,23 @@ export default function PreviewCardsSection({
   backgroundColor,
   color,
   versione,
+  sezione = "ospiti",
 }) {
   const { favorites, addFavorite, removeFavorite, isFavorite } = useFavorites();
+
+  const sezioneLinksTo =
+    sezione === "ospiti" ? "i-nostri-ospiti" : "casa-dolce-casa";
 
   return (
     <section className={styles.previewCardsSectionContainer}>
       {data.map((item, index) => (
         <div key={index}>
-          <Link href={`/${versione}/adozioni/i-nostri-ospiti/${item.id}`}>
+          <Link href={`/${versione}/adozioni/${sezioneLinksTo}/${item.id}`}>
             <PreviewCard
               item={data[index]}
               backgroundColor={backgroundColor}
               color={color}
+              sezione={sezione}
             />
           </Link>
           {/* <button

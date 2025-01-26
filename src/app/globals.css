@@ -66,12 +66,15 @@ h6 {
   --surface2: hsl(248, 100%, 76%);
   --surface3: hsl(248, 51%, 44%);
   --surface3: hsl(217, 74%, 9%);
+  --surface4: hsla(23, 39%, 44%, 0.75);
+  --surface5: hsla(23, 39%, 44%);
 
   --text-light: hsl(0, 0%, 100%);
   --text-dark: hsl(217, 74%, 9%);
 
   --accent-one: hsl(47, 100%, 68%);
   --accent-two: hsl(13, 90%, 58%);
+  --accent-three: #9c6644;
 
   --max-width: 1260px;
   --padding-inline-max-width: 40px;
@@ -97,6 +100,16 @@ button {
 
 h1 {
   font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 35px;
+  }
 }
 
 h1,
@@ -157,6 +170,20 @@ strong {
 
 .centered {
   text-align: center;
+}
+
+.marginsCenter {
+  margin-inline: auto;
+}
+
+.heading-p {
+  font-size: 20px;
+  /* font-weight: 500; */
+  /* color: var(--accent-three); */
+  line-height: 1.4;
+  max-width: 80ch;
+  margin-inline: auto;
+  margin-bottom: 25px;
 }
 
 /* REACT SLICK  */

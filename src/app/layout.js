@@ -31,16 +31,16 @@ export const metadata = {
       },
     ],
   },
-  openGraph: {
-    images: [
-      {
-        url: "https://cdn.7tv.app/emote/01HKWA1EB00005BZE9KQ0QYJW7/4x.avif",
-        width: 200,
-        height: 200,
-        alt: "Canile di Macondo",
-      },
-    ],
-  },
+  // openGraph: {
+  //   images: [
+  //     {
+  //       url: "https://cdn.7tv.app/emote/01HKWA1EB00005BZE9KQ0QYJW7/4x.avif",
+  //       width: 200,
+  //       height: 200,
+  //       alt: "Canile di Macondo",
+  //     },
+  //   ],
+  // },
 };
 
 export default function RootLayout({ children }) {

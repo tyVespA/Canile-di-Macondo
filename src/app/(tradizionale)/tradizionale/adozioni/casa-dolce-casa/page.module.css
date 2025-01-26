@@ -1,0 +1,17 @@
+.casaDolceCasaPage {
+  margin-bottom: 100px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title p {
+  margin-top: 20px;
+}
+
+.title svg {
+  margin-inline: auto;
+  margin-bottom: 25px;
+  fill: var(--accent-three);
+}

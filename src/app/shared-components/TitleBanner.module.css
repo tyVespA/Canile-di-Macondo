@@ -37,4 +37,5 @@
   padding-inline: var(--padding-inline-max-width);
   margin-inline: auto;
   color: white;
+  text-align: center;
 }
