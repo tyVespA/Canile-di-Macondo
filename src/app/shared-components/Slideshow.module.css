@@ -62,7 +62,7 @@
   }
 
   .carouselImageContainer {
-    padding-right: 0;
+    padding-inline: 5px;
   }
   .carouselContainer img {
     max-height: 400px;
