@@ -50,13 +50,14 @@ local storage 4 favs (?)
 useParams to populate form
 
 TODO:
+create branch with only 1 version
 underline effect while hover on nav (?)
 lightbox (maybe?)
 refractor navbar
-scroll animations - AOS (Animate On Scroll) (o altri?)
 
 DONE:
 hide text selection on filters?
+scroll animations - AOS (Animate On Scroll) (o altri?)
 bug on previewsection? on altri ospiti simili
 carosello still bugged (not perfect but seems good now)
 in i nostri ospiti: "Aggiungi filtri" > dropdown per i filtri
