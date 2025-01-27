@@ -53,10 +53,7 @@ export default function page() {
             </Suspense>
           </div>
           <div className={styles.formSectionImage}>
-            {/* might be laggy? */}
-            <AOSComponent>
-              <Image src={shadowBig} alt="" />
-            </AOSComponent>
+            <Image src={shadowBig} alt="" />
           </div>
         </div>
       </section>

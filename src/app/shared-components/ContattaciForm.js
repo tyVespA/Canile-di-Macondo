@@ -6,6 +6,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import Image from "next/image";
 import cane3_svg from "@images/cane3_svg.svg";
 import { useEffect, useState } from "react";
+import AOSComponent from "./AOSComponent";
 
 export default function ContattaciForm() {
   const [state, handleSubmit] = useForm("mvggdwaj");
@@ -54,9 +55,11 @@ export default function ContattaciForm() {
           required
         ></textarea>
         {!state.succeeded ? (
-          <Button type="submit" theme="light" paddingInline="60px">
-            {state.submitting ? "Invio in corso..." : "Invia"}
-          </Button>
+          <AOSComponent>
+            <Button type="submit" theme="light" paddingInline="60px">
+              {state.submitting ? "Invio in corso..." : "Invia"}
+            </Button>
+          </AOSComponent>
         ) : (
           <div>
             <div className={styles.successo}>
