@@ -49,7 +49,7 @@ export default function Home() {
           </p>
 
           <div className={styles.heroButtonsContainer}>
-            <AOSComponent animationType="fade-right">
+            <AOSComponent animationType="fade-up">
               <div className={styles.firstLink}>
                 <Link href="/tradizionale/adozioni/i-nostri-ospiti">
                   <Button theme="light" paddingInline="37.5px">
@@ -58,7 +58,7 @@ export default function Home() {
                 </Link>
               </div>
             </AOSComponent>
-            <AOSComponent animationType="fade-right" delay="200">
+            <AOSComponent animationType="fade-up" delay="200">
               <Link href="/tradizionale/come-aiutarci">
                 <Button theme="dark">Scopri come puoi aiutare</Button>{" "}
               </Link>
@@ -243,8 +243,8 @@ export default function Home() {
                 Luna era una cagnolina timida e riservata, ma con l’amore e la
                 pazienza di Sara e Mauro, ha trovato il coraggio di fidarsi. Ora
                 passa le sue giornate correndo nei prati e dormendo sul divano
-                accanto ai suoi nuovi amici umani. "Non possiamo immaginare la
-                nostra vita senza di lei," raccontano i suoi nuovi genitori.
+                accanto ai suoi nuovi amici. "Non possiamo immaginare la nostra
+                vita senza di lei," raccontano i suoi nuovi genitori.
               </Testimonial>,
               <Testimonial
                 key="2"
@@ -265,8 +265,9 @@ export default function Home() {
                 Mia è arrivata al Canile di Macondo dopo essere stata trovata
                 per strada. Dopo settimane di cure, ha incontrato Alessio e
                 Valentina. Oggi Mia vive con loro e i loro due bambini, con cui
-                gioca instancabilmente ogni giorno. "È diventata un membro
-                inseparabile della nostra famiglia," dicono.
+                gioca instancabilmente ogni giorno. "Mia è già diventata un
+                membro inseparabile della nostra famiglia" dicono Alessio e
+                Valentina.
               </Testimonial>,
             ]}
           />

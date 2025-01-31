@@ -12,6 +12,7 @@ export default function Testimonial({ name, ospite, children }) {
           alt={`foto di ${ospite}`}
           width={150}
           height={150}
+          loading="eager"
         />
         <p>{children}</p>
       </div>

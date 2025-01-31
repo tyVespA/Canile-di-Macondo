@@ -1,7 +1,7 @@
 .testimonialContainer {
   width: 100%;
   padding-inline: 20px;
-  min-height: 275px;
+  min-height: 285px;
 }
 
 .testimonialContent {
@@ -12,7 +12,7 @@
   max-width: 600px;
   margin-inline: auto;
   /* min-height: 250px; */
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 
   display: flex;
   flex-direction: column;
