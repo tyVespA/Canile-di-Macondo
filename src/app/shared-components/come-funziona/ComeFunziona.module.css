@@ -34,6 +34,7 @@
 }
 
 .imagesSection img {
+  border-radius: 30px;
   object-fit: cover;
   height: auto;
 }

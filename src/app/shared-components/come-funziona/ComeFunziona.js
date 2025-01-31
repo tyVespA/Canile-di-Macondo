@@ -10,24 +10,29 @@ import AOSComponent from "../AOSComponent";
 export default function ComeFunziona({ versione }) {
   return (
     <div className={styles.comeFunzionaContainer}>
-      <AOSComponent animationType="fade-right">
-        <div className={styles.imagesSection}>
-          <div className={`${styles.imgContainer} ${styles.wideImage}`}>
+      <div className={styles.imagesSection}>
+        <div className={`${styles.imgContainer} ${styles.wideImage}`}>
+          <AOSComponent animationType="fade-right">
             <Image src={Munia} alt="Foto di Munia" />
-          </div>
-          <div className={`${styles.imgContainer} ${styles.narrowImage}`}>
+          </AOSComponent>
+        </div>
+        <div className={`${styles.imgContainer} ${styles.narrowImage}`}>
+          <AOSComponent animationType="fade-right" delay="500">
             <Image src={Kara} alt="Foto di Kara" />
-          </div>
-          <div className={`${styles.imgContainer} ${styles.narrowImage}`}>
+          </AOSComponent>
+        </div>
+        <div className={`${styles.imgContainer} ${styles.narrowImage}`}>
+          <AOSComponent animationType="fade-right" delay="250">
             <Image src={Velo} alt="Foto di Velo" />
-          </div>
-          <div
+          </AOSComponent>
+        </div>
+        {/* <div
             className={`${styles.imgContainer} ${styles.wideImage} ${styles.additionalImage}`}
           >
             <Image src={Munia} alt="Foto di Munia" />
-          </div>
-        </div>
-      </AOSComponent>
+          </div> */}
+      </div>
+
       <div className={styles.textSection}>
         <ComeFunzionaText
           title="Visita il nostro rifugio"
