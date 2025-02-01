@@ -7,7 +7,7 @@ import Kara from "@images/foto-varie/Kara.jpg";
 import Velo from "@images/foto-varie/Velo.jpg";
 import AOSComponent from "../AOSComponent";
 
-export default function ComeFunziona({ versione }) {
+export default function ComeFunziona() {
   return (
     <div className={styles.comeFunzionaContainer}>
       <div className={styles.imagesSection}>
@@ -42,7 +42,7 @@ export default function ComeFunziona({ versione }) {
           Ti aspettiamo al rifugio per una visita! Potrai vedere da vicino i
           nostri ospiti, scoprire le loro storie e iniziare a immaginare una
           nuova vita insieme a uno di loro. <br />
-          <Link href={`/${versione}/contatti`} className="underlined">
+          <Link href={`/contatti`} className="underlined">
             Orari e posizione →
           </Link>
         </ComeFunzionaText>

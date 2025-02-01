@@ -8,7 +8,6 @@ import ReadRulesCard from "@/components/ReadRulesCard";
 import HelpCard from "@/components/HelpCard";
 
 import TitleBanner from "@/components/TitleBanner";
-import testImage from "@images/tradizionale/hero_image.jpg";
 import bannerImage from "@images/tradizionale/banner_images/cane_hero_5.jpg";
 import AOSComponent from "@/components/AOSComponent";
 
@@ -70,7 +69,7 @@ export default function page() {
         {/* <h1>I nostri ospiti</h1> */}
 
         <AOSComponent>
-          <ReadRulesCard versione="tradizionale" />
+          <ReadRulesCard />
         </AOSComponent>
 
         <Filter filters={filters} setFilters={setFilters} />
@@ -81,7 +80,6 @@ export default function page() {
               data={filteredData}
               backgroundColor="var(--accent-three)"
               color="var(--text-light)"
-              versione="tradizionale"
               sezione="ospiti"
             />
           ) : (

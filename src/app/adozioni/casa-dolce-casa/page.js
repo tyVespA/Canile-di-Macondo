@@ -32,7 +32,6 @@ export default function page() {
       </div>
       <PreviewCardsSection
         data={adottati_db}
-        versione="tradizionale"
         sezione="adottati"
         backgroundColor="var(--accent-three)"
         color="var(--text-light)"

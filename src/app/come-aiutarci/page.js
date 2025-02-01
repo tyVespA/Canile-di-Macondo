@@ -19,7 +19,6 @@ import {
 
 import bannerImage from "@images/tradizionale/banner_images/cane_hero_4.jpg";
 
-import spacer from "@images/tradizionale/spacer.svg";
 import qrCode from "@images/Codice_QR.png";
 import cinquePerMille from "@images/tradizionale/cinquePerMille.jpg";
 
@@ -116,7 +115,7 @@ export default function page() {
 
           <Link
             href={{
-              pathname: "/tradizionale/contatti",
+              pathname: "/contatti",
               hash: "form",
               query: {
                 subject: "volontariato",
@@ -134,7 +133,7 @@ export default function page() {
             la vita nel canile.
           </p>
 
-          <Link href="/tradizionale/404temp">
+          <Link href="/404temp">
             <Button theme="white">Scopri cosa ci serve</Button>
           </Link>
         </div>
@@ -147,22 +146,22 @@ export default function page() {
           </p>
           <div className={styles.socialsContainer}>
             <AOSComponent>
-              <Link href="/tradizionale/404temp">
+              <Link href="/404temp">
                 <FacebookLogo size={32} />
               </Link>
             </AOSComponent>
             <AOSComponent delay="100" mobileDelay={true}>
-              <Link href="/tradizionale/404temp">
+              <Link href="/404temp">
                 <InstagramLogo size={32} />
               </Link>
             </AOSComponent>
             <AOSComponent delay="200" mobileDelay={true}>
-              <Link href="/tradizionale/404temp">
+              <Link href="/404temp">
                 <YoutubeLogo size={32} />
               </Link>
             </AOSComponent>
             <AOSComponent delay="300" mobileDelay={true}>
-              <Link href="/tradizionale/404temp">
+              <Link href="/404temp">
                 <TiktokLogo size={32} />
               </Link>
             </AOSComponent>

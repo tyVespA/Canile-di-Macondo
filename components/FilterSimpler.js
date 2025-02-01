@@ -6,7 +6,6 @@ import PreviewCardsSection from "./PreviewCardsSection";
 
 export default function FilterSimpler({
   cane,
-  versione,
   backgroundColor = "var(--accent-one)",
   color = "var(--text-dark)",
 }) {
@@ -97,7 +96,6 @@ export default function FilterSimpler({
           data={filteredData}
           backgroundColor={backgroundColor}
           color={color}
-          versione={versione}
         />
       ) : (
         <div>

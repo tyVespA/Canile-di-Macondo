@@ -10,7 +10,6 @@ export default function PreviewCardsSection({
   data,
   backgroundColor,
   color,
-  versione,
   sezione = "ospiti",
 }) {
   const { favorites, addFavorite, removeFavorite, isFavorite } = useFavorites();
@@ -22,7 +21,7 @@ export default function PreviewCardsSection({
     <section className={styles.previewCardsSectionContainer}>
       {data.map((item, index) => (
         <div key={index}>
-          <Link href={`/${versione}/adozioni/${sezioneLinksTo}/${item.id}`}>
+          <Link href={`/adozioni/${sezioneLinksTo}/${item.id}`}>
             <PreviewCard
               item={data[index]}
               backgroundColor={backgroundColor}

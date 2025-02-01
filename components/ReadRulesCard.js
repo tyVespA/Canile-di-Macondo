@@ -4,7 +4,7 @@ import styles from "./ReadRules.module.css";
 import Button from "./Button";
 import cane_png from "@images/cane_png.png";
 
-export default function ReadRulesCard({ versione }) {
+export default function ReadRulesCard() {
   return (
     <div className={styles.readRulesContainer}>
       <div className={styles.textSection}>
@@ -12,7 +12,7 @@ export default function ReadRulesCard({ versione }) {
           Prima di scegliere il tuo futuro amico a quattro zampe, assicurati di
           aver letto il nostro processo di adozione!
         </p>
-        <Link href={`/${versione}/adozioni/come-funziona`}>
+        <Link href={`/adozioni/come-funziona`}>
           <Button theme="white">Il nostro percorso</Button>
         </Link>
       </div>

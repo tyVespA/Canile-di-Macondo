@@ -5,7 +5,6 @@ import FullWidthBg from "@/components/FullWidthBg";
 import Header from "@/components/header/Header";
 
 import Footer from "@/components/Footer";
-import SwitchVersionButton from "@/components/SwitchVersionButton";
 
 const redHatDisplay = Red_Hat_Display({
   variable: "--font-redhat-display",

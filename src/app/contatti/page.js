@@ -6,8 +6,6 @@ import MapWrapper from "@/components/Map/MapWrapper";
 import TitleBanner from "@/components/TitleBanner";
 import ContattaciForm from "@/components/ContattaciForm";
 import bannerImage from "@images/tradizionale/banner_images/cane_hero_1.jpg";
-import noshadowLight from "@images/tradizionale/noshadowLight.png";
-import noShadowBig from "@images/tradizionale/noShadowBig.png";
 import shadowBig from "@images/tradizionale/shadowBig.png";
 import AOSComponent from "@/components/AOSComponent";
 

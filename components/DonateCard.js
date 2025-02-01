@@ -26,7 +26,7 @@ export default function DonateCard() {
           Puoi fare la tua donazione direttamente in canile, ti sarà rilasciata
           la regolare ricevuta
         </p>
-        <Link href="/tradizionale/contatti#orari">
+        <Link href="/contatti#orari">
           <p style={{ textDecoration: "underline" }}>Orari e posizione →</p>
         </Link>
       </div>

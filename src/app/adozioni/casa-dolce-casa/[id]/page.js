@@ -54,10 +54,8 @@ export default async function Page({ params }) {
     <div className={styles.pageContainer}>
       <section className={`first-section`}>
         <p className={styles.navigation}>
-          <Link href="/tradizionale/adozioni/casa-dolce-casa">
-            Casa dolce casa
-          </Link>{" "}
-          &gt; {cane.nome}
+          <Link href="/adozioni/casa-dolce-casa">Casa dolce casa</Link> &gt;{" "}
+          {cane.nome}
         </p>
         <div className={styles.minHeightContainer}>
           <div className={styles.mainContent}>
@@ -101,7 +99,7 @@ export default async function Page({ params }) {
                 {cane.descrizione_dopo_adozione_2}
               </p>
               <Link
-                href={`/tradizionale/adozioni/casa-dolce-casa/${nextDogId}`}
+                href={`/adozioni/casa-dolce-casa/${nextDogId}`}
                 className={styles.altraStoriaLink}
               >
                 <AOSComponent>

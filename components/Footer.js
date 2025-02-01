@@ -25,7 +25,7 @@ export default function Footer() {
       <div className={styles.top}>
         <div className={styles.logo}>
           <div className={styles.logoContainer}>
-            <Link href="/tradizionale">
+            <Link href="/">
               <Dog size={45} weight="duotone" />
               <Image
                 src={LogoWrittenWhite}
@@ -43,19 +43,17 @@ export default function Footer() {
         <div className={styles.navigation}>
           <div>
             <Link
-              href="/tradizionale/adozioni/come-funziona"
+              href="/adozioni/come-funziona"
               className={
-                pathname === "/tradizionale/adozioni/come-funziona"
-                  ? styles.currentPath
-                  : ""
+                pathname === "/adozioni/come-funziona" ? styles.currentPath : ""
               }
             >
               Come funziona
             </Link>
             <Link
-              href="/tradizionale/adozioni/i-nostri-ospiti"
+              href="/adozioni/i-nostri-ospiti"
               className={
-                pathname === "/tradizionale/adozioni/i-nostri-ospiti"
+                pathname === "/adozioni/i-nostri-ospiti"
                   ? styles.currentPath
                   : ""
               }
@@ -65,21 +63,17 @@ export default function Footer() {
           </div>
           <div>
             <Link
-              href="/tradizionale/come-aiutarci"
+              href="/come-aiutarci"
               className={
-                pathname === "/tradizionale/adozioni/come-aiutarci"
-                  ? styles.currentPath
-                  : ""
+                pathname === "/adozioni/come-aiutarci" ? styles.currentPath : ""
               }
             >
               Come aiutarci
             </Link>
             <Link
-              href="/tradizionale/contatti"
+              href="/contatti"
               className={
-                pathname === "/tradizionale/adozioni/contatti"
-                  ? styles.currentPath
-                  : ""
+                pathname === "/adozioni/contatti" ? styles.currentPath : ""
               }
             >
               Contatti
@@ -89,16 +83,16 @@ export default function Footer() {
         <div className={styles.socials}>
           <p>Seguici sui social !</p>
           <div className={styles.socialsContainer}>
-            <Link href="/tradizionale/404temp">
+            <Link href="/404temp">
               <FacebookLogo size={32} />
             </Link>
-            <Link href="/tradizionale/404temp">
+            <Link href="/404temp">
               <InstagramLogo size={32} />
             </Link>
-            <Link href="/tradizionale/404temp">
+            <Link href="/404temp">
               <YoutubeLogo size={32} />
             </Link>
-            <Link href="/tradizionale/404temp">
+            <Link href="/404temp">
               <TiktokLogo size={32} />
             </Link>
           </div>
@@ -110,7 +104,7 @@ export default function Footer() {
           <a href="mailto:info@caniledimacondo.net">info@caniledimacondo.net</a>
           <p>+39 121 333 789</p>
         </div>
-        <div>
+        <div className={styles.madeByContainer}>
           <p className={styles.madeBy}>
             Sito sviluppato con <Heart size={15} /> da{" "}
             <Link

@@ -51,7 +51,7 @@ export default function Home() {
           <div className={styles.heroButtonsContainer}>
             <AOSComponent animationType="fade-up">
               <div className={styles.firstLink}>
-                <Link href="/tradizionale/adozioni/i-nostri-ospiti">
+                <Link href="/adozioni/i-nostri-ospiti">
                   <Button theme="light" paddingInline="37.5px">
                     Incontra i nostri ospiti
                   </Button>
@@ -59,7 +59,7 @@ export default function Home() {
               </div>
             </AOSComponent>
             <AOSComponent animationType="fade-up" delay="200">
-              <Link href="/tradizionale/come-aiutarci">
+              <Link href="/come-aiutarci">
                 <Button theme="dark">Scopri come puoi aiutare</Button>{" "}
               </Link>
             </AOSComponent>
@@ -146,11 +146,10 @@ export default function Home() {
             data={slicedDb}
             backgroundColor="var(--accent-three)"
             color="var(--text-light)"
-            versione="tradizionale"
             sezione="ospiti"
           />
           <AOSComponent animationType="fade-up" delay="200">
-            <Link href="/tradizionale/adozioni/i-nostri-ospiti">
+            <Link href="/adozioni/i-nostri-ospiti">
               <Button theme="light">Incontrali tutti →</Button>
             </Link>
           </AOSComponent>
@@ -194,7 +193,7 @@ export default function Home() {
               Puoi fare la tua donazione direttamente in canile, ti sarà
               rilasciata la regolare ricevuta
             </p>
-            <Link href="/tradizionale/contatti#orari">
+            <Link href="/contatti#orari">
               <p style={{ textDecoration: "underline" }}>Orari e posizione →</p>
             </Link>
           </div>
@@ -207,7 +206,7 @@ export default function Home() {
             </p>
             <Link
               href={{
-                pathname: "/tradizionale/contatti",
+                pathname: "/contatti",
                 hash: "form",
                 query: {
                   subject: "volontariato",
@@ -273,7 +272,7 @@ export default function Home() {
           />
         </div>
         <AOSComponent animationType="fade-up" delay="200">
-          <Link href="/tradizionale/adozioni/casa-dolce-casa">
+          <Link href="/adozioni/casa-dolce-casa">
             <Button theme="white">
               I nostri amici e le loro nuove famiglie →
             </Button>

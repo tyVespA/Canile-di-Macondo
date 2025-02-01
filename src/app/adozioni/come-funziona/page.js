@@ -29,14 +29,14 @@ export default function page() {
           possibile le esigenze e lo stile di vita di ogni persona o famiglia,
           così da poter consigliare l’abbinamento migliore possibile.
         </p>
-        <ComeFunziona versione="tradizionale" />
+        <ComeFunziona />
         <AOSComponent>
           <div className={styles.cardContainer}>
             <ReadyToAdoptCard
               dogSrc={noshadowLight}
               comicBaloonTheme={comicBaloonLight}
               btnTheme="white"
-              href="/tradizionale/adozioni/i-nostri-ospiti"
+              href="/adozioni/i-nostri-ospiti"
               paddingInline="36px"
             >
               Adottare è un percorso importante, e ora hai tutti gli strumenti

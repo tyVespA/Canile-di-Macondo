@@ -51,10 +51,8 @@ export default async function Page({ params }) {
     <div className={styles.pageContainer}>
       <section className={`first-section`}>
         <p className={styles.navigation}>
-          <Link href="/tradizionale/adozioni/i-nostri-ospiti">
-            I nostri ospiti
-          </Link>{" "}
-          &gt; {cane.nome}
+          <Link href="/adozioni/i-nostri-ospiti">I nostri ospiti</Link> &gt;{" "}
+          {cane.nome}
         </p>
         <div className={styles.mainContent}>
           <Slideshow images={cane.images} />
@@ -140,10 +138,9 @@ export default async function Page({ params }) {
                   </div>
                 )}
               </div>
-              {/* <Link href="/tradizionale/contatti#form"> */}
               <Link
                 href={{
-                  pathname: "/tradizionale/contatti",
+                  pathname: "/contatti",
                   hash: "form",
                   query: {
                     dogName: cane.nome,
@@ -160,7 +157,6 @@ export default async function Page({ params }) {
         <h2>Altri ospiti con caratteristiche simili </h2>
         <FilterSimpler
           cane={cane}
-          versione="tradizionale"
           backgroundColor="var(--accent-three)"
           color="var(--text-light)"
         />
