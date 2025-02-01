@@ -29,7 +29,8 @@ const slicedDb = db.slice(0, 3);
 
 export const metadata = {
   title: "Home | Canile di Macondo",
-  description: "Benvenuti!" /* change */,
+  description:
+    " Ispirato alla città incantata di Cent’anni di solitudine, il nostro rifugio è il luogo dove la magia delle seconde possibilità prende vita.!",
 };
 
 export default function Home() {
