@@ -1,6 +1,11 @@
 import { Comfortaa } from "next/font/google";
 import { Red_Hat_Display, Red_Hat_Text } from "next/font/google";
 import "./globals.css";
+import FullWidthBg from "@/components/FullWidthBg";
+import Header from "@/components/header/Header";
+
+import Footer from "@/components/Footer";
+import SwitchVersionButton from "@/components/SwitchVersionButton";
 
 const redHatDisplay = Red_Hat_Display({
   variable: "--font-redhat-display",
@@ -43,7 +48,7 @@ export const metadata = {
   // },
 };
 
-export default function RootLayout({ children }) {
+export default function VersionTraditionalLayout({ children }) {
   return (
     <html lang="en">
       <head>
@@ -66,9 +71,15 @@ export default function RootLayout({ children }) {
         }
          ${"max-width-container"}`}
       >
-        {/* <Header /> */}
-        {children}
-        {/* <Footer /> */}
+        {/* <SwitchVersionButton /> */}
+        <Header />
+        <div style={{ marginTop: "85px" }}>{children}</div>
+        <FullWidthBg
+          backgroundColor="var(--text-dark)"
+          color="var(--text-light)"
+        >
+          <Footer />
+        </FullWidthBg>
       </body>
     </html>
   );

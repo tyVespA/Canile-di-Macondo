@@ -1,13 +1,13 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import TitleBanner from "@/src/app/components/TitleBanner";
-import DonateCard from "@/src/app/components/DonateCard";
-import PaypalCampagna from "@/src/app/components/PaypalCampagna";
-import PaypalButton from "@/src/app/components/PaypalButton";
-import Button from "@/src/app/components/Button";
-import Spacer from "@/src/app/components/Spacer";
-import AOSComponent from "@/src/app/components/AOSComponent";
+import TitleBanner from "@/components/TitleBanner";
+import DonateCard from "@/components/DonateCard";
+import PaypalCampagna from "@/components/PaypalCampagna";
+import PaypalButton from "@/components/PaypalButton";
+import Button from "@/components/Button";
+import Spacer from "@/components/Spacer";
+import AOSComponent from "@/components/AOSComponent";
 
 import {
   FacebookLogo,

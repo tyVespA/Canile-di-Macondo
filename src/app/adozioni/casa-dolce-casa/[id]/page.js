@@ -5,13 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import { calculateAge } from "@/utils/calculateAge";
-import Button from "@/src/app/components/Button";
-import Tag from "@/src/app/components/Tag";
-import HelpCard from "@/src/app/components/HelpCard";
-import PreviewCardsSection from "@/src/app/components/PreviewCardsSection";
-import FilterSimpler from "@/src/app/components/FilterSimpler";
-import Slideshow from "@/src/app/components/Slideshow";
-import AOSComponent from "@/src/app/components/AOSComponent";
+import Button from "@/components/Button";
+import Tag from "@/components/Tag";
+import HelpCard from "@/components/HelpCard";
+import PreviewCardsSection from "@/components/PreviewCardsSection";
+import FilterSimpler from "@/components/FilterSimpler";
+import Slideshow from "@/components/Slideshow";
+import AOSComponent from "@/components/AOSComponent";
 
 import {
   GenderMale,

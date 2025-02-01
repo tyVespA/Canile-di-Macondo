@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import PaypalDonateBtn from "@/src/app/components/PaypalDonateBtn";
+import PaypalDonateBtn from "@/components/PaypalDonateBtn";
 
 export const metadata = {
   title: "Donazioni | Canile di Macondo",
