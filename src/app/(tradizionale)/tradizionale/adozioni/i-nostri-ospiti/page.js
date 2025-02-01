@@ -2,15 +2,15 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 import { db } from "@lib/db";
-import PreviewCardsSection from "@shared-components/PreviewCardsSection";
-import Filter from "@shared-components/Filter";
-import ReadRulesCard from "@shared-components/ReadRulesCard";
-import HelpCard from "@/src/app/shared-components/HelpCard";
+import PreviewCardsSection from "@/src/app/components/PreviewCardsSection";
+import Filter from "@/src/app/components/Filter";
+import ReadRulesCard from "@/src/app/components/ReadRulesCard";
+import HelpCard from "@/src/app/components/HelpCard";
 
-import TitleBanner from "@shared-components/TitleBanner";
+import TitleBanner from "@/src/app/components/TitleBanner";
 import testImage from "@images/tradizionale/hero_image.jpg";
 import bannerImage from "@images/tradizionale/banner_images/cane_hero_5.jpg";
-import AOSComponent from "@/src/app/shared-components/AOSComponent";
+import AOSComponent from "@/src/app/components/AOSComponent";
 
 export default function page() {
   const anno_corrente = new Date().getFullYear();

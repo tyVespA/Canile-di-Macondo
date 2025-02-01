@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
-import FullWidthBg from "@shared-components/FullWidthBg";
-import Button from "@shared-components/Button";
-import Spacer from "@shared-components/Spacer";
-import InfoCard from "@shared-components/InfoCard";
-import Counter from "@shared-components/Counter";
-import PreviewCardsSection from "@shared-components/PreviewCardsSection";
-import PaypalButton from "@shared-components/PaypalButton";
-import Testimonial from "@shared-components/Testimonial";
-import TestimonialsSection from "@shared-components/TestimonialsSection";
+import FullWidthBg from "@/src/app/components/FullWidthBg";
+import Button from "@/src/app/components/Button";
+import Spacer from "@/src/app/components/Spacer";
+import InfoCard from "@/src/app/components/InfoCard";
+import Counter from "@/src/app/components/Counter";
+import PreviewCardsSection from "@/src/app/components/PreviewCardsSection";
+import PaypalButton from "@/src/app/components/PaypalButton";
+import Testimonial from "@/src/app/components/Testimonial";
+import TestimonialsSection from "@/src/app/components/TestimonialsSection";
 
-import AOSComponent from "@/src/app/shared-components/AOSComponent";
+import AOSComponent from "@/src/app/components/AOSComponent";
 
 import {
   HouseLine,

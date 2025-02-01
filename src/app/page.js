@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
-import SwitchVersionButton from "./shared-components/SwitchVersionButton";
+import SwitchVersionButton from "./components/SwitchVersionButton";
 import { Dog } from "@phosphor-icons/react/dist/ssr";
-import FullWidthBg from "./shared-components/FullWidthBg";
+import FullWidthBg from "./components/FullWidthBg";
 import drawing from "@images/cane-drawing.png";
 
 export const metadata = {

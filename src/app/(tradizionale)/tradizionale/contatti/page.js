@@ -1,15 +1,15 @@
 import Image from "next/image";
 import { Suspense } from "react";
-import FullWidthBg from "@shared-components/FullWidthBg";
+import FullWidthBg from "@/src/app/components/FullWidthBg";
 import styles from "./page.module.css";
-import MapWrapper from "@shared-components/Map/MapWrapper";
-import TitleBanner from "@shared-components/TitleBanner";
-import ContattaciForm from "@shared-components/ContattaciForm";
+import MapWrapper from "@/src/app/components/Map/MapWrapper";
+import TitleBanner from "@/src/app/components/TitleBanner";
+import ContattaciForm from "@/src/app/components/ContattaciForm";
 import bannerImage from "@images/tradizionale/banner_images/cane_hero_1.jpg";
 import noshadowLight from "@images/tradizionale/noshadowLight.png";
 import noShadowBig from "@images/tradizionale/noShadowBig.png";
 import shadowBig from "@images/tradizionale/shadowBig.png";
-import AOSComponent from "@/src/app/shared-components/AOSComponent";
+import AOSComponent from "@/src/app/components/AOSComponent";
 
 export const metadata = {
   title: "Contatti | Canile di Macondo",

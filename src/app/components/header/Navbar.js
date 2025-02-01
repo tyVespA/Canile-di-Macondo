@@ -12,7 +12,7 @@ import {
   Bone,
   PawPrint,
 } from "@phosphor-icons/react/dist/ssr";
-import Button from "@shared-components/Button";
+import Button from "@/src/app/components/Button";
 
 export default function Navbar() {
   const pathname = usePathname();

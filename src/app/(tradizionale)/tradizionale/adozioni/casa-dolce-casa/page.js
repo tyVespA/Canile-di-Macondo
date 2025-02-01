@@ -1,8 +1,8 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import inCostruzione from "@images/cane-drawing-page.png";
-import TitleBanner from "@shared-components/TitleBanner";
-import PreviewCardsSection from "@shared-components/PreviewCardsSection";
+import TitleBanner from "@/src/app/components/TitleBanner";
+import PreviewCardsSection from "@/src/app/components/PreviewCardsSection";
 import cane_hero from "@images/tradizionale/banner_images/cane_hero_6.jpg";
 import { db } from "@/lib/db";
 import { adottati_db } from "@/lib/adottati_db";

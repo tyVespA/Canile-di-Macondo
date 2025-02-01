@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Dog, PawPrint, Bone } from "@phosphor-icons/react/dist/ssr";
 import styles from "./Header.module.css";
 import Navbar from "./Navbar";
-import Button from "@shared-components/Button";
+import Button from "@/src/app/components/Button";
 import LogoWrittenBlack from "@images/tradizionale/LogoWrittenBlack.png";
 
 export default function Header() {
