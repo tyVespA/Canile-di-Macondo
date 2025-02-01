@@ -1,69 +1,328 @@
-.pageContainer {
-  min-height: 100vh;
+/* 
+  HERO SECTION  
+*/
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: calc(100vh - var(--header-height));
+  max-height: 700px;
+
+  position: relative;
+}
+
+.heroContainer > div {
+  flex: 1 1 50%;
+}
+
+.textContainer {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100px;
+}
+
+.textContainer h1 {
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.textContainer p {
+  max-width: 46ch;
+}
+
+.heroButtonsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.firstLink {
+  margin-bottom: 15px;
+}
+
+/* change to heroContainer pseudo? */
+.heroImage {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  margin-left: calc(50% - 50vw);
+  background-image: url("/images/tradizionale/hero_image.jpg");
+  /* background-size: contain; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* overlay */
+.heroContainer::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 243, 212) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  margin-left: calc(50% - 50vw);
+}
+
+@media screen and (max-width: 1170px) {
+  .heroButtonsContainer {
+    flex-direction: column;
+    gap: 10px;
+    /* align-items: center; */
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .textContainer {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heroContainer {
+    min-height: calc(100vh - var(--header-height));
+  }
+  /* extra overlay for mobile */
+  .heroContainer::after {
+    background: rgba(255, 243, 212, 0.8);
+  }
+  .heroImage {
+    background-position: 60%;
+    background-size: cover;
+  }
+  .heroContainer > div {
+    flex: auto;
+  }
+  .textContainer {
+    flex: 2;
+    text-align: center;
+    width: 100%;
+    margin-inline: auto;
+    margin-bottom: 50px;
+  }
+  .textContainer h1 {
+    margin-bottom: 25px;
+    max-width: 15ch;
+    margin-inline: auto;
+  }
+  .textContainer p {
+    max-width: 30ch;
+    position: relative;
+    margin-inline: auto;
+    margin-bottom: 30px;
+  }
+
+  /* probably change for better layout */
+  /* .textContainer p::after {
+    position: absolute;
+    content: "";
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+    background-color: hsla(42, 100%, 92%, 0.623);
+    z-index: -1;
+    border-radius: 15px;
+  }
+  .textContainer p:first-of-type::after {
+    bottom: 0;
+    border-radius: 15px 15px 0 0;
+  }
+  .textContainer p:last-of-type::after {
+    border-radius: 0 0 15px 15px;
+  } */
+  .heroButtonsContainer {
+    align-items: center;
+    margin-top: 35px;
+    gap: 5px;
+  }
+}
+
+/* 
+  SECTION 2 
+*/
+
+.section2 {
+  margin-block: var(--section-margin);
+  text-align: center;
+}
+
+.section2 h2 {
+  margin-bottom: 10px;
+}
+
+.section2 h3 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* 
+  SECTION 3 
+*/
+
+.section3 {
+  text-align: center;
+}
+
+.section3 h2 {
+  margin-bottom: 20px;
+}
+
+.countersSection {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  /* gap: 25px; */
+  margin-bottom: 30px;
+}
+
+.counterContainer {
+  width: 250px;
+  flex: 1 0 auto;
+}
+
+.section3 h3 {
+  margin-bottom: 30px;
+}
+
+.iNostriOspitiContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+}
+
+/* 
+  SECTION 4 
+*/
+
+.section4 {
   text-align: center;
-  font-family: var(--font-comfortaa);
-
-  /* background-color: hsl(248, 96%, 67%); */
 }
 
-.title {
-  position: relative;
+.section4 h2 {
+  margin-bottom: 20px;
 }
 
-.title svg {
-  position: absolute;
-  top: -85px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+.otherDonationsSection {
+  width: 100%;
+  min-height: 300px;
 
-.buttonsContainer {
-  font-family: var(--font-redhat-text);
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+
+  background-image: url("/images/tradizionale/parallaxImage2.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--text-light);
+  position: relative;
+
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.buttonsContainer a {
-  /* border: 1px solid black; */
-  padding: 15px 30px;
-  border-radius: var(--border-radius-standard);
-  background-color: var(--accent-one);
-  color: black;
-  font-weight: 500;
-  transition: all 0.3s;
-}
-
-.buttonsContainer a:last-child {
-  background-color: var(--background2);
-}
-
-.buttonsContainer a:hover {
-  background-color: white;
-  transform: translateY(-5px);
-}
-
-.drawing {
+.otherDonationsSection::after {
   position: absolute;
-  bottom: 0;
-  max-width: 280px;
-  height: auto;
+  content: "";
+  background-color: hsla(23, 39%, 44%, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
-@media screen and (max-width: 475px) {
-  .pageContainer {
-    padding-bottom: 130px;
-    padding-inline: 10px;
+.otherDonationsSection h3 {
+  color: var(--text-light);
+  margin-bottom: 25px;
+}
+
+.otherDonationsSection > div {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+
+  padding-inline: 10px;
+  padding-block: 30px;
+  text-align: center;
+  min-height: 300px;
+}
+
+.otherDonationsSection > div p {
+  max-width: 40ch;
+}
+
+.paypalButtonContainer {
+  padding: 20px;
+}
+
+.otherDonationsSection .div1,
+.otherDonationsSection .div2 {
+  border-right: 1px solid var(--background);
+  border-bottom: 1px solid var(--background);
+}
+
+.otherDonationsSection .div4 {
+  border-right: 1px solid var(--background);
+}
+
+@media screen and (max-width: 979px) {
+  .otherDonationsSection .div4 {
+    border-bottom: 1px solid var(--background);
   }
-  .buttonsContainer {
-    flex-direction: column-reverse;
-    gap: 10px;
+}
+
+@media screen and (max-width: 865px) {
+  .otherDonationsSection {
+    /* background-position: center center; */
   }
-  .drawing {
-    max-width: 200px;
+}
+
+@media screen and (max-width: 450px) {
+  .otherDonationsSection {
+    background-attachment: scroll;
+    background-position: 20%;
   }
+  .otherDonationsSection > div {
+    min-width: 250px;
+  }
+}
+
+/* 
+  SECTION 5  
+*/
+
+.section5 {
+  text-align: center;
+  margin-bottom: 125px;
+}
+
+.section5 h2 {
+  margin-bottom: 10px;
+}
+
+.testimonialsIntro {
+  margin-bottom: 30px;
+  max-width: 70ch;
+  margin-inline: auto;
+}
+
+.testimonialsSection {
+  margin-bottom: 45px;
+  margin-inline: -20px;
+}
+
+.section5 button {
+  margin-inline: auto;
 }

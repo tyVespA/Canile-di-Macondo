@@ -1,0 +1,163 @@
+.footer {
+  padding-block: 30px;
+  max-width: var(--max-width);
+  padding-inline: var(--padding-inline-max-width);
+  margin-inline: auto;
+  /* margin-top: 50px; */
+  font-size: 16px;
+}
+
+.footer p {
+  font-family: var(--font-comfortaa);
+}
+
+.footer a {
+  transition: all 0.3s;
+}
+
+.footer a:hover {
+  color: var(--accent-one);
+}
+
+/* 
+  TOP SECTION 
+*/
+
+.top {
+  position: relative;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top::after {
+  position: absolute;
+  content: "";
+  bottom: -22px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--text-light);
+  opacity: 0.2;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.logoContainer a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyright {
+  color: var(--accent-one);
+  font-size: 18px;
+}
+
+.navigation {
+  display: flex;
+  gap: 40px;
+  /* text-align: center; */
+}
+
+.navigation > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.socialsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+/* 
+  BOTTOM SECTION 
+*/
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom > div {
+  flex: 1 1 0%;
+}
+
+.bottomContacts {
+  display: flex;
+  gap: 50px;
+}
+
+.madeBy {
+  font-family: var(--font-comfortaa);
+  font-size: 14px;
+  /* text-align: end; */
+  /* margin-left: auto; */
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: flex-end;
+}
+
+.madeBy a {
+  color: var(--accent-one);
+}
+
+.currentPath {
+  color: var(--accent-one);
+}
+
+@media screen and (max-width: 950px) {
+  .top {
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 60px;
+  }
+  .top::after {
+    bottom: -32px;
+  }
+  .navigation {
+    gap: 40px;
+  }
+  .bottomContacts {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bottomContacts {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .writtenLogo {
+    display: none;
+  }
+  .copyright {
+    text-align: center;
+  }
+}

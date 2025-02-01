@@ -49,7 +49,8 @@ h3,
 h4,
 h5,
 h6 {
-  /* text-wrap: balance; */
+  text-wrap: balance;
+  color: var(--accent-three);
 }
 
 #root,
@@ -60,15 +61,13 @@ h6 {
 /* END OF RESET */
 
 :root {
-  /* --background: hsl(248, 97%, 64%); */
-  --background2: #fff3d4;
-  --surface: hsl(248, 96%, 67%);
-  --surface2: hsl(248, 100%, 76%);
-  --surface3: hsl(248, 51%, 44%);
+  --background: #fff3d4;
+  --surface: hsla(23, 39%, 44%, 0.75);
   --surface3: hsl(217, 74%, 9%);
   --surface4: hsla(23, 39%, 44%, 0.75);
   --surface5: hsla(23, 39%, 44%);
 
+  --text: hsl(217, 74%, 9%);
   --text-light: hsl(0, 0%, 100%);
   --text-dark: hsl(217, 74%, 9%);
 
@@ -78,13 +77,19 @@ h6 {
 
   --max-width: 1260px;
   --padding-inline-max-width: 40px;
+  --section-margin: 50px;
   --border-radius-standard: 15px;
+
+  /* utili per layout temporanei: */
+  --header-height: 85px;
+  --footer-height: 201px;
 }
 
 body {
   background-color: var(--background);
-  color: white;
-  font-size: 18px;
+  color: var(--text-dark);
+  font-family: var(--font-redhat-text);
+  /* font-size: 17px; */
 }
 
 h1,
@@ -136,7 +141,7 @@ button {
 }
 
 strong {
-  font-weight: 500;
+  color: var(--accent-three);
 }
 
 /* HELPER CLASSES */
@@ -160,8 +165,67 @@ strong {
 
 @media screen and (max-width: 600px) {
   .max-width-container {
-    padding-inline: 20px;
+    padding-inline: 25px;
   }
+}
+
+.underlined {
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.underlined:hover {
+  color: var(--accent-three);
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.grab {
+  cursor: grab;
+}
+
+.infoCardsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-inline: auto;
+  margin-bottom: 25px;
+}
+
+.infoCardsSection > div {
+  max-width: 350px;
+  flex: 1 0 auto;
+}
+
+@media screen and (max-width: 400px) {
+  .infoCardsSection {
+    /* padding-inline: 20px; */
+  }
+  .infoCardsSection > div {
+    max-width: 100%;
+  }
+}
+
+.pawUl li {
+  list-style-type: none;
+  position: relative;
+  text-align: start;
+}
+
+.pawUl li::before {
+  content: "";
+  display: inline-block;
+  background-image: url("/images/paw-print-fill.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -30px;
+  top: 4px;
 }
 
 .first-section {
