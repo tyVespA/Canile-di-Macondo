@@ -23,18 +23,18 @@ export default function Navbar() {
 
   // dà la classe active al mainLink anche se il path è in un sublink
   const adozioniPaths = [
-    "/tradizionale/adozioni",
-    "/tradizionale/adozioni/come-funziona",
-    "/tradizionale/adozioni/i-nostri-ospiti",
-    "/tradizionale/adozioni/adozioni-a-distanza",
+    "/adozioni",
+    "/adozioni/come-funziona",
+    "/adozioni/i-nostri-ospiti",
+    "/adozioni/adozioni-a-distanza",
   ];
   const isAdozioniActive = isActiveFunction(adozioniPaths, pathname);
 
   const comeAiutarciPaths = [
-    "/tradizionale/come-aiutarci",
-    "/tradizionale/come-aiutarci/chi-siamo",
-    "/tradizionale/come-aiutarci/donazioni",
-    "/tradizionale/come-aiutarci/volontariato",
+    "/come-aiutarci",
+    "/come-aiutarci/chi-siamo",
+    "/come-aiutarci/donazioni",
+    "/come-aiutarci/volontariato",
   ];
   const isComeAiutarciActive = isActiveFunction(comeAiutarciPaths, pathname);
 
@@ -125,10 +125,10 @@ export default function Navbar() {
         <ul>
           <li>
             <Link
-              href="/tradizionale"
-              className={`${
-                pathname === "/tradizionale" ? styles.active : ""
-              } ${styles.mainLink}`}
+              href="/"
+              className={`${pathname === "/" ? styles.active : ""} ${
+                styles.mainLink
+              }`}
             >
               Homepage
             </Link>
@@ -151,12 +151,10 @@ export default function Navbar() {
             >
               <li>
                 <Link
-                  onClick={() =>
-                    handleLinkClick("/tradizionale/adozioni/come-funziona")
-                  }
-                  href="/tradizionale/adozioni/come-funziona"
+                  onClick={() => handleLinkClick("/adozioni/come-funziona")}
+                  href="/adozioni/come-funziona"
                   className={
-                    pathname === "/tradizionale/adozioni/come-funziona"
+                    pathname === "/adozioni/come-funziona"
                       ? `${styles.active}`
                       : ""
                   }
@@ -166,12 +164,10 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  onClick={() =>
-                    handleLinkClick("/tradizionale/adozioni/i-nostri-ospiti")
-                  }
-                  href="/tradizionale/adozioni/i-nostri-ospiti"
+                  onClick={() => handleLinkClick("/adozioni/i-nostri-ospiti")}
+                  href="/adozioni/i-nostri-ospiti"
                   className={
-                    pathname === "/tradizionale/adozioni/i-nostri-ospiti"
+                    pathname === "/adozioni/i-nostri-ospiti"
                       ? `${styles.active}`
                       : ""
                   }
@@ -181,12 +177,10 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  onClick={() =>
-                    handleLinkClick("/tradizionale/adozioni/casa-dolce-casa")
-                  }
-                  href="/tradizionale/adozioni/casa-dolce-casa"
+                  onClick={() => handleLinkClick("/adozioni/casa-dolce-casa")}
+                  href="/adozioni/casa-dolce-casa"
                   className={
-                    pathname === "/tradizionale/adozioni/casa-dolce-casa"
+                    pathname === "/adozioni/casa-dolce-casa"
                       ? `${styles.active}`
                       : ""
                   }
@@ -194,93 +188,13 @@ export default function Navbar() {
                   Casa dolce casa
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  onClick={() =>
-                    handleLinkClick(
-                      "/tradizionale/adozioni/adozioni-a-distanza"
-                    )
-                  }
-                  href="/tradizionale/adozioni/adozioni-a-distanza"
-                  className={
-                    pathname === "/tradizionale/adozioni/adozioni-a-distanza"
-                      ? `${styles.active}`
-                      : ""
-                  }
-                >
-                  Adozioni a distanza
-                </Link>
-              </li> */}
             </ul>
           </li>
-          {/* <li className={styles.navItem}>
-            <span
-              onClick={() => toggleSubLinks("comeAiutarci")}
-              className={`${styles.parentLink} ${styles.mainLink} ${
-                isComeAiutarciActive ? styles.active : ""
-              }`}
-            >
-              Come aiutarci <CaretDown size={15} weight="bold" />
-            </span>
-            <ul
-              className={`${styles.subLinks} ${
-                openSubLinks.comeAiutarci || isComeAiutarciActive
-                  ? styles.subLinksOpened
-                  : styles.subLinksClosed
-              } ${desktopDropdownClicked ? styles.closeDesktopDropdown : ""}`}
-            >
-              <li>
-                <Link
-                  onClick={() =>
-                    handleLinkClick("/tradizionale/come-aiutarci/chi-siamo")
-                  }
-                  href="/tradizionale/come-aiutarci/chi-siamo"
-                  className={
-                    pathname === "/tradizionale/come-aiutarci/chi-siamo"
-                      ? `${styles.active}`
-                      : ""
-                  }
-                >
-                  Chi siamo
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() =>
-                    handleLinkClick("/tradizionale/come-aiutarci/donazioni")
-                  }
-                  href="/tradizionale/come-aiutarci/donazioni"
-                  className={
-                    pathname === "/tradizionale/come-aiutarci/donazioni"
-                      ? `${styles.active}`
-                      : ""
-                  }
-                >
-                  Donazioni
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() =>
-                    handleLinkClick("/tradizionale/come-aiutarci/volontariato")
-                  }
-                  href="/tradizionale/come-aiutarci/volontariato"
-                  className={
-                    pathname === "/tradizionale/come-aiutarci/volontariato"
-                      ? `${styles.active}`
-                      : ""
-                  }
-                >
-                  Volontariato
-                </Link>
-              </li>
-            </ul>
-          </li> */}
           <li>
             <Link
-              href="/tradizionale/come-aiutarci"
+              href="/come-aiutarci"
               className={`${
-                pathname === "/tradizionale/come-aiutarci" ? styles.active : ""
+                pathname === "/come-aiutarci" ? styles.active : ""
               } ${styles.mainLink}`}
             >
               Come aiutarci
@@ -288,21 +202,19 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/tradizionale/contatti"
-              className={`${
-                pathname === "/tradizionale/contatti" ? styles.active : ""
-              } ${styles.mainLink}`}
+              href="/contatti"
+              className={`${pathname === "/contatti" ? styles.active : ""} ${
+                styles.mainLink
+              }`}
             >
               Contatti
             </Link>
           </li>
           <div className={styles.ctaButtons}>
             <Link
-              href="/tradizionale/come-aiutarci"
+              href="/come-aiutarci"
               className={`${
-                pathname === "/tradizionale/come-aiutarci"
-                  ? styles.btnHidden
-                  : ""
+                pathname === "/come-aiutarci" ? styles.btnHidden : ""
               }`}
             >
               <Button theme="white">
@@ -310,11 +222,9 @@ export default function Navbar() {
               </Button>
             </Link>
             <Link
-              href="/tradizionale/adozioni/i-nostri-ospiti"
+              href="/adozioni/i-nostri-ospiti"
               className={`${
-                pathname === "/tradizionale/adozioni/i-nostri-ospiti"
-                  ? styles.btnHidden
-                  : ""
+                pathname === "/adozioni/i-nostri-ospiti" ? styles.btnHidden : ""
               }`}
             >
               <Button theme="light">

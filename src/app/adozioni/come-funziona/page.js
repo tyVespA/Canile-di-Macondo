@@ -1,12 +1,12 @@
 import styles from "./page.module.css";
-import ReadyToAdoptCard from "@/src/app/components/ReadyToAdoptCard";
-import ComeFunziona from "@/src/app/components/come-funziona/ComeFunziona";
+import ReadyToAdoptCard from "@/components/ReadyToAdoptCard";
+import ComeFunziona from "@/components/come-funziona/ComeFunziona";
 import comicBaloonLight from "@images/tradizionale/comicBaloonLight.png";
 import noshadowLight from "@images/tradizionale/noshadowLight.png";
 
-import TitleBanner from "@/src/app/components/TitleBanner";
+import TitleBanner from "@/components/TitleBanner";
 import bannerImage from "@images/tradizionale/banner_images/cane_hero_3.jpg";
-import AOSComponent from "@/src/app/components/AOSComponent";
+import AOSComponent from "@/components/AOSComponent";
 
 export const metadata = {
   title: "Come funziona | Canile di Macondo",
