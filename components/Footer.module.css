@@ -107,13 +107,14 @@
 .madeBy {
   font-family: var(--font-comfortaa);
   font-size: 14px;
-  text-align: end;
-  z-index: 10000;
+  /* text-align: end; */
+  /* margin-left: auto; */
   position: relative;
 
   display: flex;
   align-items: center;
   gap: 3px;
+  justify-content: flex-end;
 }
 
 .madeBy a {
