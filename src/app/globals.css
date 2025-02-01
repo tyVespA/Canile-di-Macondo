@@ -89,7 +89,7 @@ body {
   background-color: var(--background);
   color: var(--text-dark);
   font-family: var(--font-redhat-text);
-  /* font-size: 17px; */
+  font-size: 18px;
 }
 
 h1,
