@@ -22,7 +22,6 @@ const comfortaa = Comfortaa({
 
 export const metadata = {
   title: "Canile di Macondo",
-  description: "Vieni a trovarci!",
   icons: {
     icon: [
       {
