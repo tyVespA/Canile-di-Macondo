@@ -42,7 +42,7 @@ export default function ComeFunziona() {
           Ti aspettiamo al rifugio per una visita! Potrai vedere da vicino i
           nostri ospiti, scoprire le loro storie e iniziare a immaginare una
           nuova vita insieme a uno di loro. <br />
-          <Link href={`/contatti`} className="underlined">
+          <Link href={`/contatti#orari`} className="underlined">
             Orari e posizione →
           </Link>
         </ComeFunzionaText>
