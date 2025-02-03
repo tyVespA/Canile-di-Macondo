@@ -49,7 +49,7 @@ export const metadata = {
 
 export default function VersionTraditionalLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="it">
       <head>
         <meta property="og:title" content="Canile di Macondo" />
         <meta property="og:description" content="Vieni a trovarci!" />
