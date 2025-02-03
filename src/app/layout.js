@@ -22,6 +22,8 @@ const comfortaa = Comfortaa({
 
 export const metadata = {
   title: "Canile di Macondo",
+  description:
+    "Ispirato alla città incantata di Cent’anni di solitudine, il nostro rifugio è il luogo dove la magia delle seconde possibilità prende vita.",
   icons: {
     icon: [
       {
@@ -34,16 +36,6 @@ export const metadata = {
       },
     ],
   },
-  // openGraph: {
-  //   images: [
-  //     {
-  //       url: "https://cdn.7tv.app/emote/01HKWA1EB00005BZE9KQ0QYJW7/4x.avif",
-  //       width: 200,
-  //       height: 200,
-  //       alt: "Canile di Macondo",
-  //     },
-  //   ],
-  // },
 };
 
 export default function VersionTraditionalLayout({ children }) {
@@ -51,7 +43,10 @@ export default function VersionTraditionalLayout({ children }) {
     <html lang="it">
       <head>
         <meta property="og:title" content="Canile di Macondo" />
-        <meta property="og:description" content="Vieni a trovarci!" />
+        <meta
+          property="og:description"
+          content="Ispirato alla città incantata di Cent’anni di solitudine, il nostro rifugio è il luogo dove la magia delle seconde possibilità prende vita."
+        />
         <meta
           property="og:url"
           content="https://a273098f.shelter-testing.pages.dev/"
