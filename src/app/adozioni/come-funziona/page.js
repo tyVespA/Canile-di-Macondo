@@ -10,7 +10,8 @@ import AOSComponent from "@/components/AOSComponent";
 
 export const metadata = {
   title: "Come funziona | Canile di Macondo",
-  description: "Il nostro percorso per poter adottare" /* change */,
+  description:
+    "Scopri il percorso di adozione del Canile di Macondo: tutti i passaggi per accogliere un nuovo amico a quattro zampe nella tua famiglia, dal primo incontro all’adozione.",
 };
 
 export default function page() {

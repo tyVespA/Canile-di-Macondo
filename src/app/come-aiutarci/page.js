@@ -22,6 +22,12 @@ import bannerImage from "@images/tradizionale/banner_images/cane_hero_4.jpg";
 import qrCode from "@images/Codice_QR.png";
 import cinquePerMille from "@images/tradizionale/cinquePerMille.jpg";
 
+export const metadata = {
+  title: "Come Aiutarci | Canile di Macondo",
+  description:
+    "Scopri come puoi aiutare il Canile di Macondo: dona online, diventa volontario, contribuisci con materiali o aiutaci con il passaparola. Ogni gesto conta!!",
+};
+
 export default function page() {
   return (
     <div className={styles.comeAiutarciPage}>
