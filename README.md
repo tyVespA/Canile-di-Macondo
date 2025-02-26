@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 # 🐶 Canile di Macondo
 
 Un sito web per aiutare i canili a trovare una famiglia per i loro ospiti. Gli utenti possono esplorare i cani disponibili, visualizzare dettagli sulle loro caratteristiche, contattare direttamente il rifugio e fare donazioni dirette per supportare la struttura.
