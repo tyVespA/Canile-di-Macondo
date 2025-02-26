@@ -1,5 +1,41 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+# 🐶 Dog Shelter - Trova una casa per ogni amico a quattro zampe
+
+Un sito web per aiutare i canili a trovare una famiglia per i loro ospiti. Gli utenti possono esplorare gli animali disponibili, visualizzare dettagli sulle loro caratteristiche e contattare direttamente il rifugio.
+
+## 🚀 Demo
+
+🔗 [Live Website](https://caniledimacondo.net)
+
+## 🛠 Tecnologie Utilizzate
+
+- ⚡ [Next.js](https://nextjs.org/)
+- 🎨 [CSS Modules](https://github.com/css-modules/css-modules)
+- 🗺️ [Leaflet.js](https://leafletjs.com/) per la mappa interattiva
+- 🔥 [MongoDB](https://www.mongodb.com/) per la gestione dei dati
+- 📡 [Express.js](https://expressjs.com/) per l'API backend
+
+## ✨ Funzionalità
+
+✅ Ricerca e filtro degli animali disponibili per l'adozione  
+✅ Pagina dettagliata per ogni animale con foto e descrizione  
+✅ Mappa interattiva con la posizione dei rifugi  
+✅ Form di contatto per chi è interessato all’adozione  
+✅ Design responsivo per mobile e desktop
+
+## 📸 Screenshot
+
+![Anteprima del sito](https://via.placeholder.com/800x400.png?text=Screenshot+del+progetto)
+
+## 🛠 Installazione Locale
+
+````bash
+git clone https://github.com/tuo-username/dog-shelter
+cd dog-shelter
+npm install
+npm run dev
+
 ## Test
 
 Learnt:
@@ -47,7 +83,7 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+````
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
