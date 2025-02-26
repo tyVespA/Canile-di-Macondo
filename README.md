@@ -9,8 +9,8 @@ Un sito web per aiutare i canili a trovare una famiglia per i loro ospiti. Gli u
 ## 🛠 Tecnologie Utilizzate
 
 - [Next.js](https://nextjs.org/)
-- [CSS Modules](https://github.com/css-modules/css-modules)
-- [AOS - Animate on scroll](https://www.npmjs.com/package/aos)
+- [CSS Modules](https://github.com/css-modules/css-modules) per gli stili
+- [AOS - Animate on scroll](https://www.npmjs.com/package/aos) per le animazioni on scroll
 
 ## ✨ Funzionalità
 
