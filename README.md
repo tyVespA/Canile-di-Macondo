@@ -23,9 +23,9 @@ Un sito web per aiutare i canili a trovare una famiglia per i loro ospiti. Gli u
 - Diverse opzioni per fare donazioni
 - Design responsivo per mobile e desktop
 
-## 📸 Screenshot
+<!-- ## 📸 Screenshot
 
-![Anteprima del sito](https://via.placeholder.com/800x400.png?text=Screenshot+del+progetto)
+![Anteprima del sito](https://via.placeholder.com/800x400.png?text=Screenshot+del+progetto) -->
 
 ## 🛠 Installazione Locale
 
@@ -38,7 +38,7 @@ npm run dev
 
 Aprire [http://localhost:3000](http://localhost:3000) con il browser per vedere il risultato.
 
-## Test
+<!-- ## Test
 
 Learnt:
 dropdowns
@@ -53,4 +53,4 @@ useParams to populate form
 TODO:
 underline effect while hover on nav (?)
 lightbox (maybe?)
-refractor navbar
+refractor navbar -->
