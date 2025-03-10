@@ -21,9 +21,9 @@ Un sito web per aiutare i canili a trovare una famiglia per i loro ospiti. Gli u
 - Diverse opzioni per fare donazioni
 - Design responsivo per mobile e desktop
 
-<!-- ## 📸 Screenshot
+## 📸 Screenshot
 
-![Anteprima del sito](https://via.placeholder.com/800x400.png?text=Screenshot+del+progetto) -->
+![Anteprima del sito](https://www.marcomigliavacca.it/_next/image?url=%2Fimages%2FprojectsImages%2FcanileThumbnail.jpg&w=640&q=75)
 
 ## 🛠 Installazione Locale
 
